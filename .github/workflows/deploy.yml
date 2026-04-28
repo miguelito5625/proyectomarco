@@ -1,0 +1,34 @@
+name: Deploy Angular to GitHub Pages
+
+# Este bloque le indica al pipeline que se ejecute al hacer push a la rama principal
+on:
+  push:
+    branches:
+      - main  # Si tu rama principal se llama 'master', cámbialo aquí.
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Puedes ajustar a la versión de Node que estés utilizando
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Compilar el proyecto de Angular
+        # Es vital el parámetro --base-href para que GitHub Pages encuentre tus assets (CSS, JS, imágenes)
+        run: npx ng build --configuration production --base-href /proyectomarco/
+
+      - name: Desplegar a GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # ¡ATENCIÓN A ESTA RUTA!
+          publish_dir: ./dist/proyectomarco/browser
