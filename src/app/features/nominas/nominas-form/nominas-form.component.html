@@ -14,13 +14,13 @@
     <div class="row">
       <mat-form-field appearance="outline" class="half-width">
         <mat-label>Fecha Inicio</mat-label>
-        <input matInput [matDatepicker]="pickerInicio" formControlName="fecha_inicio">
+        <input matInput [matDatepicker]="pickerInicio" formControlName="fecha_inicio" readonly>
         <mat-datepicker-toggle matIconSuffix [for]="pickerInicio"></mat-datepicker-toggle>
         <mat-datepicker #pickerInicio></mat-datepicker>
       </mat-form-field>
       <mat-form-field appearance="outline" class="half-width">
         <mat-label>Fecha Fin</mat-label>
-        <input matInput [matDatepicker]="pickerFin" formControlName="fecha_fin">
+        <input matInput [matDatepicker]="pickerFin" formControlName="fecha_fin" readonly>
         <mat-datepicker-toggle matIconSuffix [for]="pickerFin"></mat-datepicker-toggle>
         <mat-datepicker #pickerFin></mat-datepicker>
       </mat-form-field>
