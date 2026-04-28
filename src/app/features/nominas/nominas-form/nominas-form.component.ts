@@ -6,7 +6,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker';
-import { MatNativeDateModule } from '@angular/material/core';
+import { MatNativeDateModule, provideNativeDateAdapter } from '@angular/material/core';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { Nomina, NominasService } from '../../../core/services/nominas.service';
 import { Trabajador, TrabajadoresService } from '../../../core/services/trabajadores.service';
@@ -20,7 +20,8 @@ import { MatSnackBar } from '@angular/material/snack-bar';
     MatInputModule, MatSelectModule, MatDatepickerModule, MatNativeDateModule, MatCheckboxModule
   ],
   templateUrl: './nominas-form.component.html',
-  styleUrls: ['./nominas-form.component.scss']
+  styleUrls: ['./nominas-form.component.scss'],
+  providers: [provideNativeDateAdapter()]
 })
 export class NominasFormComponent implements OnInit {
   private fb = inject(FormBuilder);
