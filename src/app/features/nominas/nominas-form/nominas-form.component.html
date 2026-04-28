@@ -1,0 +1,70 @@
+<h2 mat-dialog-title>{{ isEdit() ? 'Editar' : 'Nueva' }} Nómina</h2>
+
+<mat-dialog-content>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" id="nominaForm" class="form-container">
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Trabajador</mat-label>
+      <mat-select formControlName="trabajador_id">
+        @for (t of trabajadores(); track t.id) {
+          <mat-option [value]="t.id">{{t.nombre}}</mat-option>
+        }
+      </mat-select>
+    </mat-form-field>
+
+    <div class="row">
+      <mat-form-field appearance="outline" class="half-width">
+        <mat-label>Fecha Inicio</mat-label>
+        <input matInput [matDatepicker]="pickerInicio" formControlName="fecha_inicio">
+        <mat-datepicker-toggle matIconSuffix [for]="pickerInicio"></mat-datepicker-toggle>
+        <mat-datepicker #pickerInicio></mat-datepicker>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="half-width">
+        <mat-label>Fecha Fin</mat-label>
+        <input matInput [matDatepicker]="pickerFin" formControlName="fecha_fin">
+        <mat-datepicker-toggle matIconSuffix [for]="pickerFin"></mat-datepicker-toggle>
+        <mat-datepicker #pickerFin></mat-datepicker>
+      </mat-form-field>
+    </div>
+
+    <div class="row">
+      <mat-form-field appearance="outline" class="half-width">
+        <mat-label>Horas Regulares</mat-label>
+        <input matInput type="number" formControlName="horas_regulares">
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="half-width">
+        <mat-label>Horas Extra</mat-label>
+        <input matInput type="number" formControlName="horas_extra">
+      </mat-form-field>
+    </div>
+
+    <div class="row">
+      <mat-form-field appearance="outline" class="half-width">
+        <mat-label>Horas Permiso</mat-label>
+        <input matInput type="number" formControlName="horas_permiso">
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="half-width">
+        <mat-label>Total Pago ($)</mat-label>
+        <input matInput type="number" formControlName="total_pago">
+      </mat-form-field>
+    </div>
+
+    <mat-checkbox formControlName="trabajo_sabado">Trabajó en Sábado</mat-checkbox>
+
+    <mat-form-field appearance="outline" class="full-width" style="margin-top: 8px;">
+      <mat-label>Monto Notas Extra ($)</mat-label>
+      <input matInput type="number" formControlName="monto_notas_extra">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Notas / Detalles</mat-label>
+      <textarea matInput formControlName="notas" rows="2"></textarea>
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close [disabled]="loading()">Cancelar</button>
+  <button mat-flat-button color="primary" type="submit" form="nominaForm" [disabled]="form.invalid || loading()">
+    {{ isEdit() ? 'Actualizar' : 'Guardar' }}
+  </button>
+</mat-dialog-actions>

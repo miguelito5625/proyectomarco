@@ -1,0 +1,51 @@
+<h2 mat-dialog-title>{{ isEdit() ? 'Editar' : 'Nuevo' }} Registro de Tiempo</h2>
+
+<mat-dialog-content>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" id="registroForm" class="form-container">
+    
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Trabajador</mat-label>
+      <mat-select formControlName="trabajador_id">
+        @for (t of trabajadores(); track t.id) {
+          <mat-option [value]="t.id">{{t.nombre}}</mat-option>
+        }
+      </mat-select>
+      @if (form.get('trabajador_id')?.invalid) { <mat-error>Requerido</mat-error> }
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Proyecto</mat-label>
+      <mat-select formControlName="proyecto_id">
+        @for (p of proyectos(); track p.id) {
+          <mat-option [value]="p.id">{{p.nombre}}</mat-option>
+        }
+      </mat-select>
+      @if (form.get('proyecto_id')?.invalid) { <mat-error>Requerido</mat-error> }
+    </mat-form-field>
+
+    <div class="row">
+      <mat-form-field appearance="outline" class="half-width">
+        <mat-label>Fecha</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="fecha">
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+        @if (form.get('fecha')?.invalid) { <mat-error>Requerido</mat-error> }
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="half-width">
+        <mat-label>Horas laboradas</mat-label>
+        <input matInput type="number" formControlName="horas" step="0.5">
+        <span matTextSuffix>hrs</span>
+        @if (form.get('horas')?.invalid) { <mat-error>Mín. 0.5</mat-error> }
+      </mat-form-field>
+    </div>
+
+  </form>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close [disabled]="loading()">Cancelar</button>
+  <button mat-flat-button color="primary" type="submit" form="registroForm" [disabled]="form.invalid || loading()">
+    {{ isEdit() ? 'Actualizar' : 'Guardar' }}
+  </button>
+</mat-dialog-actions>

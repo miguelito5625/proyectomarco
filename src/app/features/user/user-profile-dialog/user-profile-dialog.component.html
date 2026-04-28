@@ -1,0 +1,30 @@
+<h2 mat-dialog-title>Información de Usuario</h2>
+
+<mat-dialog-content>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" id="profileForm" class="form-container">
+    
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Correo Electrónico (Solo Lectura)</mat-label>
+      <input matInput formControlName="email">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Nombre para Mostrar</mat-label>
+      <input matInput formControlName="displayName">
+      @if (form.get('displayName')?.hasError('required')) { <mat-error>Requerido</mat-error> }
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Teléfono (Opcional)</mat-label>
+      <input matInput formControlName="phone" placeholder="+1234567890">
+    </mat-form-field>
+
+  </form>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close [disabled]="loading()">Cerrar</button>
+  <button mat-flat-button color="primary" type="submit" form="profileForm" [disabled]="form.invalid || loading()">
+    Guardar Cambios
+  </button>
+</mat-dialog-actions>
