@@ -1,5 +1,8 @@
 name: Deploy Angular to GitHub Pages
 
+permissions:
+  contents: write
+
 # Este bloque le indica al pipeline que se ejecute al hacer push a la rama principal
 on:
   push:
@@ -31,4 +34,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           # ¡ATENCIÓN A ESTA RUTA!
-          publish_dir: ./dist/proyectomarco
+          publish_dir: ./dist/proyectomarco/browser
