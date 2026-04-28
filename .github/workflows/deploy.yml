@@ -20,7 +20,7 @@ jobs:
           node-version: '20' # Puedes ajustar a la versión de Node que estés utilizando
 
       - name: Instalar dependencias
-        run: npm ci
+        run: npm install
 
       - name: Compilar el proyecto de Angular
         # Es vital el parámetro --base-href para que GitHub Pages encuentre tus assets (CSS, JS, imágenes)
