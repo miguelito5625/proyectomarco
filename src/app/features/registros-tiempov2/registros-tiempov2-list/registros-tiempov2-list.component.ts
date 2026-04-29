@@ -39,6 +39,7 @@ export class RegistrosTiempov2ListComponent implements OnInit {
   isDirty = signal(false);
 
   trabajadoresActivos: Trabajador[] = [];
+  trabajadoresFiltrados: Trabajador[] = [];
   proyectosActivos: Proyecto[] = [];
 
   selectedTrabajadorId = new FormControl<string>('');
@@ -70,6 +71,7 @@ export class RegistrosTiempov2ListComponent implements OnInit {
         this.proyectosService.getProyectos()
       ]);
       this.trabajadoresActivos = trabajadores.filter(t => t.estatus?.toLowerCase() === 'activo');
+      this.trabajadoresFiltrados = [...this.trabajadoresActivos];
       this.proyectosActivos = proyectos.filter(p => p.estatus?.toLowerCase() === 'activo');
     } catch (error: any) {
       this.snackBar.open('Error al cargar datos: ' + error.message, 'Cerrar', { duration: 5000 });
@@ -96,6 +98,14 @@ export class RegistrosTiempov2ListComponent implements OnInit {
     } finally {
       this.loading.set(false);
     }
+  }
+
+  filtrarTrabajadores(event: Event) {
+    const input = event.target as HTMLInputElement;
+    const filterValue = input.value.toLowerCase();
+    this.trabajadoresFiltrados = this.trabajadoresActivos.filter(t => 
+      t.nombre.toLowerCase().includes(filterValue)
+    );
   }
 
   clearTable() {
