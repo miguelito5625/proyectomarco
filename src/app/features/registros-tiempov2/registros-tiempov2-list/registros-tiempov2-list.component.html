@@ -33,6 +33,21 @@
         <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
         <mat-date-range-picker #picker></mat-date-range-picker>
       </mat-form-field>
+
+      <mat-form-field appearance="outline" class="project-select">
+        <mat-label>Proyectos Activos</mat-label>
+        <mat-select [formControl]="selectedProyectosId" multiple>
+          <div class="search-container">
+            <mat-icon class="search-icon">search</mat-icon>
+            <input type="text" class="search-input" placeholder="Buscar proyecto..." 
+                   (keydown)="$event.stopPropagation()" 
+                   (input)="filtrarProyectos($event)">
+          </div>
+          <mat-option *ngFor="let p of proyectosFiltrados" [value]="p.id">
+            {{ p.nombre }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
     </div>
 
     <mat-card-content class="table-container">
@@ -67,8 +82,8 @@
         
         <tr class="mat-row" *matNoDataRow>
           <td class="mat-cell empty-cell" [attr.colspan]="displayedColumns.length">
-            @if (!loading() && (!selectedTrabajadorId.value || !dateRange.value.start || !dateRange.value.end)) { 
-              Por favor selecciona un trabajador y un rango de fechas. 
+            @if (!loading() && (!selectedTrabajadorId.value || !selectedProyectosId.value || selectedProyectosId.value.length === 0 || !dateRange.value.start || !dateRange.value.end)) { 
+              Por favor selecciona un trabajador, un rango de fechas y al menos un proyecto activo. 
             } @else if (!loading()) {
               No hay proyectos activos.
             }

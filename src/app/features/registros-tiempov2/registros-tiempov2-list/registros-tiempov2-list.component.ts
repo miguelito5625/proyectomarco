@@ -41,8 +41,10 @@ export class RegistrosTiempov2ListComponent implements OnInit {
   trabajadoresActivos: Trabajador[] = [];
   trabajadoresFiltrados: Trabajador[] = [];
   proyectosActivos: Proyecto[] = [];
+  proyectosFiltrados: Proyecto[] = [];
 
   selectedTrabajadorId = new FormControl<string>('');
+  selectedProyectosId = new FormControl<string[]>([]);
   dateRange = new FormGroup({
     start: new FormControl<Date | null>(null),
     end: new FormControl<Date | null>(null)
@@ -60,6 +62,7 @@ export class RegistrosTiempov2ListComponent implements OnInit {
     this.loadInitialData();
 
     this.selectedTrabajadorId.valueChanges.subscribe(() => this.onFilterChange());
+    this.selectedProyectosId.valueChanges.subscribe(() => this.onFilterChange());
     this.dateRange.valueChanges.subscribe(() => this.onFilterChange());
   }
 
@@ -73,6 +76,7 @@ export class RegistrosTiempov2ListComponent implements OnInit {
       this.trabajadoresActivos = trabajadores.filter(t => t.estatus?.toLowerCase() === 'activo');
       this.trabajadoresFiltrados = [...this.trabajadoresActivos];
       this.proyectosActivos = proyectos.filter(p => p.estatus?.toLowerCase() === 'activo');
+      this.proyectosFiltrados = [...this.proyectosActivos];
     } catch (error: any) {
       this.snackBar.open('Error al cargar datos: ' + error.message, 'Cerrar', { duration: 5000 });
     } finally {
@@ -82,17 +86,18 @@ export class RegistrosTiempov2ListComponent implements OnInit {
 
   async onFilterChange() {
     const trabajadorId = this.selectedTrabajadorId.value;
+    const proyectosId = this.selectedProyectosId.value;
     const start = this.dateRange.value.start;
     const end = this.dateRange.value.end;
 
-    if (!trabajadorId || !start || !end) {
+    if (!trabajadorId || !proyectosId || proyectosId.length === 0 || !start || !end) {
       this.clearTable();
       return;
     }
 
     this.loading.set(true);
     try {
-      await this.buildTable(trabajadorId, start, end);
+      await this.buildTable(trabajadorId, proyectosId, start, end);
     } catch (error: any) {
       this.snackBar.open('Error al cargar registros: ' + error.message, 'Cerrar', { duration: 5000 });
     } finally {
@@ -108,6 +113,14 @@ export class RegistrosTiempov2ListComponent implements OnInit {
     );
   }
 
+  filtrarProyectos(event: Event) {
+    const input = event.target as HTMLInputElement;
+    const filterValue = input.value.toLowerCase();
+    this.proyectosFiltrados = this.proyectosActivos.filter(p => 
+      p.nombre.toLowerCase().includes(filterValue)
+    );
+  }
+
   clearTable() {
     this.dates = [];
     this.displayedColumns = ['proyecto'];
@@ -117,7 +130,7 @@ export class RegistrosTiempov2ListComponent implements OnInit {
     this.isDirty.set(false);
   }
 
-  async buildTable(trabajadorId: string, start: Date, end: Date) {
+  async buildTable(trabajadorId: string, proyectosId: string[], start: Date, end: Date) {
     this.clearTable();
 
     let currentDate = new Date(start);
@@ -145,7 +158,9 @@ export class RegistrosTiempov2ListComponent implements OnInit {
 
     if (error) throw error;
 
-    this.dataSource = this.proyectosActivos.map(p => {
+    const proyectosSeleccionados = this.proyectosActivos.filter(p => proyectosId.includes(p.id!));
+
+    this.dataSource = proyectosSeleccionados.map(p => {
       const row: any = { proyecto: p };
       for (const d of dateColumns) {
         row[d] = null;
@@ -236,8 +251,9 @@ export class RegistrosTiempov2ListComponent implements OnInit {
       
       const start = this.dateRange.value.start;
       const end = this.dateRange.value.end;
-      if (start && end) {
-        await this.buildTable(trabajadorId, start, end);
+      const proyectosId = this.selectedProyectosId.value;
+      if (start && end && proyectosId && proyectosId.length > 0) {
+        await this.buildTable(trabajadorId, proyectosId, start, end);
       }
     } catch (error: any) {
       this.snackBar.open('Error al guardar: ' + error.message, 'Cerrar', { duration: 5000 });
