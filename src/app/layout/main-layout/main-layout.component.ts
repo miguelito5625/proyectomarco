@@ -1,6 +1,7 @@
 import { Component, inject, computed } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { RouterOutlet, RouterLink, RouterLinkActive, Router } from '@angular/router';
+import { trigger, state, style, transition, animate } from '@angular/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -22,7 +23,19 @@ import { ChangePasswordDialogComponent } from '../../features/user/change-passwo
     MatSidenavModule, MatListModule, MatDialogModule
   ],
   templateUrl: './main-layout.component.html',
-  styleUrls: ['./main-layout.component.scss']
+  styleUrls: ['./main-layout.component.scss'],
+  animations: [
+    trigger('expandCollapse', [
+      transition(':enter', [
+        style({ height: '0', opacity: 0, overflow: 'hidden' }),
+        animate('300ms cubic-bezier(0.4, 0.0, 0.2, 1)', style({ height: '*', opacity: 1 }))
+      ]),
+      transition(':leave', [
+        style({ height: '*', opacity: 1, overflow: 'hidden' }),
+        animate('300ms cubic-bezier(0.4, 0.0, 0.2, 1)', style({ height: '0', opacity: 0 }))
+      ])
+    ])
+  ]
 })
 export class MainLayoutComponent {
   private supabase = inject(SupabaseService);
@@ -46,6 +59,12 @@ export class MainLayoutComponent {
 
   openChangePassword() {
     this.dialog.open(ChangePasswordDialogComponent, { width: '400px' });
+  }
+
+  isReportesOpen = false;
+
+  toggleReportes() {
+    this.isReportesOpen = !this.isReportesOpen;
   }
 
   async logout() {

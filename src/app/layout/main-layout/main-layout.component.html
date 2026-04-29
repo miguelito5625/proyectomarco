@@ -64,42 +64,56 @@
     <mat-sidenav #sidenav mode="over" class="sidenav">
       <mat-nav-list>
         <!-- A futuro se pueden agregar más enlaces aquí -->
-        <a mat-list-item routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        <a mat-list-item routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="sidenav.close()">
           <mat-icon matListItemIcon>home</mat-icon>
           <div matListItemTitle>Home</div>
         </a>
-        <a mat-list-item routerLink="/trabajadores" routerLinkActive="active">
+        <a mat-list-item routerLink="/trabajadores" routerLinkActive="active" (click)="sidenav.close()">
           <mat-icon matListItemIcon>people</mat-icon>
           <div matListItemTitle>Trabajadores</div>
         </a>
-        <a mat-list-item routerLink="/proyectos" routerLinkActive="active">
+        <a mat-list-item routerLink="/proyectos" routerLinkActive="active" (click)="sidenav.close()">
           <mat-icon matListItemIcon>domain</mat-icon>
           <div matListItemTitle>Proyectos</div>
         </a>
-        <a mat-list-item routerLink="/registros-tiempo" routerLinkActive="active">
+        <a mat-list-item routerLink="/registros-tiempo" routerLinkActive="active" (click)="sidenav.close()">
           <mat-icon matListItemIcon>timer</mat-icon>
           <div matListItemTitle>Labor (Horas)</div>
         </a>
-        <a mat-list-item routerLink="/registros-tiempov2" routerLinkActive="active">
+        <a mat-list-item routerLink="/registros-tiempov2" routerLinkActive="active" (click)="sidenav.close()">
           <mat-icon matListItemIcon>timer</mat-icon>
           <div matListItemTitle>Labor (Horas) V2</div>
         </a>
-        <a mat-list-item routerLink="/nominas" routerLinkActive="active">
+        <a mat-list-item routerLink="/nominas" routerLinkActive="active" (click)="sidenav.close()">
           <mat-icon matListItemIcon>payments</mat-icon>
           <div matListItemTitle>Nóminas</div>
         </a>
-        <a mat-list-item routerLink="/gastos" routerLinkActive="active">
+        <a mat-list-item routerLink="/gastos" routerLinkActive="active" (click)="sidenav.close()">
           <mat-icon matListItemIcon>receipt_long</mat-icon>
           <div matListItemTitle>Gastos Proyecto</div>
         </a>
-        <a mat-list-item routerLink="/reporte-costo-labor" routerLinkActive="active">
-          <mat-icon matListItemIcon>bar_chart</mat-icon>
-          <div matListItemTitle>Reporte Costos</div>
-        </a>
-        <a mat-list-item routerLink="/reporte-horas-trabajador" routerLinkActive="active">
-          <mat-icon matListItemIcon>insights</mat-icon>
-          <div matListItemTitle>Reporte Horas</div>
-        </a>
+        <mat-list-item (click)="toggleReportes()" style="cursor: pointer;">
+          <mat-icon matListItemIcon>insert_chart</mat-icon>
+          <div matListItemTitle>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              Reportes
+              <mat-icon>{{ isReportesOpen ? 'expand_less' : 'expand_more' }}</mat-icon>
+            </div>
+          </div>
+        </mat-list-item>
+        
+        @if (isReportesOpen) {
+          <div @expandCollapse>
+            <a mat-list-item routerLink="/reporte-costo-labor" routerLinkActive="active" (click)="sidenav.close()" class="submenu-item">
+              <mat-icon matListItemIcon>bar_chart</mat-icon>
+              <div matListItemTitle>Reporte Costos</div>
+            </a>
+            <a mat-list-item routerLink="/reporte-horas-trabajador" routerLinkActive="active" (click)="sidenav.close()" class="submenu-item">
+              <mat-icon matListItemIcon>insights</mat-icon>
+              <div matListItemTitle>Reporte Horas</div>
+            </a>
+          </div>
+        }
       </mat-nav-list>
     </mat-sidenav>
 
