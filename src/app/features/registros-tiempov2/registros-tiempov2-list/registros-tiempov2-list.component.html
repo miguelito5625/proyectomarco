@@ -1,0 +1,74 @@
+<div class="page-container">
+  <div class="page-header">
+    <h2>Registros de Tiempo v2</h2>
+    <button mat-flat-button color="primary" [disabled]="!isDirty() || saving()" (click)="guardar()">
+      <mat-icon>save</mat-icon>
+      Guardar
+    </button>
+  </div>
+
+  <mat-card>
+    <div class="table-controls">
+      <mat-form-field appearance="outline" class="worker-select">
+        <mat-label>Trabajador</mat-label>
+        <mat-select [formControl]="selectedTrabajadorId">
+          <mat-option *ngFor="let t of trabajadoresActivos" [value]="t.id">
+            {{ t.nombre }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="date-filter">
+        <mat-label>Fechas</mat-label>
+        <mat-date-range-input [formGroup]="dateRange" [rangePicker]="picker">
+          <input matStartDate formControlName="start" placeholder="Inicio">
+          <input matEndDate formControlName="end" placeholder="Fin">
+        </mat-date-range-input>
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-date-range-picker #picker></mat-date-range-picker>
+      </mat-form-field>
+    </div>
+
+    <mat-card-content class="table-container">
+      @if (loading() || saving()) {
+        <div class="loading-shade">
+          {{ saving() ? 'Guardando datos...' : 'Cargando datos...' }}
+        </div>
+      }
+
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z0">
+        
+        <!-- Proyecto Column -->
+        <ng-container matColumnDef="proyecto" sticky>
+          <th mat-header-cell *matHeaderCellDef> Proyectos </th>
+          <td mat-cell *matCellDef="let element"> {{element.proyecto.nombre}} </td>
+        </ng-container>
+
+        <!-- Dynamic Date Columns -->
+        <ng-container *ngFor="let col of displayedColumns | slice:1" [matColumnDef]="col">
+          <th mat-header-cell *matHeaderCellDef> {{ formatColumnHeader(col) }} </th>
+          <td mat-cell *matCellDef="let element">
+            <mat-form-field appearance="outline" subscriptSizing="dynamic" class="hours-input">
+              <input matInput type="number" min="0" max="24"
+                     [ngModel]="element[col]"
+                     (ngModelChange)="onHoursChange(element.proyecto.id, col, $event)">
+            </mat-form-field>
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        
+        <tr class="mat-row" *matNoDataRow>
+          <td class="mat-cell empty-cell" [attr.colspan]="displayedColumns.length">
+            @if (!loading() && (!selectedTrabajadorId.value || !dateRange.value.start || !dateRange.value.end)) { 
+              Por favor selecciona un trabajador y un rango de fechas. 
+            } @else if (!loading()) {
+              No hay proyectos activos.
+            }
+          </td>
+        </tr>
+      </table>
+    </mat-card-content>
+  </mat-card>
+</div>
