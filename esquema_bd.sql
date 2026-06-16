@@ -159,8 +159,4 @@ CREATE POLICY "Permitir todo a usuarios autenticados" ON registros_tiempo FOR AL
 CREATE POLICY "Permitir todo a usuarios autenticados" ON nominas FOR ALL TO authenticated USING (true) WITH CHECK (true);
 CREATE POLICY "Permitir todo a usuarios autenticados" ON gastos_proyecto FOR ALL TO authenticated USING (true) WITH CHECK (true);
 
--- ========================================== ELIMINAR DESPUES
--- ACTUALIZACIONES: Agregar horas_extra y gasolina a registros_tiempo
--- ==========================================
-ALTER TABLE registros_tiempo ADD COLUMN IF NOT EXISTS horas_extra DECIMAL(5, 2) DEFAULT 0.00;
-ALTER TABLE registros_tiempo ADD COLUMN IF NOT EXISTS gasolina DECIMAL(10, 2) DEFAULT 0.00;
+
