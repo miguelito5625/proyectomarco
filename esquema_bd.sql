@@ -41,6 +41,8 @@ CREATE TABLE registros_tiempo (
     proyecto_id UUID NOT NULL REFERENCES proyectos(id) ON DELETE CASCADE,
     fecha DATE NOT NULL,
     horas DECIMAL(5, 2) NOT NULL, -- Cantidad de horas invertidas en la propiedad ese día
+    horas_extra DECIMAL(5, 2) DEFAULT 0.00,
+    gasolina DECIMAL(10, 2) DEFAULT 0.00,
     fecha_creacion TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -156,3 +158,9 @@ CREATE POLICY "Permitir todo a usuarios autenticados" ON proyectos FOR ALL TO au
 CREATE POLICY "Permitir todo a usuarios autenticados" ON registros_tiempo FOR ALL TO authenticated USING (true) WITH CHECK (true);
 CREATE POLICY "Permitir todo a usuarios autenticados" ON nominas FOR ALL TO authenticated USING (true) WITH CHECK (true);
 CREATE POLICY "Permitir todo a usuarios autenticados" ON gastos_proyecto FOR ALL TO authenticated USING (true) WITH CHECK (true);
+
+-- ========================================== ELIMINAR DESPUES
+-- ACTUALIZACIONES: Agregar horas_extra y gasolina a registros_tiempo
+-- ==========================================
+ALTER TABLE registros_tiempo ADD COLUMN IF NOT EXISTS horas_extra DECIMAL(5, 2) DEFAULT 0.00;
+ALTER TABLE registros_tiempo ADD COLUMN IF NOT EXISTS gasolina DECIMAL(10, 2) DEFAULT 0.00;

@@ -69,12 +69,19 @@
           padding: 8px 16px;
           white-space: nowrap;
           
-          .hours-input {
-            width: 80px;
-            
-            ::ng-deep .mat-mdc-text-field-wrapper {
-              padding-left: 8px;
-              padding-right: 8px;
+          .inputs-container {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding: 8px 0;
+
+            .cell-input {
+              width: 110px;
+              
+              ::ng-deep .mat-mdc-text-field-wrapper {
+                padding-left: 8px;
+                padding-right: 8px;
+              }
             }
           }
         }

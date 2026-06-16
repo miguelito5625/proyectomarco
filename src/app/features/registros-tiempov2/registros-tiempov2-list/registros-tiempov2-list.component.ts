@@ -55,8 +55,8 @@ export class RegistrosTiempov2ListComponent implements OnInit {
   
   dataSource: any[] = [];
   
-  originalData = new Map<string, { id?: string, horas: number }>();
-  changes = new Map<string, number>();
+  originalData = new Map<string, { id?: string, horas: number, horas_extra: number, gasolina: number }>();
+  changes = new Map<string, { horas: number | null, horas_extra: number | null, gasolina: number | null }>();
 
   ngOnInit() {
     this.loadInitialData();
@@ -163,7 +163,7 @@ export class RegistrosTiempov2ListComponent implements OnInit {
     this.dataSource = proyectosSeleccionados.map(p => {
       const row: any = { proyecto: p };
       for (const d of dateColumns) {
-        row[d] = null;
+        row[d] = { horas: null, horas_extra: null, gasolina: null };
       }
       return row;
     });
@@ -174,8 +174,8 @@ export class RegistrosTiempov2ListComponent implements OnInit {
       
       const row = this.dataSource.find(r => r.proyecto.id === pId);
       if (row && dateColumns.includes(dateISO)) {
-        row[dateISO] = reg.horas;
-        this.originalData.set(`${pId}_${dateISO}`, { id: reg.id, horas: reg.horas });
+        row[dateISO] = { horas: reg.horas, horas_extra: reg.horas_extra || 0, gasolina: reg.gasolina || 0 };
+        this.originalData.set(`${pId}_${dateISO}`, { id: reg.id, horas: reg.horas, horas_extra: reg.horas_extra || 0, gasolina: reg.gasolina || 0 });
       }
     }
   }
@@ -200,17 +200,27 @@ export class RegistrosTiempov2ListComponent implements OnInit {
     return `${dayName} ${dayNum} ${monthName}`;
   }
 
-  onHoursChange(proyectoId: string, dateISO: string, value: string) {
+  onValueChange(proyectoId: string, dateISO: string, field: 'horas' | 'horas_extra' | 'gasolina', value: string) {
     const numValue = value === '' || value === null ? null : Number(value);
     const key = `${proyectoId}_${dateISO}`;
-    const original = this.originalData.get(key);
+    const original = this.originalData.get(key) || { horas: null, horas_extra: null, gasolina: null };
 
-    const originalHoras = original ? original.horas : null;
+    const row = this.dataSource.find(r => r.proyecto.id === proyectoId);
+    if (row) {
+      row[dateISO][field] = numValue;
+    }
 
-    if (numValue === originalHoras) {
+    const currentState = row ? { ...row[dateISO] } : { horas: null, horas_extra: null, gasolina: null };
+
+    const isDifferent = 
+      (currentState.horas !== original.horas) || 
+      (currentState.horas_extra !== original.horas_extra) || 
+      (currentState.gasolina !== original.gasolina);
+
+    if (!isDifferent) {
       this.changes.delete(key);
     } else {
-      this.changes.set(key, numValue === null ? 0 : numValue);
+      this.changes.set(key, currentState);
     }
 
     this.isDirty.set(this.changes.size > 0);
@@ -224,23 +234,29 @@ export class RegistrosTiempov2ListComponent implements OnInit {
     
     try {
       const promises = [];
-      for (const [key, horas] of this.changes.entries()) {
+      for (const [key, values] of this.changes.entries()) {
         const [proyectoId, dateISO] = key.split('_');
         const original = this.originalData.get(key);
 
+        const h = values.horas || 0;
+        const he = values.horas_extra || 0;
+        const g = values.gasolina || 0;
+
         if (original && original.id) {
-          if (horas === 0) {
+          if (h === 0 && he === 0 && g === 0) {
              promises.push(this.registrosService.deleteRegistro(original.id));
           } else {
-             promises.push(this.registrosService.updateRegistro(original.id, { horas }));
+             promises.push(this.registrosService.updateRegistro(original.id, { horas: h, horas_extra: he, gasolina: g }));
           }
         } else {
-          if (horas > 0) {
+          if (h > 0 || he > 0 || g > 0) {
             promises.push(this.registrosService.createRegistro({
               trabajador_id: trabajadorId,
               proyecto_id: proyectoId,
               fecha: dateISO,
-              horas: horas
+              horas: h,
+              horas_extra: he,
+              gasolina: g
             }));
           }
         }

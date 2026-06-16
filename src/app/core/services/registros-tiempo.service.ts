@@ -7,6 +7,8 @@ export interface RegistroTiempo {
   proyecto_id: string;
   fecha: string;
   horas: number;
+  horas_extra?: number;
+  gasolina?: number;
   fecha_creacion?: string;
   trabajadores?: { nombre: string };
   proyectos?: { nombre: string };
