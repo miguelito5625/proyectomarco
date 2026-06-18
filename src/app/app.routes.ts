@@ -10,6 +10,7 @@ import { NominasListComponent } from './features/nominas/nominas-list/nominas-li
 import { GastosListComponent } from './features/gastos/gastos-list/gastos-list.component';
 import { CostoLaborComponent } from './features/reportes/costo-labor/costo-labor.component';
 import { HorasTrabajadorComponent } from './features/reportes/horas-trabajador/horas-trabajador.component';
+import { CostoLaborDesgloseComponent } from './features/reportes/costo-labor-desglose/costo-labor-desglose.component';
 import { authGuard } from './core/guards/auth.guard';
 import { noAuthGuard } from './core/guards/no-auth.guard';
 
@@ -60,6 +61,10 @@ export const routes: Routes = [
       {
         path: 'reporte-costo-labor',
         component: CostoLaborComponent
+      },
+      {
+        path: 'reporte-costo-labor/:id/desglose',
+        component: CostoLaborDesgloseComponent
       },
       {
         path: 'reporte-horas-trabajador',

@@ -1,0 +1,82 @@
+<div class="page-container">
+  <div class="page-header">
+    <div class="header-title">
+      <button mat-icon-button (click)="volver()" color="primary">
+        <mat-icon>arrow_back</mat-icon>
+      </button>
+      <h2>Desglose de Costo: {{ proyectoNombre() }}</h2>
+    </div>
+  </div>
+
+  <mat-card>
+    <div class="table-info">
+      <p>
+        Mostrando detalle de horas y gasolina del proyecto <strong>{{ proyectoNombre() }}</strong>
+        @if (fechaInicio || fechaFin) {
+          <br>
+          <span class="date-range">Rango de fechas: {{ fechaInicio || 'Inicio' }} - {{ fechaFin || 'Fin' }}</span>
+        }
+      </p>
+    </div>
+
+    <mat-card-content class="table-container">
+      @if (loading()) {
+        <div class="loading-shade">Cargando datos...</div>
+      }
+
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z0">
+        
+        <ng-container matColumnDef="fecha">
+          <th mat-header-cell *matHeaderCellDef> Fecha </th>
+          <td mat-cell *matCellDef="let element"> {{ element.fecha | date:'fullDate' }} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="trabajador">
+          <th mat-header-cell *matHeaderCellDef> Trabajador </th>
+          <td mat-cell *matCellDef="let element"> {{ element.trabajador_nombre }} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="horas_regulares">
+          <th mat-header-cell *matHeaderCellDef> Hrs Regulares </th>
+          <td mat-cell *matCellDef="let element"> 
+            @if (!element.isSaturday) {
+              {{ element.horas || 0 }} hrs
+            } @else {
+              0 hrs
+            }
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="horas_sabado">
+          <th mat-header-cell *matHeaderCellDef> Hrs Sábado </th>
+          <td mat-cell *matCellDef="let element">
+            @if (element.isSaturday) {
+              {{ element.horas || 0 }} hrs
+            } @else {
+              0 hrs
+            }
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="horas_extra">
+          <th mat-header-cell *matHeaderCellDef> Hrs Extra </th>
+          <td mat-cell *matCellDef="let element"> {{ element.horas_extra || 0 }} hrs </td>
+        </ng-container>
+
+        <ng-container matColumnDef="gasolina">
+          <th mat-header-cell *matHeaderCellDef> Gasolina </th>
+          <td mat-cell *matCellDef="let element"> {{ element.gasolina || 0 | currency:'USD' }} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;" [class.is-saturday]="row.isSaturday"></tr>
+        
+        <tr class="mat-row" *matNoDataRow>
+          <td class="mat-cell empty-cell" colspan="6">
+            @if (!loading()) { No hay registros para mostrar en este rango. }
+          </td>
+        </tr>
+      </table>
+    </mat-card-content>
+  </mat-card>
+</div>

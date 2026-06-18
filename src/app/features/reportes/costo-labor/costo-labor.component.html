@@ -4,56 +4,148 @@
   </div>
 
   <mat-card>
-    
-    <div class="table-controls">
-      <mat-form-field appearance="outline" class="filter-input">
-        <mat-label>Buscar...</mat-label>
-        <mat-icon matPrefix>search</mat-icon>
-        <input matInput (keyup)="applyFilter($event)" placeholder="Escribe para buscar en la tabla...">
-      </mat-form-field>
+    <!-- Filter controls -->
+    <div class="filters-section">
+      <div class="filters-row">
+        <mat-form-field appearance="outline" class="filter-field project-select">
+          <mat-label>Proyectos</mat-label>
+          <mat-select [formControl]="selectedProyectoIds" multiple>
+            <div class="search-container">
+              <mat-icon class="search-icon">search</mat-icon>
+              <input type="text" class="search-input" placeholder="Buscar proyecto..."
+                     (keydown)="$event.stopPropagation()"
+                     (input)="filtrarProyectos($event)">
+            </div>
+            <mat-option *ngFor="let p of proyectosFiltrados" [value]="p.id">
+              {{ p.nombre }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="filter-field date-filter">
+          <mat-label>Rango de Fechas</mat-label>
+          <mat-date-range-input [formGroup]="dateRange" [rangePicker]="picker">
+            <input matStartDate formControlName="start" placeholder="Inicio">
+            <input matEndDate formControlName="end" placeholder="Fin">
+          </mat-date-range-input>
+          <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-date-range-picker #picker></mat-date-range-picker>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="filter-field estatus-select">
+          <mat-label>Estado del Proyecto</mat-label>
+          <mat-select [formControl]="selectedEstatus">
+            <mat-option value="">Todos</mat-option>
+            <mat-option value="activo">Activo</mat-option>
+            <mat-option value="inactivo">Inactivo</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <div class="filters-actions">
+          <button mat-flat-button color="primary" class="search-btn" (click)="buscar()" [disabled]="loading()">
+            <mat-icon>search</mat-icon>
+            Buscar
+          </button>
+          <button mat-stroked-button class="clear-filters-btn" (click)="limpiarFiltros()">
+            <mat-icon>filter_alt_off</mat-icon>
+            Limpiar
+          </button>
+        </div>
+      </div>
+
+      @if (filterError()) {
+        <div class="filter-warning">
+          <mat-icon>warning</mat-icon>
+          <span>{{ filterError() }}</span>
+        </div>
+      }
     </div>
+
     <mat-card-content class="table-container">
       @if (loading()) {
         <div class="loading-shade">Cargando datos...</div>
       }
 
-      <table mat-table [dataSource]="dataSource" class="mat-elevation-z0">
-        
-        <ng-container matColumnDef="proyecto">
-          <th mat-header-cell *matHeaderCellDef> Proyecto </th>
-          <td mat-cell *matCellDef="let element"> {{element.proyecto_nombre}} </td>
-        </ng-container>
+      @if (!hasSearched()) {
+        <div class="empty-state">
+          <mat-icon class="empty-icon">filter_alt</mat-icon>
+          <p>Selecciona los filtros y presiona <strong>Buscar</strong> para generar el reporte.</p>
+        </div>
+      } @else {
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z0">
+          
+          <ng-container matColumnDef="proyecto">
+            <th mat-header-cell *matHeaderCellDef> Proyecto </th>
+            <td mat-cell *matCellDef="let element"> {{element.proyecto_nombre}} </td>
+          </ng-container>
 
-        <ng-container matColumnDef="horas">
-          <th mat-header-cell *matHeaderCellDef> Total Horas </th>
-          <td mat-cell *matCellDef="let element"> {{element.total_horas_labor || 0}} hrs </td>
-        </ng-container>
+          <ng-container matColumnDef="estatus">
+            <th mat-header-cell *matHeaderCellDef> Estado </th>
+            <td mat-cell *matCellDef="let element">
+              <span class="status-chip" [class.status-activo]="element.proyecto_estatus === 'activo'"
+                    [class.status-inactivo]="element.proyecto_estatus !== 'activo'">
+                {{ element.proyecto_estatus === 'activo' ? 'Activo' : 'Inactivo' }}
+              </span>
+            </td>
+          </ng-container>
 
-        <ng-container matColumnDef="costo">
-          <th mat-header-cell *matHeaderCellDef> Costo Estimado </th>
-          <td mat-cell *matCellDef="let element"> 
-            <strong>{{element.costo_estimado_labor || 0 | currency:'USD'}}</strong>
-          </td>
-        </ng-container>
+          <ng-container matColumnDef="horas">
+            <th mat-header-cell *matHeaderCellDef> Horas Regulares </th>
+            <td mat-cell *matCellDef="let element"> {{element.total_horas_labor || 0}} hrs </td>
+          </ng-container>
 
-        <ng-container matColumnDef="grafica">
-          <th mat-header-cell *matHeaderCellDef> Gráfica de Costos </th>
-          <td mat-cell *matCellDef="let element" class="chart-cell">
-            <div class="bar-container">
-              <div class="bar" [style.width.%]="((element.costo_estimado_labor || 0) / maxCosto()) * 100"></div>
-            </div>
-          </td>
-        </ng-container>
+          <ng-container matColumnDef="horas_sabado">
+            <th mat-header-cell *matHeaderCellDef> Horas Sábado </th>
+            <td mat-cell *matCellDef="let element"> {{element.total_horas_sabado || 0}} hrs </td>
+          </ng-container>
 
-        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-        
-        <tr class="mat-row" *matNoDataRow>
-          <td class="mat-cell empty-cell" colspan="4">
-            @if (!loading()) { No hay datos en el reporte. }
-          </td>
-        </tr>
-      </table>
+          <ng-container matColumnDef="horas_extra">
+            <th mat-header-cell *matHeaderCellDef> Horas Extra </th>
+            <td mat-cell *matCellDef="let element"> {{element.total_horas_extra || 0}} hrs </td>
+          </ng-container>
+
+          <ng-container matColumnDef="gasolina">
+            <th mat-header-cell *matHeaderCellDef> Gasolina </th>
+            <td mat-cell *matCellDef="let element">
+              {{element.total_gasolina || 0 | currency:'USD'}}
+            </td>
+          </ng-container>
+
+          <ng-container matColumnDef="costo">
+            <th mat-header-cell *matHeaderCellDef> Costo Estimado </th>
+            <td mat-cell *matCellDef="let element"> 
+              <strong>{{element.costo_estimado_labor || 0 | currency:'USD'}}</strong>
+            </td>
+          </ng-container>
+
+          <ng-container matColumnDef="grafica">
+            <th mat-header-cell *matHeaderCellDef> Gráfica de Costos </th>
+            <td mat-cell *matCellDef="let element" class="chart-cell">
+              <div class="bar-container">
+                <div class="bar" [style.width.%]="((element.costo_estimado_labor || 0) / maxCosto()) * 100"></div>
+              </div>
+            </td>
+          </ng-container>
+
+          <ng-container matColumnDef="desglose">
+            <th mat-header-cell *matHeaderCellDef> Desglose </th>
+            <td mat-cell *matCellDef="let element">
+              <button mat-icon-button color="primary" matTooltip="Ver detalle de costos" (click)="verDesglose(element)">
+                <mat-icon>visibility</mat-icon>
+              </button>
+            </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          
+          <tr class="mat-row" *matNoDataRow>
+            <td class="mat-cell empty-cell" colspan="9">
+              @if (!loading()) { No hay datos para los filtros seleccionados. }
+            </td>
+          </tr>
+        </table>
+      }
     </mat-card-content>
   </mat-card>
 </div>
