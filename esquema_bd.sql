@@ -1,3 +1,15 @@
+-- Datos de conexion
+-- host: db.hlhfqfoqiaugdbictpky.supabase.co
+-- port: 5432
+-- username: postgres
+-- password: mariobross5625
+--
+-- NOTA PARA EL ASISTENTE (IA):
+-- Para realizar consultas a la base de datos de manera fácil, 
+-- utiliza el script de Node.js permanente que ya está configurado.
+-- Comando: node scratch/query.js "AQUÍ_TU_CONSULTA_SQL"
+-- Ejemplo: node scratch/query.js "SELECT COUNT(*) FROM trabajadores;"
+
 -- Habilitar la extensión para generar UUIDs en PostgreSQL/Supabase
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
@@ -85,18 +97,7 @@ CREATE TABLE gastos_proyecto (
 -- VISTAS
 -- ==========================================
 
--- Vista: Total de horas y costo estimado de mano de obra (labor) por proyecto
--- Permite saber "cuánto de mano de obra se le está poniendo" a cada casa.
-CREATE OR REPLACE VIEW vista_costo_labor_proyecto AS
-SELECT 
-    p.id AS proyecto_id,
-    p.nombre AS proyecto_nombre,
-    SUM(rt.horas) AS total_horas_labor,
-    SUM(rt.horas * t.pago_hora_regular) AS costo_estimado_labor
-FROM proyectos p
-LEFT JOIN registros_tiempo rt ON p.id = rt.proyecto_id
-LEFT JOIN trabajadores t ON rt.trabajador_id = t.id
-GROUP BY p.id, p.nombre;
+
 
 -- Vista: Horas trabajadas por persona en cada proyecto
 -- Muestra el detalle de cuántas horas invirtió cada trabajador en cada casa.
@@ -133,7 +134,6 @@ TRUNCATE TABLE trabajadores CASCADE;
 
 /*
 DROP VIEW IF EXISTS vista_horas_por_trabajador_proyecto CASCADE;
-DROP VIEW IF EXISTS vista_costo_labor_proyecto CASCADE;
 
 DROP TABLE IF EXISTS gastos_proyecto CASCADE;
 DROP TABLE IF EXISTS nominas CASCADE;

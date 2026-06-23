@@ -29,20 +29,10 @@ export interface HorasTrabajador {
 export class ReportesService {
   private supabase = inject(SupabaseService).client;
 
-  async getCostoLabor(): Promise<CostoLabor[]> {
-    const { data, error } = await this.supabase
-      .from('vista_costo_labor_proyecto')
-      .select('*')
-      .order('costo_estimado_labor', { ascending: false });
-
-    if (error) throw error;
-    return data || [];
-  }
-
   /**
    * Fetches labor cost data with optional filters.
-   * Since the DB view doesn't support filtering by date/estatus,
-   * we query the raw tables and aggregate in code.
+   * We query the raw tables and aggregate in code to calculate
+   * extra hours, gasoline, saturday rates and apply filters.
    */
   async getCostoLaborFiltered(filters: CostoLaborFilters): Promise<CostoLabor[]> {
     // 1. Fetch projects (filtered by estatus and/or IDs)
