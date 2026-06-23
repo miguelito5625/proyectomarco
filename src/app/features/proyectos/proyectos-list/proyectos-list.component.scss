@@ -20,9 +20,10 @@
 
 .table-container {
   padding: 0;
-  overflow-x: auto;
+  overflow: auto;
   position: relative;
-  min-height: 200px;
+  /* Header: 56px + 5 filas de 52px = 316px */
+  max-height: 550px;
 }
 
 table {
@@ -57,9 +58,11 @@ table {
 .table-controls {
   padding: 16px 24px 0 24px;
 }
+
 .filter-input {
   width: 300px;
 }
+
 @media (max-width: 600px) {
   .filter-input {
     width: 100%;

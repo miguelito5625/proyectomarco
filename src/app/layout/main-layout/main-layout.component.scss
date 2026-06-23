@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
 }
 
 .navbar {
@@ -32,6 +34,7 @@
 
 .sidenav-container {
   flex: 1;
+  min-height: 0;
 }
 
 .sidenav {
@@ -60,6 +63,7 @@
 .content-area {
   padding: 24px;
   background-color: var(--mat-sys-surface-container-lowest);
+  box-sizing: border-box;
 }
 
 /* Responsiveness */
