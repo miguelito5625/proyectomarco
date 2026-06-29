@@ -12,6 +12,92 @@
   }
 }
 
+// ---- Filters Section ----
+.filters-section {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--mat-sys-outline-variant, #e0e0e0);
+
+  .filters-row {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .filter-field {
+    margin-bottom: -1.25em;
+  }
+
+  .project-select {
+    width: 280px;
+  }
+
+  .date-filter {
+    width: 280px;
+  }
+
+  .estatus-select {
+    width: 200px;
+  }
+
+  .filters-actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 4px;
+
+    .search-btn,
+    .clear-filters-btn {
+      height: 40px;
+    }
+  }
+}
+
+.filter-warning {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background-color: rgba(255, 152, 0, 0.1);
+  color: #e65100;
+  font-size: 13px;
+  font-weight: 500;
+
+  mat-icon {
+    font-size: 20px;
+    height: 20px;
+    width: 20px;
+    color: #f57c00;
+  }
+}
+
+// ---- Empty State ----
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 24px;
+  color: var(--mat-sys-outline, #888);
+
+  .empty-icon {
+    font-size: 48px;
+    height: 48px;
+    width: 48px;
+    margin-bottom: 16px;
+    opacity: 0.5;
+  }
+
+  p {
+    margin: 0;
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+// ---- Table ----
 .table-container {
   padding: 0;
   overflow-x: auto;
@@ -23,8 +109,31 @@ table {
   width: 100%;
 }
 
+// ---- Status Chips ----
+.status-chip {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  line-height: 1.4;
+
+  &.status-activo {
+    background-color: rgba(76, 175, 80, 0.15);
+    color: #2e7d32;
+  }
+
+  &.status-inactivo {
+    background-color: rgba(244, 67, 54, 0.12);
+    color: #c62828;
+  }
+}
+
+// ---- Chart Bar ----
 .chart-cell {
-  width: 40%;
+  width: 35%;
 }
 
 .bar-container {
@@ -36,11 +145,12 @@ table {
 
   .bar {
     height: 100%;
-    background-color: var(--mat-sys-tertiary);
+    background-color: var(--mat-sys-primary);
     transition: width 0.5s ease-in-out;
   }
 }
 
+// ---- Loading ----
 .loading-shade {
   position: absolute;
   top: 0;
@@ -60,14 +170,48 @@ table {
   color: var(--mat-sys-outline);
 }
 
-.table-controls {
-  padding: 16px 24px 0 24px;
+// ---- Search inside select dropdowns ----
+::ng-deep .search-container {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  position: sticky;
+  top: 0;
+  background: var(--mat-select-panel-background-color, white);
+  z-index: 2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+  .search-icon {
+    margin-right: 8px;
+    color: var(--mat-sys-outline, #666);
+    font-size: 20px;
+    height: 20px;
+    width: 20px;
+  }
+
+  .search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 8px 0;
+    font-size: 14px;
+    background: transparent;
+    color: var(--mat-sys-on-surface, #333);
+  }
 }
-.filter-input {
-  width: 300px;
-}
+
+// ---- Responsive ----
 @media (max-width: 600px) {
-  .filter-input {
-    width: 100%;
+  .filters-section {
+    .project-select,
+    .date-filter,
+    .estatus-select {
+      width: 100%;
+    }
+
+    .filters-actions {
+      width: 100%;
+      justify-content: flex-end;
+    }
   }
 }

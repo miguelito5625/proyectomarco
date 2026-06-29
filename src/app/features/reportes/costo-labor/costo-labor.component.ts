@@ -55,8 +55,20 @@ export class CostoLaborComponent implements OnInit {
     return Math.max(...this.datos().map(d => d.costo_estimado_labor || 0));
   });
 
+  totalCostoEstimado = computed(() => {
+    return this.datos().reduce((acc, curr) => acc + (curr.costo_estimado_labor || 0), 0);
+  });
+
   ngOnInit() {
     this.loadProyectos();
+  }
+
+  seleccionarTodosProyectos() {
+    this.selectedProyectoIds.setValue(this.proyectosFiltrados.map(p => p.id as string));
+  }
+
+  deseleccionarTodosProyectos() {
+    this.selectedProyectoIds.setValue([]);
   }
 
   async loadProyectos() {

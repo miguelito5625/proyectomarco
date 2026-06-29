@@ -16,6 +16,10 @@
                      (keydown)="$event.stopPropagation()"
                      (input)="filtrarProyectos($event)">
             </div>
+            <div class="select-all-actions" style="display: flex; justify-content: space-between; padding: 8px 16px; border-bottom: 1px solid #eee;">
+              <button mat-button color="primary" (click)="seleccionarTodosProyectos(); $event.stopPropagation()">Todos</button>
+              <button mat-button color="warn" (click)="deseleccionarTodosProyectos(); $event.stopPropagation()">Ninguno</button>
+            </div>
             <mat-option *ngFor="let p of proyectosFiltrados" [value]="p.id">
               {{ p.nombre }}
             </mat-option>
@@ -50,6 +54,11 @@
             <mat-icon>filter_alt_off</mat-icon>
             Limpiar
           </button>
+          @if (hasSearched()) {
+            <div class="total-label" style="display: flex; align-items: center; margin-left: 16px; font-size: 1.1rem; font-weight: 500; color: #2e7d32;">
+              Total: {{ totalCostoEstimado() | currency:'USD' }}
+            </div>
+          }
         </div>
       </div>
 

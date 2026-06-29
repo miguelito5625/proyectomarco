@@ -25,6 +25,14 @@ export interface HorasTrabajador {
   total_horas: number;
 }
 
+export interface HorasTrabajadorFilters {
+  proyectoIds?: string[];
+  trabajadorIds?: string[];
+  fechaInicio?: string;
+  fechaFin?: string;
+  estatus?: string;
+}
+
 @Injectable({ providedIn: 'root' })
 export class ReportesService {
   private supabase = inject(SupabaseService).client;
@@ -135,14 +143,75 @@ export class ReportesService {
       .sort((a, b) => b.costo_estimado_labor - a.costo_estimado_labor);
   }
 
-  async getHorasTrabajador(): Promise<HorasTrabajador[]> {
-    const { data, error } = await this.supabase
-      .from('vista_horas_por_trabajador_proyecto')
-      .select('*')
-      .order('proyecto_nombre', { ascending: true });
 
-    if (error) throw error;
-    return data || [];
+
+  async getHorasTrabajadorFiltered(filters: HorasTrabajadorFilters): Promise<HorasTrabajador[]> {
+    let proyectosQuery = this.supabase
+      .from('proyectos')
+      .select('id, nombre, estatus');
+
+    if (filters.estatus) {
+      proyectosQuery = proyectosQuery.eq('estatus', filters.estatus);
+    }
+    if (filters.proyectoIds && filters.proyectoIds.length > 0) {
+      proyectosQuery = proyectosQuery.in('id', filters.proyectoIds);
+    }
+
+    const { data: proyectos, error: proyectosError } = await proyectosQuery;
+    if (proyectosError) throw proyectosError;
+    if (!proyectos || proyectos.length === 0) return [];
+
+    let trabajadoresQuery = this.supabase
+      .from('trabajadores')
+      .select('id, nombre');
+      
+    if (filters.trabajadorIds && filters.trabajadorIds.length > 0) {
+      trabajadoresQuery = trabajadoresQuery.in('id', filters.trabajadorIds);
+    }
+    const { data: trabajadores, error: trabajadoresError } = await trabajadoresQuery;
+    if (trabajadoresError) throw trabajadoresError;
+    if (!trabajadores || trabajadores.length === 0) return [];
+
+    const proyectoIdsList = proyectos.map(p => p.id);
+    const trabajadorIdsList = trabajadores.map(t => t.id);
+
+    let registrosQuery = this.supabase
+      .from('registros_tiempo')
+      .select('proyecto_id, trabajador_id, horas, fecha')
+      .in('proyecto_id', proyectoIdsList)
+      .in('trabajador_id', trabajadorIdsList);
+
+    if (filters.fechaInicio) {
+      registrosQuery = registrosQuery.gte('fecha', filters.fechaInicio);
+    }
+    if (filters.fechaFin) {
+      registrosQuery = registrosQuery.lte('fecha', filters.fechaFin);
+    }
+
+    const { data: registros, error: registrosError } = await registrosQuery;
+    if (registrosError) throw registrosError;
+
+    const map = new Map<string, HorasTrabajador>();
+    
+    for (const r of registros || []) {
+      const p = proyectos.find(proj => proj.id === r.proyecto_id);
+      const t = trabajadores.find(trab => trab.id === r.trabajador_id);
+      if (!p || !t) continue;
+      
+      const key = `${r.proyecto_id}_${r.trabajador_id}`;
+      if (!map.has(key)) {
+        map.set(key, {
+          proyecto_nombre: p.nombre,
+          trabajador_nombre: t.nombre,
+          total_horas: 0
+        });
+      }
+      
+      const entry = map.get(key)!;
+      entry.total_horas += Number(r.horas) || 0;
+    }
+    
+    return Array.from(map.values()).sort((a, b) => a.proyecto_nombre.localeCompare(b.proyecto_nombre));
   }
 
   async getCostoLaborDesglose(proyectoId: string, fechaInicio?: string, fechaFin?: string): Promise<any[]> {
