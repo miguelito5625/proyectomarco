@@ -5,31 +5,61 @@
 // custom components at https://material.angular.dev/guide/theming
 @use '@angular/material' as mat;
 
+@use 'sass:map';
+
+@mixin preserve-light-primary($primary, $tertiary) {
+  --mat-sys-primary: #{map.get($primary, 40)};
+  --mat-sys-on-primary: #{map.get($primary, 100)};
+  --mat-sys-tertiary: #{map.get($tertiary, 40)};
+  --mat-sys-on-tertiary: #{map.get($tertiary, 100)};
+}
+
 html {
   height: 100%;
+  // Default (Azure & Blue) Light
   @include mat.theme(
     (
       color: (
         primary: mat.$azure-palette,
         tertiary: mat.$blue-palette,
+        theme-type: light,
       ),
       typography: Roboto,
       density: 0,
     )
   );
 
+  &.dark-theme {
+    color-scheme: dark;
+    @include mat.theme((color: (primary: mat.$azure-palette, tertiary: mat.$blue-palette, theme-type: dark)));
+    @include preserve-light-primary(mat.$azure-palette, mat.$blue-palette);
+  }
+
   &.theme-rose-red {
-    @include mat.theme((color: (primary: mat.$rose-palette, tertiary: mat.$red-palette)));
+    @include mat.theme((color: (primary: mat.$rose-palette, tertiary: mat.$red-palette, theme-type: light)));
+    &.dark-theme {
+      color-scheme: dark;
+      @include mat.theme((color: (primary: mat.$rose-palette, tertiary: mat.$red-palette, theme-type: dark)));
+      @include preserve-light-primary(mat.$rose-palette, mat.$red-palette);
+    }
   }
 
   &.theme-magenta-violet {
-    color-scheme: dark;
-    @include mat.theme((color: (theme-type: dark, primary: mat.$magenta-palette, tertiary: mat.$violet-palette)));
+    @include mat.theme((color: (primary: mat.$magenta-palette, tertiary: mat.$violet-palette, theme-type: light)));
+    &.dark-theme {
+      color-scheme: dark;
+      @include mat.theme((color: (primary: mat.$magenta-palette, tertiary: mat.$violet-palette, theme-type: dark)));
+      @include preserve-light-primary(mat.$magenta-palette, mat.$violet-palette);
+    }
   }
 
   &.theme-cyan-orange {
-    color-scheme: dark;
-    @include mat.theme((color: (theme-type: dark, primary: mat.$cyan-palette, tertiary: mat.$orange-palette)));
+    @include mat.theme((color: (primary: mat.$cyan-palette, tertiary: mat.$orange-palette, theme-type: light)));
+    &.dark-theme {
+      color-scheme: dark;
+      @include mat.theme((color: (primary: mat.$cyan-palette, tertiary: mat.$orange-palette, theme-type: dark)));
+      @include preserve-light-primary(mat.$cyan-palette, mat.$orange-palette);
+    }
   }
 }
 

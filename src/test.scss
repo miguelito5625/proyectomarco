@@ -1,0 +1,3 @@
+@use '@angular/material' as mat;
+$light: mat.define-theme((color: (theme-type: light, primary: mat.$azure-palette)));
+.test { color: mat.get-theme-color($light, primary); }

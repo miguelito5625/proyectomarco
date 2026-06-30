@@ -12,7 +12,15 @@
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   z-index: 2; /* To sit above the sidenav */
   background-color: var(--mat-sys-primary);
-  color: var(--mat-sys-on-primary);
+  color: #ffffff !important;
+  
+  /* Forzar color blanco absoluto en cualquier texto o icono dentro del navbar */
+  .mat-icon, span, button {
+    color: #ffffff !important;
+  }
+  
+  --mdc-text-button-label-text-color: #ffffff;
+  --mdc-icon-button-icon-color: #ffffff;
 
   .brand {
     display: flex;

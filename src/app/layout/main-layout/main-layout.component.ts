@@ -9,6 +9,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { MatDividerModule } from '@angular/material/divider';
 import { SupabaseService } from '../../core/services/supabase.service';
 import { ThemeService, AppTheme } from '../../core/services/theme.service';
 import { UserProfileDialogComponent } from '../../features/user/user-profile-dialog/user-profile-dialog.component';
@@ -20,7 +21,7 @@ import { ChangePasswordDialogComponent } from '../../features/user/change-passwo
   imports: [
     RouterOutlet, RouterLink, RouterLinkActive, 
     MatToolbarModule, MatButtonModule, MatIconModule, MatMenuModule,
-    MatSidenavModule, MatListModule, MatDialogModule
+    MatSidenavModule, MatListModule, MatDialogModule, MatDividerModule
   ],
   templateUrl: './main-layout.component.html',
   styleUrls: ['./main-layout.component.scss'],
