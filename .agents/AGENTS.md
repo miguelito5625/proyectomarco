@@ -1,4 +1,4 @@
-# Reglas de Proyecto: FactuCheck (Verificador de Facturas)
+# Reglas de Proyecto: proyectomarco
 
 ## Flujo de Trabajo y Verificación de Errores
 Para CADA cambio o tarea que se te pida realizar en este proyecto, DEBES seguir estrictamente este flujo de trabajo una vez finalices la edición del código:
