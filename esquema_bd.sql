@@ -55,6 +55,9 @@ CREATE TABLE registros_tiempo (
     horas DECIMAL(5, 2) NOT NULL, -- Cantidad de horas invertidas en la propiedad ese día
     horas_extra DECIMAL(5, 2) DEFAULT 0.00,
     gasolina DECIMAL(10, 2) DEFAULT 0.00,
+    tarifa_regular DECIMAL(10, 2),
+    tarifa_extra DECIMAL(10, 2),
+    tarifa_sabado DECIMAL(10, 2),
     fecha_creacion TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 );
 

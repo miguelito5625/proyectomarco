@@ -231,6 +231,10 @@ export class RegistrosTiempov2ListComponent implements OnInit {
 
     this.saving.set(true);
     const trabajadorId = this.selectedTrabajadorId.value!;
+    const trabajador = this.trabajadoresActivos.find(t => t.id === trabajadorId);
+    const tarifaRegular = trabajador?.pago_hora_regular || 0;
+    const tarifaExtra = trabajador?.pago_hora_extra || 0;
+    const tarifaSabado = trabajador?.pago_sabado || tarifaRegular;
     
     try {
       const promises = [];
@@ -256,7 +260,10 @@ export class RegistrosTiempov2ListComponent implements OnInit {
               fecha: dateISO,
               horas: h,
               horas_extra: he,
-              gasolina: g
+              gasolina: g,
+              tarifa_regular: tarifaRegular,
+              tarifa_extra: tarifaExtra,
+              tarifa_sabado: tarifaSabado
             }));
           }
         }

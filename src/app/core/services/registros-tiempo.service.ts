@@ -9,6 +9,9 @@ export interface RegistroTiempo {
   horas: number;
   horas_extra?: number;
   gasolina?: number;
+  tarifa_regular?: number;
+  tarifa_extra?: number;
+  tarifa_sabado?: number;
   fecha_creacion?: string;
   trabajadores?: { nombre: string };
   proyectos?: { nombre: string };

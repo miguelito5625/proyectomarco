@@ -1,18 +1,7 @@
 # Reglas de Proyecto: proyectomarco
 
-## Flujo de Trabajo y Verificación de Errores
-Para CADA cambio o tarea que se te pida realizar en este proyecto, DEBES seguir estrictamente este flujo de trabajo una vez finalices la edición del código:
-
-1. **Validación Autónoma de Integridad (Post-Edición):**
-   - Inmediatamente después de completar las modificaciones al código y *antes* de reportar al usuario que la tarea ha finalizado, estás obligado a realizar una prueba de ejecución del proyecto (ej. arrancando el servidor con `ng build` en background) para comprobar su estabilidad.
-   - Si durante esta prueba detectas errores, debes entrar en un ciclo de auto-corrección: analiza el error, aplica la solución y vuelve a probar iterativamente de forma autónoma.
-   - Solo se te permite notificar al usuario sobre la finalización de la tarea (y proceder con el push a git) una vez que hayas verificado empíricamente que la aplicación arranca y funciona sin emitir errores.
-
-2. **Control de Versiones y Sincronización Automática (Git):**
-   - Una vez que estés seguro de que el código funciona y no tiene errores, debes realizar las siguientes acciones en la terminal (Powershell) para subir los cambios al repositorio remoto:
-     ```bash
-     git add .
-     git commit -am "Agrega aquí un breve resumen de los cambios realizados"
-     git push -u origin main
-     ```
-   - No preguntes al usuario si desea subir los cambios, asume que es el flujo por defecto para este proyecto y ejecuta los comandos (el usuario tendrá que aprobar el comando terminal).
+Para CADA cambio o tarea que se te pida realizar en este proyecto, DEBES usar las skills `prompt_enhancer`, `auto_compiler` y `auto_commiter` de forma obligatoria.
+Lee las instrucciones de estas skills y asegúrate de seguirlas en este orden estricto:
+1. Primero aplica `prompt_enhancer` al recibir la solicitud para analizar y mejorar el entendimiento del requerimiento ANTES de modificar el código.
+2. Tras realizar los cambios, aplica `auto_compiler` para validar que el código funciona.
+3. Finalmente aplica `auto_commiter` para subir los cambios al repositorio remoto.

@@ -64,7 +64,7 @@ export class ReportesService {
     const proyectoIdsList = proyectos.map(p => p.id);
     let registrosQuery = this.supabase
       .from('registros_tiempo')
-      .select('proyecto_id, fecha, horas, horas_extra, gasolina, trabajador_id')
+      .select('proyecto_id, fecha, horas, horas_extra, gasolina, trabajador_id, tarifa_regular, tarifa_extra, tarifa_sabado')
       .in('proyecto_id', proyectoIdsList);
 
     if (filters.fechaInicio) {
@@ -116,9 +116,9 @@ export class ReportesService {
         const gasolina = Number(r.gasolina) || 0;
         
         const t = trabajadoresMap.get(r.trabajador_id);
-        const pagoHoraRegular = t?.pago_hora_regular || 0;
-        const pagoHoraExtra = t?.pago_hora_extra || 0;
-        const pagoSabado = t?.pago_sabado || pagoHoraRegular; // Fallback to regular if not set
+        const pagoHoraRegular = r.tarifa_regular ?? t?.pago_hora_regular ?? 0;
+        const pagoHoraExtra = r.tarifa_extra ?? t?.pago_hora_extra ?? 0;
+        const pagoSabado = r.tarifa_sabado ?? t?.pago_sabado ?? pagoHoraRegular; // Fallback to regular if not set
 
         // Determine if the date is a Saturday
         const dateObj = new Date(r.fecha + 'T12:00:00Z');
@@ -223,6 +223,9 @@ export class ReportesService {
         horas,
         horas_extra,
         gasolina,
+        tarifa_regular,
+        tarifa_extra,
+        tarifa_sabado,
         trabajador_id,
         trabajadores ( nombre )
       `)
