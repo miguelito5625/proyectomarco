@@ -1,11 +1,11 @@
-# Graph Report - proyectomarco  (2026-09-10)
+# Graph Report - proyectomarco  (2026-08-26)
 
 ## Corpus Check
-- 59 files · ~17,569 words
+- 58 files · ~16,931 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 386 nodes · 562 edges · 27 communities (16 shown, 11 thin omitted)
+- 352 nodes · 534 edges · 21 communities (13 shown, 8 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 3 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
@@ -26,7 +26,7 @@
 - NominasService
 - TrabajadoresService
 - HorasTrabajadorComponent
-- Reglas de Proyecto: proyectomarco
+- AGENTS.md
 - RegistrosTiempov2ListComponent
 - CostoLaborComponent
 - update_responsive.js
@@ -35,12 +35,6 @@
 - query.js
 - rules/graphify.md
 - workflows/graphify.md
-- Procedimientos de Ejecución
-- Instrucciones de Backup y Restauración de Base de Datos
-- Proyectomarco
-- auto_commiter/SKILL.md
-- auto_compiler/SKILL.md
-- prompt_enhancer/SKILL.md
 
 ## God Nodes (most connected - your core abstractions)
 1. `SupabaseService` - 24 edges
@@ -48,8 +42,8 @@
 3. `RegistrosTiempov2ListComponent` - 16 edges
 4. `Proyecto` - 15 edges
 5. `ProyectosService` - 15 edges
-6. `TrabajadoresService` - 14 edges
-7. `CostoLaborComponent` - 14 edges
+6. `CostoLaborComponent` - 14 edges
+7. `TrabajadoresService` - 14 edges
 8. `Trabajador` - 13 edges
 9. `RegistrosTiempoListComponent` - 11 edges
 10. `RegistrosTiempoService` - 10 edges
@@ -61,15 +55,15 @@
   src/app/features/reportes/costo-labor/costo-labor.component.ts → src/app/core/services/proyectos.service.ts
 - `HorasTrabajadorComponent` --references--> `Proyecto`  [EXTRACTED]
   src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts → src/app/core/services/proyectos.service.ts
-- `RegistrosTiempov2ListComponent` --references--> `Trabajador`  [EXTRACTED]
-  src/app/features/registros-tiempov2/registros-tiempov2-list/registros-tiempov2-list.component.ts → src/app/core/services/trabajadores.service.ts
 - `HorasTrabajadorComponent` --references--> `Trabajador`  [EXTRACTED]
   src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts → src/app/core/services/trabajadores.service.ts
+- `RegistrosTiempov2ListComponent` --references--> `Trabajador`  [EXTRACTED]
+  src/app/features/registros-tiempov2/registros-tiempov2-list/registros-tiempov2-list.component.ts → src/app/core/services/trabajadores.service.ts
 
 ## Import Cycles
 - None detected.
 
-## Communities (27 total, 11 thin omitted)
+## Communities (21 total, 8 thin omitted)
 
 ### Community 0 - "main-layout.component.ts"
 Cohesion: 0.07
@@ -119,36 +113,24 @@ Nodes (3): fs, path, srcDir
 Cohesion: 0.40
 Nodes (3): fs, path, srcDir
 
-### Community 21 - "Procedimientos de Ejecución"
-Cohesion: 0.20
-Nodes (9): 1. Backup Completo (Esquema y Datos) - Recomendado, 2. Backup Solo de Estructura (Esquema SQL sin datos), 3. Restauración de Base de Datos, 4. Restauración Solo de Datos (Tablas ya existentes y limpias), Condición de Activación, Credenciales y Configuración de Conexión, Pasos de Verificación tras el Backup, Procedimientos de Ejecución (+1 more)
-
-### Community 22 - "Instrucciones de Backup y Restauración de Base de Datos"
-Cohesion: 0.25
-Nodes (7): 1. Realizar un Backup (Respaldo), 2. Restaurar la Base de Datos, 3. Hacer Backup Solo de la Estructura (Esquema), 4. Vaciar la Base de Datos o Eliminarla (Opcional), Credenciales de Conexión, Instrucciones de Backup y Restauración de Base de Datos, Restaurar SOLO LOS DATOS (Si usaste TRUNCATE)
-
-### Community 23 - "Proyectomarco"
-Cohesion: 0.25
-Nodes (7): Additional Resources, Building, Code scaffolding, Development server, Proyectomarco, Running end-to-end tests, Running unit tests
-
 ## Knowledge Gaps
-- **87 isolated node(s):** `$schema`, `version`, `packageManager`, `analytics`, `newProjectRoot` (+82 more)
+- **66 isolated node(s):** `Reglas de Proyecto: proyectomarco`, `graphify`, `Workflow: graphify`, `analytics`, `packageManager` (+61 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **11 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **8 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `HorasTrabajadorComponent` connect `HorasTrabajadorComponent` to `Proyecto`, `app.routes.ts`, `TrabajadoresService`?**
-  _High betweenness centrality (0.044) - this node is a cross-community bridge._
+  _High betweenness centrality (0.053) - this node is a cross-community bridge._
 - **Why does `SupabaseService` connect `app.routes.ts` to `main-layout.component.ts`, `Proyecto`, `registros-tiempov2-list.component.ts`, `gastos-form.component.ts`, `NominasService`, `TrabajadoresService`?**
-  _High betweenness centrality (0.042) - this node is a cross-community bridge._
+  _High betweenness centrality (0.050) - this node is a cross-community bridge._
 - **Why does `RegistrosTiempov2ListComponent` connect `RegistrosTiempov2ListComponent` to `Proyecto`, `registros-tiempov2-list.component.ts`, `app.routes.ts`, `TrabajadoresService`?**
-  _High betweenness centrality (0.038) - this node is a cross-community bridge._
-- **What connects `$schema`, `version`, `packageManager` to the rest of the system?**
-  _87 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _High betweenness centrality (0.045) - this node is a cross-community bridge._
+- **What connects `Reglas de Proyecto: proyectomarco`, `graphify`, `Workflow: graphify` to the rest of the system?**
+  _66 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `main-layout.component.ts` be split into smaller, more focused modules?**
-  _Cohesion score 0.06882591093117409 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07112375533428165 - nodes in this community are weakly interconnected._
 - **Should `Proyecto` be split into smaller, more focused modules?**
   _Cohesion score 0.10252100840336134 - nodes in this community are weakly interconnected._
 - **Should `dependencies` be split into smaller, more focused modules?**

@@ -6,3 +6,6 @@ Lee las instrucciones de estas herramientas y asegúrate de seguirlas en este or
 2. Luego aplica `prompt_enhancer` para analizar y mejorar el entendimiento del requerimiento basándote en el contexto obtenido, ANTES de modificar el código.
 3. Tras realizar los cambios, aplica `auto_compiler` para validar que el código funciona.
 4. Finalmente aplica `auto_commiter` para subir los cambios al repositorio remoto.
+
+### Reglas de Base de Datos
+- **MANDATORIO**: ANTES de realizar cualquier modificación estructural o masiva a la base de datos (Supabase/PostgreSQL), DEBES crear un backup de la base de datos actual y guardarlo en la carpeta `db/backup`. Sigue las instrucciones que se encuentren en esa carpeta para generar el respaldo.
