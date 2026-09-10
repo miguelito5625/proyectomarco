@@ -289,7 +289,7 @@
   },
   ".vscode/mcp.json": {
     "mtime": 1777229876.2570295,
-    "seen": 1787809406.7180455,
+    "seen": 1789052253.0718253,
     "ast_hash": "",
     "semantic_hash": ""
   },
@@ -477,6 +477,12 @@
     "mtime": 1789052202.92424,
     "seen": 1789052212.7903411,
     "ast_hash": "dbfea0e22dca780e425fed1ee2ea9b27",
+    "semantic_hash": ""
+  },
+  "db/esquema_bd.sql": {
+    "mtime": 1787807359.008685,
+    "seen": 1789052253.0718312,
+    "ast_hash": "",
     "semantic_hash": ""
   }
 }

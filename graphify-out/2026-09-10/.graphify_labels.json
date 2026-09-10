@@ -10,14 +10,19 @@
   "8": "NominasService",
   "9": "TrabajadoresService",
   "10": "HorasTrabajadorComponent",
-  "11": "AGENTS.md",
+  "11": "Reglas de Proyecto: proyectomarco",
   "12": "RegistrosTiempov2ListComponent",
   "13": "CostoLaborComponent",
   "14": "update_responsive.js",
   "15": "fix_ts.js",
-  "16": "CostoLaborDesgloseComponent",
   "17": "query.js",
   "18": "costo-labor-desglose.spec.ts",
   "19": "rules/graphify.md",
-  "20": "workflows/graphify.md"
+  "20": "workflows/graphify.md",
+  "21": "Procedimientos de Ejecución",
+  "22": "Instrucciones de Backup y Restauración de Base de Datos",
+  "23": "Proyectomarco",
+  "24": "auto_commiter/SKILL.md",
+  "25": "auto_compiler/SKILL.md",
+  "26": "prompt_enhancer/SKILL.md"
 }

@@ -289,14 +289,14 @@
   },
   ".vscode/mcp.json": {
     "mtime": 1777229876.2570295,
-    "seen": 1787809406.7180455,
+    "seen": 1789052253.0718253,
     "ast_hash": "a73020575e74990ecd722ccc5122bb0c",
     "semantic_hash": ""
   },
   ".agents/AGENTS.md": {
-    "mtime": 1787808774.4403536,
-    "seen": 1787809406.7213633,
-    "ast_hash": "649a6d39bd9d50c8d65a1ce7455a1d32",
+    "mtime": 1788444964.0852509,
+    "seen": 1789052212.7897027,
+    "ast_hash": "a1762b6170149075141265ac15f441b9",
     "semantic_hash": ""
   },
   ".agents/rules/graphify.md": {
@@ -471,6 +471,18 @@
     "mtime": 1777230027.103116,
     "seen": 1787809406.721388,
     "ast_hash": "0a8dcb4bd60f3e66280fdd8084863197",
+    "semantic_hash": ""
+  },
+  ".agents/skills/db_backup/SKILL.md": {
+    "mtime": 1789052202.92424,
+    "seen": 1789052212.7903411,
+    "ast_hash": "dbfea0e22dca780e425fed1ee2ea9b27",
+    "semantic_hash": ""
+  },
+  "db/esquema_bd.sql": {
+    "mtime": 1787807359.008685,
+    "seen": 1789052253.0718312,
+    "ast_hash": "b766bbab21c107d904c301b51793b4e1",
     "semantic_hash": ""
   }
 }
