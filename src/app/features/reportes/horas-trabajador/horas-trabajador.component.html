@@ -73,6 +73,12 @@
             <mat-icon>filter_alt_off</mat-icon>
             Limpiar
           </button>
+          @if (hasSearched()) {
+            <div style="display: flex; gap: 16px; align-items: center; margin-left: 16px; font-size: 1.05rem; font-weight: 500;">
+              <span style="color: var(--primary-color, #1976d2);">Total Horas: {{ totalHoras() }} hrs</span>
+              <span style="color: #2e7d32;">Total Costo: {{ totalCosto() | currency:'USD' }}</span>
+            </div>
+          }
         </div>
       </div>
 
@@ -97,29 +103,40 @@
       } @else {
         <table mat-table [dataSource]="dataSource" class="mat-elevation-z0">
           
+          <ng-container matColumnDef="trabajador">
+            <th mat-header-cell *matHeaderCellDef> Trabajador </th>
+            <td mat-cell *matCellDef="let element"> <strong>{{element.trabajador_nombre}}</strong> </td>
+          </ng-container>
+
           <ng-container matColumnDef="proyecto">
             <th mat-header-cell *matHeaderCellDef> Proyecto </th>
             <td mat-cell *matCellDef="let element"> {{element.proyecto_nombre}} </td>
           </ng-container>
 
-          <ng-container matColumnDef="trabajador">
-            <th mat-header-cell *matHeaderCellDef> Trabajador </th>
-            <td mat-cell *matCellDef="let element"> {{element.trabajador_nombre}} </td>
+          <ng-container matColumnDef="horas_regulares">
+            <th mat-header-cell *matHeaderCellDef> Horas Regulares </th>
+            <td mat-cell *matCellDef="let element"> {{element.total_horas_regulares || 0}} hrs </td>
           </ng-container>
 
-          <ng-container matColumnDef="horas">
-            <th mat-header-cell *matHeaderCellDef> Total Horas </th>
+          <ng-container matColumnDef="horas_sabado">
+            <th mat-header-cell *matHeaderCellDef> Horas Sábado </th>
+            <td mat-cell *matCellDef="let element"> {{element.total_horas_sabado || 0}} hrs </td>
+          </ng-container>
+
+          <ng-container matColumnDef="horas_extra">
+            <th mat-header-cell *matHeaderCellDef> Horas Extra </th>
+            <td mat-cell *matCellDef="let element"> {{element.total_horas_extra || 0}} hrs </td>
+          </ng-container>
+
+          <ng-container matColumnDef="otros_gasolina">
+            <th mat-header-cell *matHeaderCellDef> Otros / Gasolina </th>
+            <td mat-cell *matCellDef="let element"> {{element.total_otros_gasolina || 0 | currency:'USD'}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="costo_estimado">
+            <th mat-header-cell *matHeaderCellDef> Costo Estimado </th>
             <td mat-cell *matCellDef="let element"> 
-              <strong>{{element.total_horas || 0}} hrs</strong>
-            </td>
-          </ng-container>
-
-          <ng-container matColumnDef="grafica">
-            <th mat-header-cell *matHeaderCellDef> Gráfica de Horas </th>
-            <td mat-cell *matCellDef="let element" class="chart-cell">
-              <div class="bar-container">
-                <div class="bar" [style.width.%]="((element.total_horas || 0) / maxHoras()) * 100"></div>
-              </div>
+              <strong>{{element.costo_estimado || 0 | currency:'USD'}}</strong>
             </td>
           </ng-container>
 
@@ -127,7 +144,7 @@
           <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
           
           <tr class="mat-row" *matNoDataRow>
-            <td class="mat-cell empty-cell" colspan="4">
+            <td class="mat-cell empty-cell" [attr.colspan]="displayedColumns.length">
               @if (!loading()) { No hay datos para los filtros seleccionados. }
             </td>
           </tr>

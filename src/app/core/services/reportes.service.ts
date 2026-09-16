@@ -22,6 +22,11 @@ export interface CostoLaborFilters {
 export interface HorasTrabajador {
   proyecto_nombre: string;
   trabajador_nombre: string;
+  total_horas_regulares: number;
+  total_horas_sabado: number;
+  total_horas_extra: number;
+  total_otros_gasolina: number;
+  costo_estimado: number;
   total_horas: number;
 }
 
@@ -163,7 +168,7 @@ export class ReportesService {
 
     let trabajadoresQuery = this.supabase
       .from('trabajadores')
-      .select('id, nombre');
+      .select('id, nombre, pago_hora_regular, pago_hora_extra, pago_sabado');
       
     if (filters.trabajadorIds && filters.trabajadorIds.length > 0) {
       trabajadoresQuery = trabajadoresQuery.in('id', filters.trabajadorIds);
@@ -177,7 +182,7 @@ export class ReportesService {
 
     let registrosQuery = this.supabase
       .from('registros_tiempo')
-      .select('proyecto_id, trabajador_id, horas, fecha')
+      .select('proyecto_id, trabajador_id, horas, horas_extra, gasolina, fecha, tarifa_regular, tarifa_extra, tarifa_sabado')
       .in('proyecto_id', proyectoIdsList)
       .in('trabajador_id', trabajadorIdsList);
 
@@ -198,20 +203,47 @@ export class ReportesService {
       const t = trabajadores.find(trab => trab.id === r.trabajador_id);
       if (!p || !t) continue;
       
-      const key = `${r.proyecto_id}_${r.trabajador_id}`;
+      const key = `${r.trabajador_id}_${r.proyecto_id}`;
       if (!map.has(key)) {
         map.set(key, {
           proyecto_nombre: p.nombre,
           trabajador_nombre: t.nombre,
+          total_horas_regulares: 0,
+          total_horas_sabado: 0,
+          total_horas_extra: 0,
+          total_otros_gasolina: 0,
+          costo_estimado: 0,
           total_horas: 0
         });
       }
       
       const entry = map.get(key)!;
-      entry.total_horas += Number(r.horas) || 0;
+      const horas = Number(r.horas) || 0;
+      const horasExtra = Number(r.horas_extra) || 0;
+      const gasolina = Number(r.gasolina) || 0;
+
+      const pagoHoraRegular = r.tarifa_regular ?? t.pago_hora_regular ?? 0;
+      const pagoHoraExtra = r.tarifa_extra ?? t.pago_hora_extra ?? 0;
+      const pagoSabado = r.tarifa_sabado ?? t.pago_sabado ?? pagoHoraRegular;
+
+      const dateObj = new Date(r.fecha + 'T12:00:00Z');
+      const isSaturday = dateObj.getUTCDay() === 6;
+      const rateToUse = isSaturday ? pagoSabado : pagoHoraRegular;
+
+      if (isSaturday) {
+        entry.total_horas_sabado += horas;
+      } else {
+        entry.total_horas_regulares += horas;
+      }
+      entry.total_horas_extra += horasExtra;
+      entry.total_otros_gasolina += gasolina;
+      entry.total_horas += (horas + horasExtra);
+      entry.costo_estimado += (horas * rateToUse) + (horasExtra * pagoHoraExtra) + gasolina;
     }
     
-    return Array.from(map.values()).sort((a, b) => a.proyecto_nombre.localeCompare(b.proyecto_nombre));
+    return Array.from(map.values()).sort((a, b) => 
+      a.trabajador_nombre.localeCompare(b.trabajador_nombre) || a.proyecto_nombre.localeCompare(b.proyecto_nombre)
+    );
   }
 
   async getCostoLaborDesglose(proyectoId: string, fechaInicio?: string, fechaFin?: string): Promise<any[]> {

@@ -251,17 +251,69 @@
       "source_location": "L30"
     },
     {
-      "id": "src_app_features_reportes_costo_labor_desglose_costo_labor_desglose_component_costolabordesglosecomponent",
-      "label": "CostoLaborDesgloseComponent",
+      "id": "src_app_core_services_backup_service_backupdata",
+      "label": "BackupData",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 16,
-      "community_name": "CostoLaborDesgloseComponent",
+      "community": 27,
+      "community_name": "BackupService",
       "file_type": "code",
-      "norm_label": "costolabordesglosecomponent",
-      "source_file": "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.ts",
-      "source_location": "L22"
+      "norm_label": "backupdata",
+      "source_file": "src/app/core/services/backup.service.ts",
+      "source_location": "L12"
+    },
+    {
+      "id": "src_app_core_services_backup_service_backupservice",
+      "label": "BackupService",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 27,
+      "community_name": "BackupService",
+      "file_type": "code",
+      "norm_label": "backupservice",
+      "source_file": "src/app/core/services/backup.service.ts",
+      "source_location": "L42"
+    },
+    {
+      "id": "src_app_core_services_backup_service_progressstate",
+      "label": "ProgressState",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 27,
+      "community_name": "BackupService",
+      "file_type": "code",
+      "norm_label": "progressstate",
+      "source_file": "src/app/core/services/backup.service.ts",
+      "source_location": "L29"
+    },
+    {
+      "id": "src_app_core_services_backup_service_tablestats",
+      "label": "TableStats",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 27,
+      "community_name": "BackupService",
+      "file_type": "code",
+      "norm_label": "tablestats",
+      "source_file": "src/app/core/services/backup.service.ts",
+      "source_location": "L4"
+    },
+    {
+      "id": "src_app_features_backup_backup_component_backupcomponent",
+      "label": "BackupComponent",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 28,
+      "community_name": "BackupComponent",
+      "file_type": "code",
+      "norm_label": "backupcomponent",
+      "source_file": "src/app/features/backup/backup.component.ts",
+      "source_location": "L29"
     },
     {
       "id": "src_app_core_services_registros_tiempo_service_registrostiemposervice",
@@ -353,6 +405,19 @@
       "norm_label": "homecomponent",
       "source_file": "src/app/features/home/home.component.ts",
       "source_location": "L13"
+    },
+    {
+      "id": "src_app_features_reportes_costo_labor_desglose_costo_labor_desglose_component_costolabordesglosecomponent",
+      "label": "CostoLaborDesgloseComponent",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.routes.ts",
+      "file_type": "code",
+      "norm_label": "costolabordesglosecomponent",
+      "source_file": "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.ts",
+      "source_location": "L22"
     },
     {
       "id": "src_app_core_services_gastos_service_gastoproyecto",
@@ -1315,42 +1380,6 @@
       "source_location": "L6"
     },
     {
-      "id": "src_app_features_reportes_costo_labor_desglose_costo_labor_desglose_component_costolabordesglosecomponent_loaddatos",
-      "label": ".loadDatos()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "CostoLaborDesgloseComponent",
-      "file_type": "code",
-      "norm_label": ".loaddatos()",
-      "source_file": "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.ts",
-      "source_location": "L48"
-    },
-    {
-      "id": "src_app_features_reportes_costo_labor_desglose_costo_labor_desglose_component_costolabordesglosecomponent_ngoninit",
-      "label": ".ngOnInit()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "CostoLaborDesgloseComponent",
-      "file_type": "code",
-      "norm_label": ".ngoninit()",
-      "source_file": "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.ts",
-      "source_location": "L38"
-    },
-    {
-      "id": "src_app_features_reportes_costo_labor_desglose_costo_labor_desglose_component_costolabordesglosecomponent_volver",
-      "label": ".volver()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "CostoLaborDesgloseComponent",
-      "file_type": "code",
-      "norm_label": ".volver()",
-      "source_file": "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.ts",
-      "source_location": "L63"
-    },
-    {
       "id": "scratch_query_runquery",
       "label": "runQuery()",
       "_callable": true,
@@ -1361,6 +1390,210 @@
       "norm_label": "runquery()",
       "source_file": "scratch/query.js",
       "source_location": "L3"
+    },
+    {
+      "id": "src_app_core_services_backup_service_backupservice_delay",
+      "label": ".delay()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 27,
+      "community_name": "BackupService",
+      "file_type": "code",
+      "norm_label": ".delay()",
+      "source_file": "src/app/core/services/backup.service.ts",
+      "source_location": "L100"
+    },
+    {
+      "id": "src_app_core_services_backup_service_backupservice_exportbackup",
+      "label": ".exportBackup()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 27,
+      "community_name": "BackupService",
+      "file_type": "code",
+      "norm_label": ".exportbackup()",
+      "source_file": "src/app/core/services/backup.service.ts",
+      "source_location": "L104"
+    },
+    {
+      "id": "src_app_core_services_backup_service_backupservice_fetchallfromtable",
+      "label": ".fetchAllFromTable()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 27,
+      "community_name": "BackupService",
+      "file_type": "code",
+      "norm_label": ".fetchallfromtable()",
+      "source_file": "src/app/core/services/backup.service.ts",
+      "source_location": "L71"
+    },
+    {
+      "id": "src_app_core_services_backup_service_backupservice_getdatabasestats",
+      "label": ".getDatabaseStats()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 27,
+      "community_name": "BackupService",
+      "file_type": "code",
+      "norm_label": ".getdatabasestats()",
+      "source_file": "src/app/core/services/backup.service.ts",
+      "source_location": "L53"
+    },
+    {
+      "id": "src_app_core_services_backup_service_backupservice_insertinbatches",
+      "label": ".insertInBatches()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 27,
+      "community_name": "BackupService",
+      "file_type": "code",
+      "norm_label": ".insertinbatches()",
+      "source_file": "src/app/core/services/backup.service.ts",
+      "source_location": "L471"
+    },
+    {
+      "id": "src_app_core_services_backup_service_backupservice_restorefrombackup",
+      "label": ".restoreFromBackup()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 27,
+      "community_name": "BackupService",
+      "file_type": "code",
+      "norm_label": ".restorefrombackup()",
+      "source_file": "src/app/core/services/backup.service.ts",
+      "source_location": "L307"
+    },
+    {
+      "id": "src_app_core_services_backup_service_backupservice_validatebackupjson",
+      "label": ".validateBackupJson()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 27,
+      "community_name": "BackupService",
+      "file_type": "code",
+      "norm_label": ".validatebackupjson()",
+      "source_file": "src/app/core/services/backup.service.ts",
+      "source_location": "L256"
+    },
+    {
+      "id": "src_app_features_backup_backup_component_backupcomponent_cancelrestore",
+      "label": ".cancelRestore()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 28,
+      "community_name": "BackupComponent",
+      "file_type": "code",
+      "norm_label": ".cancelrestore()",
+      "source_file": "src/app/features/backup/backup.component.ts",
+      "source_location": "L140"
+    },
+    {
+      "id": "src_app_features_backup_backup_component_backupcomponent_executerestore",
+      "label": ".executeRestore()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 28,
+      "community_name": "BackupComponent",
+      "file_type": "code",
+      "norm_label": ".executerestore()",
+      "source_file": "src/app/features/backup/backup.component.ts",
+      "source_location": "L151"
+    },
+    {
+      "id": "src_app_features_backup_backup_component_backupcomponent_loadstats",
+      "label": ".loadStats()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 28,
+      "community_name": "BackupComponent",
+      "file_type": "code",
+      "norm_label": ".loadstats()",
+      "source_file": "src/app/features/backup/backup.component.ts",
+      "source_location": "L53"
+    },
+    {
+      "id": "src_app_features_backup_backup_component_backupcomponent_ngoninit",
+      "label": ".ngOnInit()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 28,
+      "community_name": "BackupComponent",
+      "file_type": "code",
+      "norm_label": ".ngoninit()",
+      "source_file": "src/app/features/backup/backup.component.ts",
+      "source_location": "L49"
+    },
+    {
+      "id": "src_app_features_backup_backup_component_backupcomponent_ondragover",
+      "label": ".onDragOver()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 28,
+      "community_name": "BackupComponent",
+      "file_type": "code",
+      "norm_label": ".ondragover()",
+      "source_file": "src/app/features/backup/backup.component.ts",
+      "source_location": "L95"
+    },
+    {
+      "id": "src_app_features_backup_backup_component_backupcomponent_ondrop",
+      "label": ".onDrop()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 28,
+      "community_name": "BackupComponent",
+      "file_type": "code",
+      "norm_label": ".ondrop()",
+      "source_file": "src/app/features/backup/backup.component.ts",
+      "source_location": "L100"
+    },
+    {
+      "id": "src_app_features_backup_backup_component_backupcomponent_onfileselected",
+      "label": ".onFileSelected()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 28,
+      "community_name": "BackupComponent",
+      "file_type": "code",
+      "norm_label": ".onfileselected()",
+      "source_file": "src/app/features/backup/backup.component.ts",
+      "source_location": "L85"
+    },
+    {
+      "id": "src_app_features_backup_backup_component_backupcomponent_processfile",
+      "label": ".processFile()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 28,
+      "community_name": "BackupComponent",
+      "file_type": "code",
+      "norm_label": ".processfile()",
+      "source_file": "src/app/features/backup/backup.component.ts",
+      "source_location": "L110"
+    },
+    {
+      "id": "src_app_features_backup_backup_component_backupcomponent_requestrestoreconfirmation",
+      "label": ".requestRestoreConfirmation()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 28,
+      "community_name": "BackupComponent",
+      "file_type": "code",
+      "norm_label": ".requestrestoreconfirmation()",
+      "source_file": "src/app/features/backup/backup.component.ts",
+      "source_location": "L147"
+    },
+    {
+      "id": "src_app_features_backup_backup_component_backupcomponent_startexport",
+      "label": ".startExport()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 28,
+      "community_name": "BackupComponent",
+      "file_type": "code",
+      "norm_label": ".startexport()",
+      "source_file": "src/app/features/backup/backup.component.ts",
+      "source_location": "L65"
     },
     {
       "id": "src_app_core_services_registros_tiempo_service_registrostiemposervice_createregistro",
@@ -1697,6 +1930,42 @@
       "norm_label": ".onsubmit()",
       "source_file": "src/app/features/auth/login/login.component.ts",
       "source_location": "L47"
+    },
+    {
+      "id": "src_app_features_reportes_costo_labor_desglose_costo_labor_desglose_component_costolabordesglosecomponent_loaddatos",
+      "label": ".loadDatos()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.routes.ts",
+      "file_type": "code",
+      "norm_label": ".loaddatos()",
+      "source_file": "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.ts",
+      "source_location": "L48"
+    },
+    {
+      "id": "src_app_features_reportes_costo_labor_desglose_costo_labor_desglose_component_costolabordesglosecomponent_ngoninit",
+      "label": ".ngOnInit()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.routes.ts",
+      "file_type": "code",
+      "norm_label": ".ngoninit()",
+      "source_file": "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.ts",
+      "source_location": "L38"
+    },
+    {
+      "id": "src_app_features_reportes_costo_labor_desglose_costo_labor_desglose_component_costolabordesglosecomponent_volver",
+      "label": ".volver()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.routes.ts",
+      "file_type": "code",
+      "norm_label": ".volver()",
+      "source_file": "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.ts",
+      "source_location": "L63"
     },
     {
       "id": "src_app_core_services_gastos_service_gastosproyectoservice_creategasto",
@@ -2131,17 +2400,6 @@
       "source_location": "L74"
     },
     {
-      "id": "forms",
-      "label": "@angular/forms",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "main-layout.component.ts",
-      "confidence": "EXTRACTED",
-      "file_type": "code",
-      "norm_label": "@angular/forms",
-      "source_file": "@angular/forms"
-    },
-    {
       "id": "inject",
       "label": "Inject",
       "_origin": "ast",
@@ -2194,7 +2452,7 @@
       "file_type": "code",
       "norm_label": "routes",
       "source_file": "src/app/app.routes.ts",
-      "source_location": "L17"
+      "source_location": "L18"
     },
     {
       "id": "src_app_app_spec",
@@ -2596,13 +2854,13 @@
       "source_location": "L4"
     },
     {
-      "id": "src_app_features_reportes_costo_labor_desglose_costo_labor_desglose_component_ts_component",
-      "label": "Component",
+      "id": "src_app_core_services_backup_service_ts_injectable",
+      "label": "Injectable",
       "_origin": "ast",
       "community": 16,
-      "community_name": "CostoLaborDesgloseComponent",
+      "community_name": "Injectable",
       "file_type": "code",
-      "norm_label": "component",
+      "norm_label": "injectable",
       "source_file": "",
       "source_location": ""
     },
@@ -3393,6 +3651,61 @@
       "source_location": "L5"
     },
     {
+      "id": "injectable",
+      "label": "Injectable",
+      "_origin": "ast",
+      "community": 27,
+      "community_name": "BackupService",
+      "file_type": "code",
+      "norm_label": "injectable",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "src_app_core_services_backup_service",
+      "label": "backup.service.ts",
+      "_origin": "ast",
+      "community": 27,
+      "community_name": "BackupService",
+      "file_type": "code",
+      "norm_label": "backup.service.ts",
+      "source_file": "src/app/core/services/backup.service.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_app_features_backup_backup_component",
+      "label": "backup.component.ts",
+      "_origin": "ast",
+      "community": 27,
+      "community_name": "BackupService",
+      "file_type": "code",
+      "norm_label": "backup.component.ts",
+      "source_file": "src/app/features/backup/backup.component.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "component",
+      "label": "Component",
+      "_origin": "ast",
+      "community": 28,
+      "community_name": "BackupComponent",
+      "file_type": "code",
+      "norm_label": "component",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "src_app_features_backup_backup_component_ts_component",
+      "label": "Component",
+      "_origin": "ast",
+      "community": 29,
+      "community_name": "Component",
+      "file_type": "code",
+      "norm_label": "component",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
       "id": "angular",
       "label": "angular.json",
       "_origin": "ast",
@@ -3481,6 +3794,17 @@
       "source_location": "L19"
     },
     {
+      "id": "angular_cli",
+      "label": "cli",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "proyectomarco",
+      "file_type": "code",
+      "norm_label": "cli",
+      "source_file": "angular.json",
+      "source_location": "L4"
+    },
+    {
       "id": "angular_cli_analytics",
       "label": "analytics",
       "_origin": "ast",
@@ -3567,17 +3891,6 @@
       "norm_label": "sourcemap",
       "source_file": "angular.json",
       "source_location": "L49"
-    },
-    {
-      "id": "angular_json_angular_cli",
-      "label": "cli",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "proyectomarco",
-      "file_type": "code",
-      "norm_label": "cli",
-      "source_file": "angular.json",
-      "source_location": "L4"
     },
     {
       "id": "angular_newprojectroot",
@@ -4306,6 +4619,17 @@
       "source_location": ""
     },
     {
+      "id": "src_app_features_reportes_costo_labor_desglose_costo_labor_desglose_component_ts_component",
+      "label": "Component",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.routes.ts",
+      "file_type": "code",
+      "norm_label": "component",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
       "id": "src_environments_environment",
       "label": "environment.ts",
       "_origin": "ast",
@@ -4528,6 +4852,54 @@
   ],
   "links": [
     {
+      "source": "src_app_core_services_backup_service_backupservice_exportbackup",
+      "target": "src_app_core_services_backup_service_backupservice_delay",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/core/services/backup.service.ts",
+      "source_location": "L115",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_core_services_backup_service_backupservice_exportbackup",
+      "target": "src_app_core_services_backup_service_backupservice_fetchallfromtable",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/core/services/backup.service.ts",
+      "source_location": "L125",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_core_services_backup_service_backupservice_restorefrombackup",
+      "target": "src_app_core_services_backup_service_backupservice_delay",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/core/services/backup.service.ts",
+      "source_location": "L318",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_core_services_backup_service_backupservice_restorefrombackup",
+      "target": "src_app_core_services_backup_service_backupservice_insertinbatches",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/core/services/backup.service.ts",
+      "source_location": "L385",
+      "weight": 1.0
+    },
+    {
       "source": "src_app_core_services_theme_service_themeservice_constructor",
       "target": "src_app_core_services_theme_service_themeservice_applytheme",
       "relation": "calls",
@@ -4561,6 +4933,54 @@
       "context": "call",
       "source_file": "src/app/core/services/theme.service.ts",
       "source_location": "L43",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_backup_backup_component_backupcomponent_executerestore",
+      "target": "src_app_features_backup_backup_component_backupcomponent_loadstats",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/features/backup/backup.component.ts",
+      "source_location": "L163",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_backup_backup_component_backupcomponent_ngoninit",
+      "target": "src_app_features_backup_backup_component_backupcomponent_loadstats",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/features/backup/backup.component.ts",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_backup_backup_component_backupcomponent_ondrop",
+      "target": "src_app_features_backup_backup_component_backupcomponent_processfile",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/features/backup/backup.component.ts",
+      "source_location": "L106",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_backup_backup_component_backupcomponent_onfileselected",
+      "target": "src_app_features_backup_backup_component_backupcomponent_processfile",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/features/backup/backup.component.ts",
+      "source_location": "L90",
       "weight": 1.0
     },
     {
@@ -5020,6 +5440,18 @@
       "weight": 1.0
     },
     {
+      "source": "src_app_core_services_backup_service_backupservice",
+      "target": "injectable",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "decorator",
+      "source_file": "src/app/core/services/backup.service.ts",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
       "source": "src_app_core_services_gastos_service_gastosproyectoservice",
       "target": "src_app_core_services_gastos_service_ts_injectable",
       "relation": "references",
@@ -5136,6 +5568,18 @@
       "confidence_score": 1.0,
       "context": "decorator",
       "source_file": "src/app/features/auth/login/login.component.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_backup_backup_component_backupcomponent",
+      "target": "component",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "decorator",
+      "source_file": "src/app/features/backup/backup.component.ts",
       "source_location": "L13",
       "weight": 1.0
     },
@@ -5813,6 +6257,18 @@
     },
     {
       "source": "src_app_app_routes",
+      "target": "src_app_features_backup_backup_component_backupcomponent",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/app.routes.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_app_routes",
       "target": "src_app_features_auth_login_login_component_logincomponent",
       "relation": "imports",
       "_origin": "ast",
@@ -5944,6 +6400,18 @@
       "weight": 1.0
     },
     {
+      "source": "src_app_core_services_backup_service",
+      "target": "src_app_core_services_supabase_service_supabaseservice",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/core/services/backup.service.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
       "source": "src_app_core_services_gastos_service",
       "target": "src_app_core_services_supabase_service_supabaseservice",
       "relation": "imports",
@@ -6037,6 +6505,42 @@
       "context": "import",
       "source_file": "src/app/features/auth/login/login.component.ts",
       "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_backup_backup_component",
+      "target": "src_app_core_services_backup_service_backupdata",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/features/backup/backup.component.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_backup_backup_component",
+      "target": "src_app_core_services_backup_service_backupservice",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/features/backup/backup.component.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_backup_backup_component",
+      "target": "src_app_core_services_backup_service_tablestats",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/features/backup/backup.component.ts",
+      "source_location": "L11",
       "weight": 1.0
     },
     {
@@ -6917,7 +7421,7 @@
     },
     {
       "source": "src_app_app_routes",
-      "target": "src_app_core_guards_auth_guard",
+      "target": "src_app_features_backup_backup_component",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6929,7 +7433,7 @@
     },
     {
       "source": "src_app_app_routes",
-      "target": "src_app_core_guards_no_auth_guard",
+      "target": "src_app_core_guards_auth_guard",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6937,6 +7441,18 @@
       "context": "import",
       "source_file": "src/app/app.routes.ts",
       "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_app_routes",
+      "target": "src_app_core_guards_no_auth_guard",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/app.routes.ts",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -7072,6 +7588,18 @@
       "weight": 1.0
     },
     {
+      "source": "src_app_core_services_backup_service",
+      "target": "src_app_core_services_supabase_service",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/core/services/backup.service.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
       "source": "src_app_core_services_gastos_service",
       "target": "src_app_core_services_supabase_service",
       "relation": "imports_from",
@@ -7165,6 +7693,18 @@
       "context": "import",
       "source_file": "src/app/features/auth/login/login.component.ts",
       "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_backup_backup_component",
+      "target": "src_app_core_services_backup_service",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/features/backup/backup.component.ts",
+      "source_location": "L11",
       "weight": 1.0
     },
     {
@@ -7991,7 +8531,7 @@
     },
     {
       "source": "angular",
-      "target": "angular_json_angular_cli",
+      "target": "angular_cli",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -8177,6 +8717,28 @@
       "weight": 1.0
     },
     {
+      "source": "angular_cli",
+      "target": "angular_cli_packagemanager",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "angular.json",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "angular_cli",
+      "target": "angular_cli_analytics",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "angular.json",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
       "source": "angular_configurations_development",
       "target": "angular_development_optimization",
       "relation": "contains",
@@ -8251,28 +8813,6 @@
       "confidence_score": 1.0,
       "source_file": "angular.json",
       "source_location": "L58",
-      "weight": 1.0
-    },
-    {
-      "source": "angular_json_angular_cli",
-      "target": "angular_cli_packagemanager",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "angular.json",
-      "source_location": "L5",
-      "weight": 1.0
-    },
-    {
-      "source": "angular_json_angular_cli",
-      "target": "angular_cli_analytics",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "angular.json",
-      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -9064,7 +9604,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/app.routes.ts",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -9087,6 +9627,50 @@
       "confidence_score": 1.0,
       "source_file": "src/app/core/guards/no-auth.guard.ts",
       "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_core_services_backup_service",
+      "target": "src_app_core_services_backup_service_backupdata",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/core/services/backup.service.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_core_services_backup_service",
+      "target": "src_app_core_services_backup_service_progressstate",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/core/services/backup.service.ts",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_core_services_backup_service",
+      "target": "src_app_core_services_backup_service_tablestats",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/core/services/backup.service.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_core_services_backup_service",
+      "target": "src_app_core_services_backup_service_backupservice",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/core/services/backup.service.ts",
+      "source_location": "L42",
       "weight": 1.0
     },
     {
@@ -9295,6 +9879,17 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/features/auth/login/login.component.ts",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_backup_backup_component",
+      "target": "src_app_features_backup_backup_component_backupcomponent",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/backup/backup.component.ts",
       "source_location": "L29",
       "weight": 1.0
     },
@@ -9530,13 +10125,81 @@
       "weight": 1.0
     },
     {
-      "source": "src_app_features_user_change_password_dialog_change_password_dialog_component",
-      "target": "forms",
-      "relation": "dynamic_import",
+      "source": "src_app_core_services_backup_service_backupservice",
+      "target": "src_app_core_services_backup_service_backupservice_delay",
+      "relation": "method",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "src/app/features/user/change-password-dialog/change-password-dialog.component.ts"
+      "source_file": "src/app/core/services/backup.service.ts",
+      "source_location": "L100",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_core_services_backup_service_backupservice",
+      "target": "src_app_core_services_backup_service_backupservice_exportbackup",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/core/services/backup.service.ts",
+      "source_location": "L104",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_core_services_backup_service_backupservice",
+      "target": "src_app_core_services_backup_service_backupservice_validatebackupjson",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/core/services/backup.service.ts",
+      "source_location": "L256",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_core_services_backup_service_backupservice",
+      "target": "src_app_core_services_backup_service_backupservice_restorefrombackup",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/core/services/backup.service.ts",
+      "source_location": "L307",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_core_services_backup_service_backupservice",
+      "target": "src_app_core_services_backup_service_backupservice_insertinbatches",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/core/services/backup.service.ts",
+      "source_location": "L471",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_core_services_backup_service_backupservice",
+      "target": "src_app_core_services_backup_service_backupservice_getdatabasestats",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/core/services/backup.service.ts",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_core_services_backup_service_backupservice",
+      "target": "src_app_core_services_backup_service_backupservice_fetchallfromtable",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/core/services/backup.service.ts",
+      "source_location": "L71",
+      "weight": 1.0
     },
     {
       "source": "src_app_core_services_gastos_service_gastosproyectoservice",
@@ -9976,6 +10639,116 @@
       "confidence_score": 1.0,
       "source_file": "src/app/features/auth/login/login.component.ts",
       "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_backup_backup_component_backupcomponent",
+      "target": "src_app_features_backup_backup_component_backupcomponent_ondrop",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/backup/backup.component.ts",
+      "source_location": "L100",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_backup_backup_component_backupcomponent",
+      "target": "src_app_features_backup_backup_component_backupcomponent_processfile",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/backup/backup.component.ts",
+      "source_location": "L110",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_backup_backup_component_backupcomponent",
+      "target": "src_app_features_backup_backup_component_backupcomponent_cancelrestore",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/backup/backup.component.ts",
+      "source_location": "L140",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_backup_backup_component_backupcomponent",
+      "target": "src_app_features_backup_backup_component_backupcomponent_requestrestoreconfirmation",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/backup/backup.component.ts",
+      "source_location": "L147",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_backup_backup_component_backupcomponent",
+      "target": "src_app_features_backup_backup_component_backupcomponent_executerestore",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/backup/backup.component.ts",
+      "source_location": "L151",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_backup_backup_component_backupcomponent",
+      "target": "src_app_features_backup_backup_component_backupcomponent_ngoninit",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/backup/backup.component.ts",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_backup_backup_component_backupcomponent",
+      "target": "src_app_features_backup_backup_component_backupcomponent_loadstats",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/backup/backup.component.ts",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_backup_backup_component_backupcomponent",
+      "target": "src_app_features_backup_backup_component_backupcomponent_startexport",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/backup/backup.component.ts",
+      "source_location": "L65",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_backup_backup_component_backupcomponent",
+      "target": "src_app_features_backup_backup_component_backupcomponent_onfileselected",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/backup/backup.component.ts",
+      "source_location": "L85",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_backup_backup_component_backupcomponent",
+      "target": "src_app_features_backup_backup_component_backupcomponent_ondragover",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/backup/backup.component.ts",
+      "source_location": "L95",
       "weight": 1.0
     },
     {
@@ -10955,7 +11728,7 @@
       "confidence_score": 0.85,
       "context": "collection",
       "source_file": "src/app/app.routes.ts",
-      "source_location": "L26",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -10967,7 +11740,7 @@
       "confidence_score": 0.85,
       "context": "collection",
       "source_file": "src/app/app.routes.ts",
-      "source_location": "L31",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -10984,5 +11757,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "3b20dfd89f41fdc60f1d2d56921ee599196de8ad"
+  "built_at_commit": "b954c1d6465f2b490baa3512c2130b80eea6cf35"
 }

@@ -1,6 +1,6 @@
 <div class="page-container">
   <div class="page-header">
-    <h2>Registros de Tiempo v2</h2>
+    <h2>Labor (Registro de Horas)</h2>
     <button mat-flat-button color="primary" [disabled]="!isDirty() || saving()" (click)="guardar()">
       <mat-icon>save</mat-icon>
       Guardar
@@ -42,6 +42,10 @@
             <input type="text" class="search-input" placeholder="Buscar proyecto..." 
                    (keydown)="$event.stopPropagation()" 
                    (input)="filtrarProyectos($event)">
+          </div>
+          <div class="select-all-actions" style="display: flex; justify-content: space-between; padding: 8px 16px; border-bottom: 1px solid #eee;">
+            <button mat-button color="primary" (click)="seleccionarTodosProyectos(); $event.stopPropagation()">Todos</button>
+            <button mat-button color="warn" (click)="deseleccionarTodosProyectos(); $event.stopPropagation()">Ninguno</button>
           </div>
           <mat-option *ngFor="let p of proyectosFiltrados" [value]="p.id">
             {{ p.nombre }}
@@ -85,7 +89,7 @@
               </mat-form-field>
 
               <mat-form-field appearance="outline" subscriptSizing="dynamic" class="cell-input">
-                <mat-label>Gasolina</mat-label>
+                <mat-label>Otros / Gasolina</mat-label>
                 <span matTextPrefix>$&nbsp;</span>
                 <input matInput type="number" min="0"
                        [ngModel]="element[col]?.gasolina"

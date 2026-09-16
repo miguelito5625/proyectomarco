@@ -35,7 +35,7 @@ export class CostoLaborComponent implements OnInit {
 
   dataSource = new MatTableDataSource<CostoLabor>([]);
   datos = signal<CostoLabor[]>([]);
-  displayedColumns: string[] = ['proyecto', 'estatus', 'horas', 'horas_sabado', 'horas_extra', 'gasolina', 'costo', 'grafica', 'desglose'];
+  displayedColumns: string[] = ['proyecto', 'estatus', 'horas', 'horas_sabado', 'horas_extra', 'gasolina', 'costo', 'desglose'];
   loading = signal(false);
   hasSearched = signal(false);
   filterError = signal('');
@@ -43,6 +43,7 @@ export class CostoLaborComponent implements OnInit {
   // Filter controls
   proyectos: Proyecto[] = [];
   proyectosFiltrados: Proyecto[] = [];
+  projectSearchText = '';
   selectedProyectoIds = new FormControl<string[]>([]);
   selectedEstatus = new FormControl<string>('');
   dateRange = new FormGroup({
@@ -61,6 +62,9 @@ export class CostoLaborComponent implements OnInit {
 
   ngOnInit() {
     this.loadProyectos();
+    this.selectedEstatus.valueChanges.subscribe(() => {
+      this.aplicarFiltroProyectos();
+    });
   }
 
   seleccionarTodosProyectos() {
@@ -74,18 +78,31 @@ export class CostoLaborComponent implements OnInit {
   async loadProyectos() {
     try {
       this.proyectos = await this.proyectosService.getProyectos();
-      this.proyectosFiltrados = [...this.proyectos];
+      this.aplicarFiltroProyectos();
     } catch (error: any) {
       this.snackBar.open('Error al cargar proyectos: ' + error.message, 'Cerrar', { duration: 5000 });
     }
   }
 
+  aplicarFiltroProyectos() {
+    const estatus = (this.selectedEstatus.value || '').toLowerCase();
+    this.proyectosFiltrados = this.proyectos.filter(p => {
+      const matchSearch = p.nombre.toLowerCase().includes(this.projectSearchText.toLowerCase());
+      const matchEstatus = !estatus || (p.estatus?.toLowerCase() === estatus);
+      return matchSearch && matchEstatus;
+    });
+
+    const validIds = new Set(this.proyectosFiltrados.map(p => p.id!));
+    const currentSelected = this.selectedProyectoIds.value || [];
+    const updatedSelected = currentSelected.filter(id => validIds.has(id));
+    if (updatedSelected.length !== currentSelected.length) {
+      this.selectedProyectoIds.setValue(updatedSelected);
+    }
+  }
+
   filtrarProyectos(event: Event) {
-    const input = event.target as HTMLInputElement;
-    const filterValue = input.value.toLowerCase();
-    this.proyectosFiltrados = this.proyectos.filter(p =>
-      p.nombre.toLowerCase().includes(filterValue)
-    );
+    this.projectSearchText = (event.target as HTMLInputElement).value;
+    this.aplicarFiltroProyectos();
   }
 
   /**

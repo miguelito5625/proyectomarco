@@ -1,16 +1,16 @@
-# Graph Report - proyectomarco  (2026-09-10)
+# Graph Report - proyectomarco  (2026-09-15)
 
 ## Corpus Check
-- 59 files · ~17,569 words
+- 61 files · ~20,390 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 386 nodes · 562 edges · 27 communities (16 shown, 11 thin omitted)
-- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 3 edges (avg confidence: 0.85)
+- 413 nodes · 601 edges · 30 communities (17 shown, 13 thin omitted)
+- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 3 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `3b20dfd8`
+- Built from commit: `b954c1d6`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -31,7 +31,7 @@
 - CostoLaborComponent
 - update_responsive.js
 - fix_ts.js
-- CostoLaborDesgloseComponent
+- Injectable
 - query.js
 - rules/graphify.md
 - workflows/graphify.md
@@ -41,18 +41,21 @@
 - auto_commiter/SKILL.md
 - auto_compiler/SKILL.md
 - prompt_enhancer/SKILL.md
+- BackupService
+- BackupComponent
+- Component
 
 ## God Nodes (most connected - your core abstractions)
-1. `SupabaseService` - 24 edges
+1. `SupabaseService` - 25 edges
 2. `HorasTrabajadorComponent` - 18 edges
 3. `RegistrosTiempov2ListComponent` - 16 edges
 4. `Proyecto` - 15 edges
 5. `ProyectosService` - 15 edges
-6. `TrabajadoresService` - 14 edges
-7. `CostoLaborComponent` - 14 edges
-8. `Trabajador` - 13 edges
-9. `RegistrosTiempoListComponent` - 11 edges
-10. `RegistrosTiempoService` - 10 edges
+6. `CostoLaborComponent` - 14 edges
+7. `TrabajadoresService` - 14 edges
+8. `BackupComponent` - 13 edges
+9. `Trabajador` - 13 edges
+10. `RegistrosTiempoListComponent` - 11 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `RegistrosTiempov2ListComponent` --references--> `Proyecto`  [EXTRACTED]
@@ -61,15 +64,15 @@
   src/app/features/reportes/costo-labor/costo-labor.component.ts → src/app/core/services/proyectos.service.ts
 - `HorasTrabajadorComponent` --references--> `Proyecto`  [EXTRACTED]
   src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts → src/app/core/services/proyectos.service.ts
-- `RegistrosTiempov2ListComponent` --references--> `Trabajador`  [EXTRACTED]
-  src/app/features/registros-tiempov2/registros-tiempov2-list/registros-tiempov2-list.component.ts → src/app/core/services/trabajadores.service.ts
 - `HorasTrabajadorComponent` --references--> `Trabajador`  [EXTRACTED]
   src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts → src/app/core/services/trabajadores.service.ts
+- `RegistrosTiempov2ListComponent` --references--> `Trabajador`  [EXTRACTED]
+  src/app/features/registros-tiempov2/registros-tiempov2-list/registros-tiempov2-list.component.ts → src/app/core/services/trabajadores.service.ts
 
 ## Import Cycles
 - None detected.
 
-## Communities (27 total, 11 thin omitted)
+## Communities (30 total, 13 thin omitted)
 
 ### Community 0 - "main-layout.component.ts"
 Cohesion: 0.07
@@ -85,7 +88,7 @@ Nodes (27): @angular/animations, @angular/cdk, @angular/common, @angular/compile
 
 ### Community 3 - "proyectomarco"
 Cohesion: 0.05
-Nodes (40): build, serve, test, builder, configurations, defaultConfiguration, options, analytics (+32 more)
+Nodes (40): build, serve, test, builder, configurations, defaultConfiguration, options, cli (+32 more)
 
 ### Community 4 - "registros-tiempov2-list.component.ts"
 Cohesion: 0.13
@@ -96,8 +99,8 @@ Cohesion: 0.08
 Nodes (25): @angular/build, @angular/compiler-cli, jsdom, devDependencies, @angular/build, @angular/cli, @angular/compiler-cli, jsdom (+17 more)
 
 ### Community 6 - "app.routes.ts"
-Cohesion: 0.11
-Nodes (9): authGuard(), noAuthGuard(), SupabaseService, Injectable, LoginComponent, Component, HomeComponent, Component (+1 more)
+Cohesion: 0.09
+Nodes (11): authGuard(), noAuthGuard(), SupabaseService, Injectable, LoginComponent, Component, HomeComponent, Component (+3 more)
 
 ### Community 7 - "gastos-form.component.ts"
 Cohesion: 0.15
@@ -131,24 +134,28 @@ Nodes (7): 1. Realizar un Backup (Respaldo), 2. Restaurar la Base de Datos, 3. H
 Cohesion: 0.25
 Nodes (7): Additional Resources, Building, Code scaffolding, Development server, Proyectomarco, Running end-to-end tests, Running unit tests
 
+### Community 27 - "BackupService"
+Cohesion: 0.22
+Nodes (5): Injectable, BackupData, BackupService, ProgressState, TableStats
+
 ## Knowledge Gaps
-- **87 isolated node(s):** `$schema`, `version`, `packageManager`, `analytics`, `newProjectRoot` (+82 more)
+- **88 isolated node(s):** `$schema`, `version`, `packageManager`, `analytics`, `newProjectRoot` (+83 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **11 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **13 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `HorasTrabajadorComponent` connect `HorasTrabajadorComponent` to `Proyecto`, `app.routes.ts`, `TrabajadoresService`?**
+- **Why does `SupabaseService` connect `app.routes.ts` to `main-layout.component.ts`, `Proyecto`, `registros-tiempov2-list.component.ts`, `gastos-form.component.ts`, `NominasService`, `TrabajadoresService`, `BackupService`?**
   _High betweenness centrality (0.044) - this node is a cross-community bridge._
-- **Why does `SupabaseService` connect `app.routes.ts` to `main-layout.component.ts`, `Proyecto`, `registros-tiempov2-list.component.ts`, `gastos-form.component.ts`, `NominasService`, `TrabajadoresService`?**
+- **Why does `HorasTrabajadorComponent` connect `HorasTrabajadorComponent` to `Proyecto`, `app.routes.ts`, `TrabajadoresService`?**
   _High betweenness centrality (0.042) - this node is a cross-community bridge._
 - **Why does `RegistrosTiempov2ListComponent` connect `RegistrosTiempov2ListComponent` to `Proyecto`, `registros-tiempov2-list.component.ts`, `app.routes.ts`, `TrabajadoresService`?**
-  _High betweenness centrality (0.038) - this node is a cross-community bridge._
+  _High betweenness centrality (0.037) - this node is a cross-community bridge._
 - **What connects `$schema`, `version`, `packageManager` to the rest of the system?**
-  _87 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _88 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `main-layout.component.ts` be split into smaller, more focused modules?**
-  _Cohesion score 0.06882591093117409 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07112375533428165 - nodes in this community are weakly interconnected._
 - **Should `Proyecto` be split into smaller, more focused modules?**
   _Cohesion score 0.10252100840336134 - nodes in this community are weakly interconnected._
 - **Should `dependencies` be split into smaller, more focused modules?**

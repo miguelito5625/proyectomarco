@@ -2,7 +2,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { Component, inject, OnInit, signal, computed } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, CurrencyPipe } from '@angular/common';
 import { MatTableModule, MatTableDataSource } from '@angular/material/table';
 import { MatCardModule } from '@angular/material/card';
 import { MatSnackBar } from '@angular/material/snack-bar';
@@ -23,6 +23,7 @@ import { Trabajador, TrabajadoresService } from '../../../core/services/trabajad
     MatIconModule, MatSelectModule, MatDatepickerModule, MatNativeDateModule,
     MatButtonModule, ReactiveFormsModule
   ],
+  providers: [CurrencyPipe],
   templateUrl: './horas-trabajador.component.html',
   styleUrls: ['./horas-trabajador.component.scss']
 })
@@ -34,7 +35,7 @@ export class HorasTrabajadorComponent implements OnInit {
 
   dataSource = new MatTableDataSource<HorasTrabajador>([]);
   datos = signal<HorasTrabajador[]>([]);
-  displayedColumns: string[] = ['proyecto', 'trabajador', 'horas', 'grafica'];
+  displayedColumns: string[] = ['trabajador', 'proyecto', 'horas_regulares', 'horas_sabado', 'horas_extra', 'otros_gasolina', 'costo_estimado'];
   loading = signal(false);
   hasSearched = signal(false);
   filterError = signal('');
@@ -45,6 +46,8 @@ export class HorasTrabajadorComponent implements OnInit {
   trabajadores: Trabajador[] = [];
   trabajadoresFiltrados: Trabajador[] = [];
 
+  projectSearchText = '';
+
   selectedProyectoIds = new FormControl<string[]>([]);
   selectedTrabajadorIds = new FormControl<string[]>([]);
   selectedEstatus = new FormControl<string>('');
@@ -53,20 +56,27 @@ export class HorasTrabajadorComponent implements OnInit {
     end: new FormControl<Date | null>(null)
   });
 
-  maxHoras = computed(() => {
-    if (!this.datos().length) return 1;
-    return Math.max(...this.datos().map(d => d.total_horas || 0));
+  totalHoras = computed(() => {
+    return this.datos().reduce((acc, curr) => acc + (curr.total_horas || 0), 0);
+  });
+
+  totalCosto = computed(() => {
+    return this.datos().reduce((acc, curr) => acc + (curr.costo_estimado || 0), 0);
   });
 
   ngOnInit() {
     this.loadProyectos();
     this.loadTrabajadores();
+
+    this.selectedEstatus.valueChanges.subscribe(() => {
+      this.aplicarFiltroProyectos();
+    });
   }
 
   async loadProyectos() {
     try {
       this.proyectos = await this.proyectosService.getProyectos();
-      this.proyectosFiltrados = [...this.proyectos];
+      this.aplicarFiltroProyectos();
     } catch (error: any) {
       this.snackBar.open('Error al cargar proyectos: ' + error.message, 'Cerrar', { duration: 5000 });
     }
@@ -81,11 +91,26 @@ export class HorasTrabajadorComponent implements OnInit {
     }
   }
 
+  aplicarFiltroProyectos() {
+    const estatus = (this.selectedEstatus.value || '').toLowerCase();
+    this.proyectosFiltrados = this.proyectos.filter(p => {
+      const matchSearch = p.nombre.toLowerCase().includes(this.projectSearchText.toLowerCase());
+      const matchEstatus = !estatus || (p.estatus?.toLowerCase() === estatus);
+      return matchSearch && matchEstatus;
+    });
+
+    // Clean up selected IDs that are no longer matching the filter
+    const validIds = new Set(this.proyectosFiltrados.map(p => p.id!));
+    const currentSelected = this.selectedProyectoIds.value || [];
+    const updatedSelected = currentSelected.filter(id => validIds.has(id));
+    if (updatedSelected.length !== currentSelected.length) {
+      this.selectedProyectoIds.setValue(updatedSelected);
+    }
+  }
+
   filtrarProyectos(event: Event) {
-    const filterValue = (event.target as HTMLInputElement).value.toLowerCase();
-    this.proyectosFiltrados = this.proyectos.filter(p =>
-      p.nombre.toLowerCase().includes(filterValue)
-    );
+    this.projectSearchText = (event.target as HTMLInputElement).value;
+    this.aplicarFiltroProyectos();
   }
 
   filtrarTrabajadores(event: Event) {

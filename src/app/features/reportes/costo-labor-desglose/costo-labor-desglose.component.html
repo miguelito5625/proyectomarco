@@ -11,7 +11,7 @@
   <mat-card>
     <div class="table-info">
       <p>
-        Mostrando detalle de horas y gasolina del proyecto <strong>{{ proyectoNombre() }}</strong>
+        Mostrando detalle de horas y otros/gasolina del proyecto <strong>{{ proyectoNombre() }}</strong>
         @if (fechaInicio || fechaFin) {
           <br>
           <span class="date-range">Rango de fechas: {{ fechaInicio || 'Inicio' }} - {{ fechaFin || 'Fin' }}</span>
@@ -64,7 +64,7 @@
         </ng-container>
 
         <ng-container matColumnDef="gasolina">
-          <th mat-header-cell *matHeaderCellDef> Gasolina </th>
+          <th mat-header-cell *matHeaderCellDef> Otros / Gasolina </th>
           <td mat-cell *matCellDef="let element"> {{ element.gasolina || 0 | currency:'USD' }} </td>
         </ng-container>
 

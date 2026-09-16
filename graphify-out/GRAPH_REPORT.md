@@ -1,16 +1,16 @@
 # Graph Report - proyectomarco  (2026-09-15)
 
 ## Corpus Check
-- 61 files · ~20,390 words
+- 62 files · ~20,799 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 412 nodes · 602 edges · 29 communities (18 shown, 11 thin omitted)
+- 416 nodes · 612 edges · 30 communities (18 shown, 12 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 3 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `9e30912f`
+- Built from commit: `b954c1d6`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -43,15 +43,16 @@
 - prompt_enhancer/SKILL.md
 - BackupService
 - BackupComponent
+- CostoLaborDesgloseComponent
 
 ## God Nodes (most connected - your core abstractions)
 1. `SupabaseService` - 25 edges
-2. `HorasTrabajadorComponent` - 18 edges
-3. `RegistrosTiempov2ListComponent` - 16 edges
+2. `HorasTrabajadorComponent` - 19 edges
+3. `RegistrosTiempov2ListComponent` - 18 edges
 4. `Proyecto` - 15 edges
 5. `ProyectosService` - 15 edges
-6. `TrabajadoresService` - 14 edges
-7. `CostoLaborComponent` - 14 edges
+6. `CostoLaborComponent` - 15 edges
+7. `TrabajadoresService` - 14 edges
 8. `Trabajador` - 13 edges
 9. `BackupComponent` - 13 edges
 10. `RegistrosTiempoListComponent` - 11 edges
@@ -71,7 +72,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (29 total, 11 thin omitted)
+## Communities (30 total, 12 thin omitted)
 
 ### Community 0 - "main-layout.component.ts"
 Cohesion: 0.07
@@ -98,8 +99,8 @@ Cohesion: 0.08
 Nodes (25): @angular/build, @angular/compiler-cli, jsdom, devDependencies, @angular/build, @angular/cli, @angular/compiler-cli, jsdom (+17 more)
 
 ### Community 6 - "app.routes.ts"
-Cohesion: 0.09
-Nodes (11): authGuard(), noAuthGuard(), SupabaseService, Injectable, LoginComponent, Component, HomeComponent, Component (+3 more)
+Cohesion: 0.11
+Nodes (9): authGuard(), noAuthGuard(), SupabaseService, Injectable, LoginComponent, Component, HomeComponent, Component (+1 more)
 
 ### Community 7 - "gastos-form.component.ts"
 Cohesion: 0.15
@@ -144,17 +145,17 @@ Nodes (5): BackupData, BackupService, ProgressState, TableStats, Injectable
 ## Knowledge Gaps
 - **88 isolated node(s):** `$schema`, `version`, `packageManager`, `analytics`, `newProjectRoot` (+83 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **11 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **12 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `SupabaseService` connect `app.routes.ts` to `main-layout.component.ts`, `Proyecto`, `registros-tiempov2-list.component.ts`, `gastos-form.component.ts`, `NominasService`, `TrabajadoresService`, `BackupService`?**
-  _High betweenness centrality (0.046) - this node is a cross-community bridge._
 - **Why does `HorasTrabajadorComponent` connect `HorasTrabajadorComponent` to `Proyecto`, `app.routes.ts`, `TrabajadoresService`?**
-  _High betweenness centrality (0.043) - this node is a cross-community bridge._
+  _High betweenness centrality (0.046) - this node is a cross-community bridge._
+- **Why does `SupabaseService` connect `app.routes.ts` to `main-layout.component.ts`, `Proyecto`, `registros-tiempov2-list.component.ts`, `gastos-form.component.ts`, `NominasService`, `TrabajadoresService`, `BackupService`?**
+  _High betweenness centrality (0.045) - this node is a cross-community bridge._
 - **Why does `RegistrosTiempov2ListComponent` connect `RegistrosTiempov2ListComponent` to `Proyecto`, `registros-tiempov2-list.component.ts`, `app.routes.ts`, `TrabajadoresService`?**
-  _High betweenness centrality (0.037) - this node is a cross-community bridge._
+  _High betweenness centrality (0.043) - this node is a cross-community bridge._
 - **What connects `$schema`, `version`, `packageManager` to the rest of the system?**
   _88 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `main-layout.component.ts` be split into smaller, more focused modules?**

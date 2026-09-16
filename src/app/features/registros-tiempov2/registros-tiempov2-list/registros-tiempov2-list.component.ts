@@ -121,6 +121,14 @@ export class RegistrosTiempov2ListComponent implements OnInit {
     );
   }
 
+  seleccionarTodosProyectos() {
+    this.selectedProyectosId.setValue(this.proyectosFiltrados.map(p => p.id!));
+  }
+
+  deseleccionarTodosProyectos() {
+    this.selectedProyectosId.setValue([]);
+  }
+
   clearTable() {
     this.dates = [];
     this.displayedColumns = ['proyecto'];
