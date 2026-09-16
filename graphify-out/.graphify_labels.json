@@ -3,7 +3,7 @@
   "1": "Proyecto",
   "2": "dependencies",
   "3": "development",
-  "4": "registros-tiempov2-list.component.ts",
+  "4": "RegistrosTiempoListComponent",
   "5": "devDependencies",
   "6": "app.routes.ts",
   "7": "gastos-form.component.ts",

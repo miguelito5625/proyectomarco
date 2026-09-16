@@ -1,11 +1,454 @@
-<div class="home-container">
-  <mat-card>
-    <mat-card-header>
-      <mat-card-title>Bienvenido {{ userName() }} a Proyecto Marco</mat-card-title>
-      <mat-card-subtitle>Has iniciado sesión exitosamente</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content>
-      <p>Esta es la página principal segura del sistema.</p>
-    </mat-card-content>
-  </mat-card>
+<div class="dashboard-wrapper">
+  <!-- Header / Bienvenida -->
+  <header class="dashboard-header">
+    <div class="welcome-text">
+      <div class="subtitle-badge">
+        <mat-icon class="pulse-icon">insights</mat-icon>
+        <span>Panel Ejecutivo • {{ currentDate() }}</span>
+      </div>
+      <h1 class="welcome-title">Bienvenido de nuevo, {{ userName() }}</h1>
+      <p class="welcome-desc">
+        Resumen operativo y financiero en tiempo real de <strong>Proyecto Marco</strong>.
+      </p>
+    </div>
+
+    <div class="header-actions">
+      <button 
+        mat-flat-button 
+        color="primary" 
+        class="refresh-btn" 
+        (click)="loadDashboardData(true)" 
+        [disabled]="loading() || refreshing()"
+        matTooltip="Actualizar métricas desde Supabase">
+        <mat-icon [class.spin-icon]="refreshing()">refresh</mat-icon>
+        <span>{{ refreshing() ? 'Actualizando...' : 'Actualizar' }}</span>
+      </button>
+
+      <a mat-stroked-button routerLink="/registros-tiempov2" class="action-btn">
+        <mat-icon>add_circle_outline</mat-icon>
+        <span>Cargar Labor</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Estado de Carga Inicial -->
+  @if (loading()) {
+    <div class="loading-container">
+      <mat-spinner diameter="48"></mat-spinner>
+      <p>Cargando información consolidada de la base de datos...</p>
+    </div>
+  }
+
+  <!-- Mensaje de Error -->
+  @if (errorMessage()) {
+    <div class="error-banner">
+      <mat-icon color="warn">error_outline</mat-icon>
+      <div class="error-content">
+        <strong>Error al cargar el dashboard</strong>
+        <p>{{ errorMessage() }}</p>
+      </div>
+      <button mat-flat-button color="warn" (click)="loadDashboardData()">Reintentar</button>
+    </div>
+  }
+
+  <!-- Contenido del Dashboard -->
+  @if (!loading() && data(); as dashboard) {
+    <!-- 1. Tarjetas KPI Principales -->
+    <section class="kpi-grid">
+      <!-- KPI 1: Proyectos Activos -->
+      <mat-card class="kpi-card card-projects">
+        <mat-card-content>
+          <div class="kpi-header">
+            <span class="kpi-title">Proyectos Activos</span>
+            <div class="kpi-icon-wrapper icon-projects">
+              <mat-icon>domain</mat-icon>
+            </div>
+          </div>
+          <div class="kpi-value-row">
+            <span class="kpi-value">{{ dashboard.stats.proyectosActivos }}</span>
+            <span class="kpi-total">de {{ dashboard.stats.totalProyectos }}</span>
+          </div>
+          <div class="kpi-badge-row">
+            <span class="status-pill active-pill">
+              <span class="dot"></span> {{ (dashboard.stats.proyectosActivos / dashboard.stats.totalProyectos * 100) | number:'1.0-0' }}% Operativos
+            </span>
+          </div>
+        </mat-card-content>
+        <div class="kpi-footer">
+          <a routerLink="/proyectos" class="kpi-link">
+            <span>Ver todos los proyectos</span>
+            <mat-icon>arrow_forward</mat-icon>
+          </a>
+        </div>
+      </mat-card>
+
+      <!-- KPI 2: Fuerza Laboral -->
+      <mat-card class="kpi-card card-workers">
+        <mat-card-content>
+          <div class="kpi-header">
+            <span class="kpi-title">Fuerza Laboral</span>
+            <div class="kpi-icon-wrapper icon-workers">
+              <mat-icon>people</mat-icon>
+            </div>
+          </div>
+          <div class="kpi-value-row">
+            <span class="kpi-value">{{ dashboard.stats.trabajadoresActivos }}</span>
+            <span class="kpi-total">colaboradores</span>
+          </div>
+          <div class="kpi-badge-row">
+            <span class="status-pill neutral-pill">
+              <mat-icon>badge</mat-icon> 100% en plantilla activa
+            </span>
+          </div>
+        </mat-card-content>
+        <div class="kpi-footer">
+          <a routerLink="/trabajadores" class="kpi-link">
+            <span>Gestionar personal</span>
+            <mat-icon>arrow_forward</mat-icon>
+          </a>
+        </div>
+      </mat-card>
+
+      <!-- KPI 3: Total Horas Invertidas -->
+      <mat-card class="kpi-card card-hours">
+        <mat-card-content>
+          <div class="kpi-header">
+            <span class="kpi-title">Horas Trabajadas</span>
+            <div class="kpi-icon-wrapper icon-hours">
+              <mat-icon>timer</mat-icon>
+            </div>
+          </div>
+          <div class="kpi-value-row">
+            <span class="kpi-value">{{ dashboard.stats.totalHoras | number:'1.1-1' }}</span>
+            <span class="kpi-unit">hrs</span>
+          </div>
+          <div class="kpi-breakdown">
+            <span title="Horas Regulares">{{ dashboard.stats.totalHorasRegulares | number:'1.0-0' }}h reg</span>
+            <span class="sep">•</span>
+            <span title="Horas Extra">{{ dashboard.stats.totalHorasExtra | number:'1.0-0' }}h extra</span>
+            <span class="sep">•</span>
+            <span title="Horas Sábado">{{ dashboard.stats.totalHorasSabado | number:'1.0-0' }}h sáb</span>
+          </div>
+        </mat-card-content>
+        <div class="kpi-footer">
+          <a routerLink="/registros-tiempov2" class="kpi-link">
+            <span>Bitácora de labor</span>
+            <mat-icon>arrow_forward</mat-icon>
+          </a>
+        </div>
+      </mat-card>
+
+      <!-- KPI 4: Costo Labor Estimado -->
+      <mat-card class="kpi-card card-cost">
+        <mat-card-content>
+          <div class="kpi-header">
+            <span class="kpi-title">Inversión Mano de Obra</span>
+            <div class="kpi-icon-wrapper icon-cost">
+              <mat-icon>payments</mat-icon>
+            </div>
+          </div>
+          <div class="kpi-value-row">
+            <span class="kpi-value">{{ dashboard.stats.totalCostoLabor | currency:'USD':'symbol':'1.0-0' }}</span>
+          </div>
+          <div class="kpi-badge-row">
+            <span class="status-pill gas-pill" [matTooltip]="'Total viáticos de combustible acumulados'">
+              <mat-icon>local_gas_station</mat-icon> {{ dashboard.stats.totalGasolina | currency:'USD':'symbol':'1.0-0' }} gasolina
+            </span>
+          </div>
+        </mat-card-content>
+        <div class="kpi-footer">
+          <a routerLink="/reporte-costo-labor" class="kpi-link">
+            <span>Detalle de costos</span>
+            <mat-icon>arrow_forward</mat-icon>
+          </a>
+        </div>
+      </mat-card>
+    </section>
+
+    <!-- 2. Grid Central: Top Proyectos & Top Trabajadores -->
+    <section class="analytics-grid">
+      <!-- Columna 1: Top Proyectos -->
+      <mat-card class="section-card">
+        <mat-card-header>
+          <div class="card-header-content">
+            <div class="header-icon-title">
+              <mat-icon class="section-icon">assessment</mat-icon>
+              <div>
+                <mat-card-title>Top Proyectos con Mayor Esfuerzo</mat-card-title>
+                <mat-card-subtitle>Proyectos con mayor acumulación de horas de labor</mat-card-subtitle>
+              </div>
+            </div>
+            <a mat-button color="primary" routerLink="/reporte-costo-labor" class="card-action-link">
+              <span>Reporte</span>
+              <mat-icon>chevron_right</mat-icon>
+            </a>
+          </div>
+        </mat-card-header>
+
+        <mat-card-content>
+          <div class="rankings-list">
+            @for (proj of dashboard.topProjects; track proj.id; let idx = $index) {
+              <div class="rank-item">
+                <div class="rank-badge" [class.gold]="idx === 0" [class.silver]="idx === 1" [class.bronze]="idx === 2">
+                  {{ idx + 1 }}
+                </div>
+                <div class="rank-body">
+                  <div class="rank-info-header">
+                    <div class="rank-title-group">
+                      <span class="rank-name">{{ proj.nombre }}</span>
+                      <span class="status-tag" [class.tag-active]="proj.estatus === 'activo'">
+                        {{ proj.estatus }}
+                      </span>
+                    </div>
+                    <div class="rank-metrics">
+                      <strong class="metric-highlight">{{ proj.horas | number:'1.1-1' }} hrs</strong>
+                      <span class="metric-cost">{{ proj.costo | currency:'USD':'symbol':'1.0-0' }}</span>
+                    </div>
+                  </div>
+
+                  <!-- Barra de progreso relativa -->
+                  <div class="custom-progress-track">
+                    <div 
+                      class="custom-progress-bar progress-project" 
+                      [style.width.%]="proj.percentage"
+                      [matTooltip]="proj.horas + ' horas invertidas (' + proj.percentage + '%)'">
+                    </div>
+                  </div>
+
+                  <div class="rank-sub-details">
+                    <span>{{ proj.registros }} jornadas registradas</span>
+                    @if (proj.horasExtra > 0) {
+                      <span>• {{ proj.horasExtra }} hrs extra</span>
+                    }
+                  </div>
+                </div>
+              </div>
+            }
+          </div>
+        </mat-card-content>
+      </mat-card>
+
+      <!-- Columna 2: Top Trabajadores -->
+      <mat-card class="section-card">
+        <mat-card-header>
+          <div class="card-header-content">
+            <div class="header-icon-title">
+              <mat-icon class="section-icon">military_tech</mat-icon>
+              <div>
+                <mat-card-title>Colaboradores con Mayor Dedicación</mat-card-title>
+                <mat-card-subtitle>Líderes de horas registradas en campo</mat-card-subtitle>
+              </div>
+            </div>
+            <a mat-button color="primary" routerLink="/reporte-horas-trabajador" class="card-action-link">
+              <span>Reporte</span>
+              <mat-icon>chevron_right</mat-icon>
+            </a>
+          </div>
+        </mat-card-header>
+
+        <mat-card-content>
+          <div class="rankings-list">
+            @for (worker of dashboard.topWorkers; track worker.id; let idx = $index) {
+              <div class="rank-item">
+                <div class="avatar-circle avatar-gradient-{{ (idx % 4) + 1 }}">
+                  {{ getInitials(worker.nombre) }}
+                </div>
+                <div class="rank-body">
+                  <div class="rank-info-header">
+                    <div class="rank-title-group">
+                      <span class="rank-name">{{ worker.nombre }}</span>
+                      <span class="records-tag">{{ worker.registros }} registros</span>
+                    </div>
+                    <div class="rank-metrics">
+                      <strong class="metric-highlight">{{ worker.horas | number:'1.1-1' }} hrs</strong>
+                      <span class="metric-cost">{{ worker.costo | currency:'USD':'symbol':'1.0-0' }}</span>
+                    </div>
+                  </div>
+
+                  <!-- Barra de progreso relativa -->
+                  <div class="custom-progress-track">
+                    <div 
+                      class="custom-progress-bar progress-worker" 
+                      [style.width.%]="worker.percentage"
+                      [matTooltip]="worker.horas + ' horas acumuladas'">
+                    </div>
+                  </div>
+
+                  <div class="rank-sub-details">
+                    <span>{{ worker.percentage }}% del volumen máximo</span>
+                  </div>
+                </div>
+              </div>
+            }
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </section>
+
+    <!-- 3. Sección Inferior: Bitácora de Actividad Reciente & Accesos Rápidos -->
+    <section class="bottom-grid">
+      <!-- Actividad Reciente -->
+      <mat-card class="section-card recent-activity-card">
+        <mat-card-header>
+          <div class="card-header-content">
+            <div class="header-icon-title">
+              <mat-icon class="section-icon">history</mat-icon>
+              <div>
+                <mat-card-title>Últimas Entradas de Labor</mat-card-title>
+                <mat-card-subtitle>Actividad más reciente reportada en el sistema</mat-card-subtitle>
+              </div>
+            </div>
+            <a mat-button color="primary" routerLink="/registros-tiempov2" class="card-action-link">
+              <span>Ver todas</span>
+              <mat-icon>arrow_forward</mat-icon>
+            </a>
+          </div>
+        </mat-card-header>
+
+        <mat-card-content>
+          <div class="activity-table-wrapper">
+            <table class="activity-table">
+              <thead>
+                <tr>
+                  <th>Fecha</th>
+                  <th>Colaborador</th>
+                  <th>Proyecto / Propiedad</th>
+                  <th class="text-right">Horas</th>
+                  <th class="text-right">Gasolina</th>
+                  <th class="text-right">Costo Est.</th>
+                </tr>
+              </thead>
+              <tbody>
+                @for (act of dashboard.recentActivity; track act.id) {
+                  <tr>
+                    <td>
+                      <span class="date-chip">
+                        <mat-icon class="mini-icon">event</mat-icon>
+                        {{ act.fecha | date:'dd/MM/yyyy' }}
+                      </span>
+                    </td>
+                    <td>
+                      <div class="worker-cell">
+                        <mat-icon class="mini-icon">person</mat-icon>
+                        <span class="worker-text">{{ act.trabajadorNombre }}</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="project-cell">
+                        <mat-icon class="mini-icon">home_work</mat-icon>
+                        <span class="project-text">{{ act.proyectoNombre }}</span>
+                      </div>
+                    </td>
+                    <td class="text-right">
+                      <span class="hours-badge">
+                        {{ act.horas }}h
+                        @if (act.horasExtra > 0) {
+                          <small class="extra-badge">+{{ act.horasExtra }}h ext</small>
+                        }
+                      </span>
+                    </td>
+                    <td class="text-right">
+                      @if (act.gasolina > 0) {
+                        <span class="gas-badge">{{ act.gasolina | currency:'USD':'symbol':'1.0-2' }}</span>
+                      } @else {
+                        <span class="dash-text">—</span>
+                      }
+                    </td>
+                    <td class="text-right font-semibold">
+                      {{ act.costoEstimado | currency:'USD':'symbol':'1.2-2' }}
+                    </td>
+                  </tr>
+                }
+              </tbody>
+            </table>
+          </div>
+        </mat-card-content>
+      </mat-card>
+
+      <!-- Accesos Rápidos -->
+      <mat-card class="section-card quick-actions-card">
+        <mat-card-header>
+          <div class="card-header-content">
+            <div class="header-icon-title">
+              <mat-icon class="section-icon">bolt</mat-icon>
+              <div>
+                <mat-card-title>Accesos Rápidos</mat-card-title>
+                <mat-card-subtitle>Operaciones frecuentes del sistema</mat-card-subtitle>
+              </div>
+            </div>
+          </div>
+        </mat-card-header>
+
+        <mat-card-content>
+          <div class="quick-buttons-grid">
+            <a routerLink="/registros-tiempov2" class="quick-tile tile-labor">
+              <div class="tile-icon-box">
+                <mat-icon>timer</mat-icon>
+              </div>
+              <div class="tile-text">
+                <strong>Registro de Labor</strong>
+                <span>Cargar o editar horas</span>
+              </div>
+              <mat-icon class="tile-arrow">arrow_forward</mat-icon>
+            </a>
+
+            <a routerLink="/reporte-costo-labor" class="quick-tile tile-costos">
+              <div class="tile-icon-box">
+                <mat-icon>bar_chart</mat-icon>
+              </div>
+              <div class="tile-text">
+                <strong>Reporte de Costos</strong>
+                <span>Desglose por proyecto</span>
+              </div>
+              <mat-icon class="tile-arrow">arrow_forward</mat-icon>
+            </a>
+
+            <a routerLink="/reporte-horas-trabajador" class="quick-tile tile-horas">
+              <div class="tile-icon-box">
+                <mat-icon>insights</mat-icon>
+              </div>
+              <div class="tile-text">
+                <strong>Reporte de Horas</strong>
+                <span>Análisis por trabajador</span>
+              </div>
+              <mat-icon class="tile-arrow">arrow_forward</mat-icon>
+            </a>
+
+            <a routerLink="/proyectos" class="quick-tile tile-proyectos">
+              <div class="tile-icon-box">
+                <mat-icon>domain</mat-icon>
+              </div>
+              <div class="tile-text">
+                <strong>Proyectos</strong>
+                <span>Catálogo de propiedades</span>
+              </div>
+              <mat-icon class="tile-arrow">arrow_forward</mat-icon>
+            </a>
+
+            <a routerLink="/trabajadores" class="quick-tile tile-trabajadores">
+              <div class="tile-icon-box">
+                <mat-icon>people</mat-icon>
+              </div>
+              <div class="tile-text">
+                <strong>Trabajadores</strong>
+                <span>Tarifas y personal</span>
+              </div>
+              <mat-icon class="tile-arrow">arrow_forward</mat-icon>
+            </a>
+
+            <a routerLink="/backup" class="quick-tile tile-backup">
+              <div class="tile-icon-box">
+                <mat-icon>storage</mat-icon>
+              </div>
+              <div class="tile-text">
+                <strong>Copia de Seguridad</strong>
+                <span>Exportar e importar datos</span>
+              </div>
+              <mat-icon class="tile-arrow">arrow_forward</mat-icon>
+            </a>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </section>
+  }
 </div>

@@ -18,9 +18,9 @@
     "semantic_hash": "cb7ed9a56930402d9059ea5a9773d60e"
   },
   "angular.json": {
-    "mtime": 1789520241.9281301,
-    "seen": 1789520274.6635165,
-    "ast_hash": "320bfe2cbf0bdfb3192b19cbea05bee1",
+    "mtime": 1789521863.964152,
+    "seen": 1789521880.7503023,
+    "ast_hash": "bf7aecf6b28e7c3c59805b360a5da0f1",
     "semantic_hash": ""
   },
   "package.json": {
@@ -150,10 +150,10 @@
     "semantic_hash": "aad855a96712ce89cb82591c0668714f"
   },
   "src/app/features/home/home.component.ts": {
-    "mtime": 1777233980.7322288,
-    "seen": 1787808900.6230164,
-    "ast_hash": "acbdd0f1b9e9ba76305e140bcd4260f0",
-    "semantic_hash": "acbdd0f1b9e9ba76305e140bcd4260f0"
+    "mtime": 1789521753.3802793,
+    "seen": 1789521880.7521563,
+    "ast_hash": "96f0ef47f6fbe7b89f4092aea81f97d2",
+    "semantic_hash": ""
   },
   "src/app/features/nominas/nominas-form/nominas-form.component.ts": {
     "mtime": 1777398061.5651574,
@@ -289,7 +289,7 @@
   },
   ".vscode/mcp.json": {
     "mtime": 1777229876.2570295,
-    "seen": 1789520281.7773342,
+    "seen": 1789521078.39998,
     "ast_hash": "",
     "semantic_hash": ""
   },
@@ -372,9 +372,9 @@
     "semantic_hash": ""
   },
   "src/app/features/home/home.component.html": {
-    "mtime": 1777233982.7423172,
-    "seen": 1787809406.7213748,
-    "ast_hash": "c3df19d80f5378e9c16a39289c7e8bc1",
+    "mtime": 1789521770.7391472,
+    "seen": 1789521880.7551827,
+    "ast_hash": "9708b3b7386df39b9e494ad07beeb496",
     "semantic_hash": ""
   },
   "src/app/features/nominas/nominas-form/nominas-form.component.html": {
@@ -481,7 +481,7 @@
   },
   "db/esquema_bd.sql": {
     "mtime": 1787807359.008685,
-    "seen": 1789520281.7773404,
+    "seen": 1789521078.4001317,
     "ast_hash": "",
     "semantic_hash": ""
   },
@@ -501,6 +501,12 @@
     "mtime": 1789519985.9782648,
     "seen": 1789520274.6680489,
     "ast_hash": "62176427f436a4580fb08c0154dba44f",
+    "semantic_hash": ""
+  },
+  "src/app/core/services/dashboard.service.ts": {
+    "mtime": 1789521747.338334,
+    "seen": 1789521880.7511816,
+    "ast_hash": "0f049b5247b57c77f938634141956e8c",
     "semantic_hash": ""
   }
 }

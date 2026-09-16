@@ -108,10 +108,10 @@
     "semantic_hash": "f567ed0c0d998aa633b62c0989f2f19a"
   },
   "src/app/core/services/reportes.service.ts": {
-    "mtime": 1787807408.9648576,
-    "seen": 1787808900.6230094,
-    "ast_hash": "91f5d5badd1744a736502d04f7a6a074",
-    "semantic_hash": "91f5d5badd1744a736502d04f7a6a074"
+    "mtime": 1789520964.8382292,
+    "seen": 1789521064.3392694,
+    "ast_hash": "b9c3ccc8f72426086f403ee05837af86",
+    "semantic_hash": ""
   },
   "src/app/core/services/supabase.service.ts": {
     "mtime": 1777233493.8086364,
@@ -192,10 +192,10 @@
     "semantic_hash": "0618726d79117814b27f0ddaf6719281"
   },
   "src/app/features/registros-tiempov2/registros-tiempov2-list/registros-tiempov2-list.component.ts": {
-    "mtime": 1787807387.478274,
-    "seen": 1787808900.623023,
-    "ast_hash": "921b8d85a4df6690176568beaef13bd0",
-    "semantic_hash": "921b8d85a4df6690176568beaef13bd0"
+    "mtime": 1789520928.678819,
+    "seen": 1789521064.3404946,
+    "ast_hash": "092851eaf028a0374b53bae1d93b991f",
+    "semantic_hash": ""
   },
   "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.ts": {
     "mtime": 1781754102.9933631,
@@ -210,16 +210,16 @@
     "semantic_hash": "97e566ff68ca14da707953673ef1ec80"
   },
   "src/app/features/reportes/costo-labor/costo-labor.component.ts": {
-    "mtime": 1782700942.7328863,
-    "seen": 1787808900.6230257,
-    "ast_hash": "057ae3f5778336ee107cf2c1a9d0718b",
-    "semantic_hash": "057ae3f5778336ee107cf2c1a9d0718b"
+    "mtime": 1789521009.6473985,
+    "seen": 1789521064.340692,
+    "ast_hash": "0bf17093cb2d0aa5a848e0d25451d681",
+    "semantic_hash": ""
   },
   "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts": {
-    "mtime": 1782700894.6960106,
-    "seen": 1787808900.6230266,
-    "ast_hash": "ffdeac60e00d188a6bf5d8e36b1e4d75",
-    "semantic_hash": "ffdeac60e00d188a6bf5d8e36b1e4d75"
+    "mtime": 1789520983.6354434,
+    "seen": 1789521064.3406947,
+    "ast_hash": "85e8ad2e9132369b0f03cd9f581f906c",
+    "semantic_hash": ""
   },
   "src/app/features/trabajadores/trabajadores-form/trabajadores-form.component.ts": {
     "mtime": 1777231805.8660212,
@@ -289,7 +289,7 @@
   },
   ".vscode/mcp.json": {
     "mtime": 1777229876.2570295,
-    "seen": 1789520281.7773342,
+    "seen": 1789521078.39998,
     "ast_hash": "a73020575e74990ecd722ccc5122bb0c",
     "semantic_hash": ""
   },
@@ -414,27 +414,27 @@
     "semantic_hash": ""
   },
   "src/app/features/registros-tiempov2/registros-tiempov2-list/registros-tiempov2-list.component.html": {
-    "mtime": 1781627331.25115,
-    "seen": 1787809406.7213812,
-    "ast_hash": "c75b6b793bb9907c3e15aad9f3900cbf",
+    "mtime": 1789520917.091892,
+    "seen": 1789521064.3442397,
+    "ast_hash": "c8b6f7da2e9c0f5b78b811908c615c0a",
     "semantic_hash": ""
   },
   "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.html": {
-    "mtime": 1781754068.6457815,
-    "seen": 1787809406.721382,
-    "ast_hash": "29a08b125ffa56347a7c04bed3e65800",
+    "mtime": 1789521029.5549078,
+    "seen": 1789521064.3442419,
+    "ast_hash": "8a20fbada72d95bfc17026d0fb8ad86a",
     "semantic_hash": ""
   },
   "src/app/features/reportes/costo-labor/costo-labor.component.html": {
-    "mtime": 1782700840.2212224,
-    "seen": 1787809406.7213826,
-    "ast_hash": "c0d4e2c2e2a455384edbcae8b94223e8",
+    "mtime": 1789521019.4221284,
+    "seen": 1789521064.344244,
+    "ast_hash": "69c87490ec96e63d4f1c7dd27bbb723a",
     "semantic_hash": ""
   },
   "src/app/features/reportes/horas-trabajador/horas-trabajador.component.html": {
-    "mtime": 1782700909.5277922,
-    "seen": 1787809406.7213836,
-    "ast_hash": "e6f09f913721c9c2d9331383dbbacb8b",
+    "mtime": 1789520996.3362784,
+    "seen": 1789521064.3442464,
+    "ast_hash": "3d31a492bc415901ec83505b2b70a934",
     "semantic_hash": ""
   },
   "src/app/features/trabajadores/trabajadores-form/trabajadores-form.component.html": {
@@ -462,9 +462,9 @@
     "semantic_hash": ""
   },
   "src/app/layout/main-layout/main-layout.component.html": {
-    "mtime": 1789520025.914011,
-    "seen": 1789520274.6701696,
-    "ast_hash": "5f625bece13e0bae85473d41bb449dad",
+    "mtime": 1789520945.1094804,
+    "seen": 1789521064.344688,
+    "ast_hash": "684fff312d8ca3b9929990359617f57a",
     "semantic_hash": ""
   },
   "src/index.html": {
@@ -481,7 +481,7 @@
   },
   "db/esquema_bd.sql": {
     "mtime": 1787807359.008685,
-    "seen": 1789520281.7773404,
+    "seen": 1789521078.4001317,
     "ast_hash": "b766bbab21c107d904c301b51793b4e1",
     "semantic_hash": ""
   },

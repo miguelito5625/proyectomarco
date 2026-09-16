@@ -101,7 +101,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "Proyecto",
+      "community_name": "ProyectosService",
       "file_type": "code",
       "norm_label": "proyecto",
       "source_file": "src/app/core/services/proyectos.service.ts",
@@ -114,7 +114,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "Proyecto",
+      "community_name": "ProyectosService",
       "file_type": "code",
       "norm_label": "proyectosservice",
       "source_file": "src/app/core/services/proyectos.service.ts",
@@ -127,7 +127,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "Proyecto",
+      "community_name": "ProyectosService",
       "file_type": "code",
       "norm_label": "costolabor",
       "source_file": "src/app/core/services/reportes.service.ts",
@@ -140,7 +140,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "Proyecto",
+      "community_name": "ProyectosService",
       "file_type": "code",
       "norm_label": "costolaborfilters",
       "source_file": "src/app/core/services/reportes.service.ts",
@@ -153,7 +153,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "Proyecto",
+      "community_name": "ProyectosService",
       "file_type": "code",
       "norm_label": "horastrabajador",
       "source_file": "src/app/core/services/reportes.service.ts",
@@ -166,11 +166,11 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "Proyecto",
+      "community_name": "ProyectosService",
       "file_type": "code",
       "norm_label": "horastrabajadorfilters",
       "source_file": "src/app/core/services/reportes.service.ts",
-      "source_location": "L28"
+      "source_location": "L33"
     },
     {
       "id": "src_app_core_services_reportes_service_reportesservice",
@@ -179,11 +179,11 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "Proyecto",
+      "community_name": "ProyectosService",
       "file_type": "code",
       "norm_label": "reportesservice",
       "source_file": "src/app/core/services/reportes.service.ts",
-      "source_location": "L37"
+      "source_location": "L42"
     },
     {
       "id": "src_app_features_proyectos_proyectos_form_proyectos_form_component_proyectosformcomponent",
@@ -192,7 +192,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "Proyecto",
+      "community_name": "ProyectosService",
       "file_type": "code",
       "norm_label": "proyectosformcomponent",
       "source_file": "src/app/features/proyectos/proyectos-form/proyectos-form.component.ts",
@@ -205,7 +205,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "Proyecto",
+      "community_name": "ProyectosService",
       "file_type": "code",
       "norm_label": "proyectoslistcomponent",
       "source_file": "src/app/features/proyectos/proyectos-list/proyectos-list.component.ts",
@@ -222,7 +222,7 @@
       "file_type": "code",
       "norm_label": "horastrabajadorcomponent",
       "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
-      "source_location": "L29"
+      "source_location": "L30"
     },
     {
       "id": "src_app_features_registros_tiempov2_registros_tiempov2_list_registros_tiempov2_list_component_registrostiempov2listcomponent",
@@ -316,6 +316,19 @@
       "source_location": "L29"
     },
     {
+      "id": "src_app_features_reportes_costo_labor_desglose_costo_labor_desglose_component_costolabordesglosecomponent",
+      "label": "CostoLaborDesgloseComponent",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 29,
+      "community_name": "CostoLaborDesgloseComponent",
+      "file_type": "code",
+      "norm_label": "costolabordesglosecomponent",
+      "source_file": "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.ts",
+      "source_location": "L22"
+    },
+    {
       "id": "src_app_core_services_registros_tiempo_service_registrostiemposervice",
       "label": "RegistrosTiempoService",
       "_callable": true,
@@ -405,19 +418,6 @@
       "norm_label": "homecomponent",
       "source_file": "src/app/features/home/home.component.ts",
       "source_location": "L13"
-    },
-    {
-      "id": "src_app_features_reportes_costo_labor_desglose_costo_labor_desglose_component_costolabordesglosecomponent",
-      "label": "CostoLaborDesgloseComponent",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "app.routes.ts",
-      "file_type": "code",
-      "norm_label": "costolabordesglosecomponent",
-      "source_file": "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.ts",
-      "source_location": "L22"
     },
     {
       "id": "src_app_core_services_gastos_service_gastoproyecto",
@@ -761,7 +761,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "Proyecto",
+      "community_name": "ProyectosService",
       "file_type": "code",
       "norm_label": ".createproyecto()",
       "source_file": "src/app/core/services/proyectos.service.ts",
@@ -773,7 +773,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "Proyecto",
+      "community_name": "ProyectosService",
       "file_type": "code",
       "norm_label": ".deleteproyecto()",
       "source_file": "src/app/core/services/proyectos.service.ts",
@@ -785,7 +785,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "Proyecto",
+      "community_name": "ProyectosService",
       "file_type": "code",
       "norm_label": ".getproyecto()",
       "source_file": "src/app/core/services/proyectos.service.ts",
@@ -797,7 +797,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "Proyecto",
+      "community_name": "ProyectosService",
       "file_type": "code",
       "norm_label": ".getproyectos()",
       "source_file": "src/app/core/services/proyectos.service.ts",
@@ -809,7 +809,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "Proyecto",
+      "community_name": "ProyectosService",
       "file_type": "code",
       "norm_label": ".updateproyecto()",
       "source_file": "src/app/core/services/proyectos.service.ts",
@@ -821,11 +821,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "Proyecto",
+      "community_name": "ProyectosService",
       "file_type": "code",
       "norm_label": ".getcostolabordesglose()",
       "source_file": "src/app/core/services/reportes.service.ts",
-      "source_location": "L217"
+      "source_location": "L249"
     },
     {
       "id": "src_app_core_services_reportes_service_reportesservice_getcostolaborfiltered",
@@ -833,11 +833,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "Proyecto",
+      "community_name": "ProyectosService",
       "file_type": "code",
       "norm_label": ".getcostolaborfiltered()",
       "source_file": "src/app/core/services/reportes.service.ts",
-      "source_location": "L45"
+      "source_location": "L50"
     },
     {
       "id": "src_app_core_services_reportes_service_reportesservice_gethorastrabajadorfiltered",
@@ -845,11 +845,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "Proyecto",
+      "community_name": "ProyectosService",
       "file_type": "code",
       "norm_label": ".gethorastrabajadorfiltered()",
       "source_file": "src/app/core/services/reportes.service.ts",
-      "source_location": "L148"
+      "source_location": "L153"
     },
     {
       "id": "src_app_features_proyectos_proyectos_form_proyectos_form_component_proyectosformcomponent_ngoninit",
@@ -857,7 +857,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "Proyecto",
+      "community_name": "ProyectosService",
       "file_type": "code",
       "norm_label": ".ngoninit()",
       "source_file": "src/app/features/proyectos/proyectos-form/proyectos-form.component.ts",
@@ -869,7 +869,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "Proyecto",
+      "community_name": "ProyectosService",
       "file_type": "code",
       "norm_label": ".onsubmit()",
       "source_file": "src/app/features/proyectos/proyectos-form/proyectos-form.component.ts",
@@ -881,7 +881,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "Proyecto",
+      "community_name": "ProyectosService",
       "file_type": "code",
       "norm_label": ".applyfilter()",
       "source_file": "src/app/features/proyectos/proyectos-list/proyectos-list.component.ts",
@@ -893,7 +893,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "Proyecto",
+      "community_name": "ProyectosService",
       "file_type": "code",
       "norm_label": ".deleteproyecto()",
       "source_file": "src/app/features/proyectos/proyectos-list/proyectos-list.component.ts",
@@ -905,7 +905,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "Proyecto",
+      "community_name": "ProyectosService",
       "file_type": "code",
       "norm_label": ".loadproyectos()",
       "source_file": "src/app/features/proyectos/proyectos-list/proyectos-list.component.ts",
@@ -917,7 +917,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "Proyecto",
+      "community_name": "ProyectosService",
       "file_type": "code",
       "norm_label": ".ngoninit()",
       "source_file": "src/app/features/proyectos/proyectos-list/proyectos-list.component.ts",
@@ -929,11 +929,23 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "Proyecto",
+      "community_name": "ProyectosService",
       "file_type": "code",
       "norm_label": ".openform()",
       "source_file": "src/app/features/proyectos/proyectos-list/proyectos-list.component.ts",
       "source_location": "L65"
+    },
+    {
+      "id": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_aplicarfiltroproyectos",
+      "label": ".aplicarFiltroProyectos()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "HorasTrabajadorComponent",
+      "file_type": "code",
+      "norm_label": ".aplicarfiltroproyectos()",
+      "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
+      "source_location": "L94"
     },
     {
       "id": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_buscar",
@@ -945,7 +957,7 @@
       "file_type": "code",
       "norm_label": ".buscar()",
       "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
-      "source_location": "L143"
+      "source_location": "L168"
     },
     {
       "id": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_deseleccionartodosproyectos",
@@ -957,7 +969,7 @@
       "file_type": "code",
       "norm_label": ".deseleccionartodosproyectos()",
       "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
-      "source_location": "L102"
+      "source_location": "L127"
     },
     {
       "id": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_deseleccionartodostrabajadores",
@@ -969,7 +981,7 @@
       "file_type": "code",
       "norm_label": ".deseleccionartodostrabajadores()",
       "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
-      "source_location": "L110"
+      "source_location": "L135"
     },
     {
       "id": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_filtrarproyectos",
@@ -981,7 +993,7 @@
       "file_type": "code",
       "norm_label": ".filtrarproyectos()",
       "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
-      "source_location": "L84"
+      "source_location": "L111"
     },
     {
       "id": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_filtrartrabajadores",
@@ -993,7 +1005,7 @@
       "file_type": "code",
       "norm_label": ".filtrartrabajadores()",
       "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
-      "source_location": "L91"
+      "source_location": "L116"
     },
     {
       "id": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_formatdateiso",
@@ -1005,7 +1017,7 @@
       "file_type": "code",
       "norm_label": ".formatdateiso()",
       "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
-      "source_location": "L188"
+      "source_location": "L213"
     },
     {
       "id": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_limpiarfiltros",
@@ -1017,7 +1029,7 @@
       "file_type": "code",
       "norm_label": ".limpiarfiltros()",
       "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
-      "source_location": "L177"
+      "source_location": "L202"
     },
     {
       "id": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_loadproyectos",
@@ -1029,7 +1041,7 @@
       "file_type": "code",
       "norm_label": ".loadproyectos()",
       "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
-      "source_location": "L66"
+      "source_location": "L76"
     },
     {
       "id": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_loadtrabajadores",
@@ -1041,7 +1053,7 @@
       "file_type": "code",
       "norm_label": ".loadtrabajadores()",
       "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
-      "source_location": "L75"
+      "source_location": "L85"
     },
     {
       "id": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_ngoninit",
@@ -1053,7 +1065,7 @@
       "file_type": "code",
       "norm_label": ".ngoninit()",
       "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
-      "source_location": "L61"
+      "source_location": "L67"
     },
     {
       "id": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_seleccionartodosproyectos",
@@ -1065,7 +1077,7 @@
       "file_type": "code",
       "norm_label": ".seleccionartodosproyectos()",
       "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
-      "source_location": "L98"
+      "source_location": "L123"
     },
     {
       "id": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_seleccionartodostrabajadores",
@@ -1077,7 +1089,7 @@
       "file_type": "code",
       "norm_label": ".seleccionartodostrabajadores()",
       "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
-      "source_location": "L106"
+      "source_location": "L131"
     },
     {
       "id": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_validatefilters",
@@ -1089,7 +1101,7 @@
       "file_type": "code",
       "norm_label": ".validatefilters()",
       "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
-      "source_location": "L114"
+      "source_location": "L139"
     },
     {
       "id": "src_app_features_registros_tiempov2_registros_tiempov2_list_registros_tiempov2_list_component_registrostiempov2listcomponent_buildtable",
@@ -1101,7 +1113,7 @@
       "file_type": "code",
       "norm_label": ".buildtable()",
       "source_file": "src/app/features/registros-tiempov2/registros-tiempov2-list/registros-tiempov2-list.component.ts",
-      "source_location": "L133"
+      "source_location": "L141"
     },
     {
       "id": "src_app_features_registros_tiempov2_registros_tiempov2_list_registros_tiempov2_list_component_registrostiempov2listcomponent_cleartable",
@@ -1113,7 +1125,19 @@
       "file_type": "code",
       "norm_label": ".cleartable()",
       "source_file": "src/app/features/registros-tiempov2/registros-tiempov2-list/registros-tiempov2-list.component.ts",
-      "source_location": "L124"
+      "source_location": "L132"
+    },
+    {
+      "id": "src_app_features_registros_tiempov2_registros_tiempov2_list_registros_tiempov2_list_component_registrostiempov2listcomponent_deseleccionartodosproyectos",
+      "label": ".deseleccionarTodosProyectos()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "RegistrosTiempov2ListComponent",
+      "file_type": "code",
+      "norm_label": ".deseleccionartodosproyectos()",
+      "source_file": "src/app/features/registros-tiempov2/registros-tiempov2-list/registros-tiempov2-list.component.ts",
+      "source_location": "L128"
     },
     {
       "id": "src_app_features_registros_tiempov2_registros_tiempov2_list_registros_tiempov2_list_component_registrostiempov2listcomponent_filtrarproyectos",
@@ -1149,7 +1173,7 @@
       "file_type": "code",
       "norm_label": ".formatcolumnheader()",
       "source_file": "src/app/features/registros-tiempov2/registros-tiempov2-list/registros-tiempov2-list.component.ts",
-      "source_location": "L190"
+      "source_location": "L198"
     },
     {
       "id": "src_app_features_registros_tiempov2_registros_tiempov2_list_registros_tiempov2_list_component_registrostiempov2listcomponent_formatdateiso",
@@ -1161,7 +1185,7 @@
       "file_type": "code",
       "norm_label": ".formatdateiso()",
       "source_file": "src/app/features/registros-tiempov2/registros-tiempov2-list/registros-tiempov2-list.component.ts",
-      "source_location": "L183"
+      "source_location": "L191"
     },
     {
       "id": "src_app_features_registros_tiempov2_registros_tiempov2_list_registros_tiempov2_list_component_registrostiempov2listcomponent_guardar",
@@ -1173,7 +1197,7 @@
       "file_type": "code",
       "norm_label": ".guardar()",
       "source_file": "src/app/features/registros-tiempov2/registros-tiempov2-list/registros-tiempov2-list.component.ts",
-      "source_location": "L229"
+      "source_location": "L237"
     },
     {
       "id": "src_app_features_registros_tiempov2_registros_tiempov2_list_registros_tiempov2_list_component_registrostiempov2listcomponent_loadinitialdata",
@@ -1221,7 +1245,31 @@
       "file_type": "code",
       "norm_label": ".onvaluechange()",
       "source_file": "src/app/features/registros-tiempov2/registros-tiempov2-list/registros-tiempov2-list.component.ts",
-      "source_location": "L203"
+      "source_location": "L211"
+    },
+    {
+      "id": "src_app_features_registros_tiempov2_registros_tiempov2_list_registros_tiempov2_list_component_registrostiempov2listcomponent_seleccionartodosproyectos",
+      "label": ".seleccionarTodosProyectos()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "RegistrosTiempov2ListComponent",
+      "file_type": "code",
+      "norm_label": ".seleccionartodosproyectos()",
+      "source_file": "src/app/features/registros-tiempov2/registros-tiempov2-list/registros-tiempov2-list.component.ts",
+      "source_location": "L124"
+    },
+    {
+      "id": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_aplicarfiltroproyectos",
+      "label": ".aplicarFiltroProyectos()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "CostoLaborComponent",
+      "file_type": "code",
+      "norm_label": ".aplicarfiltroproyectos()",
+      "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
+      "source_location": "L87"
     },
     {
       "id": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_buscar",
@@ -1233,7 +1281,7 @@
       "file_type": "code",
       "norm_label": ".buscar()",
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L120"
+      "source_location": "L137"
     },
     {
       "id": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_deseleccionartodosproyectos",
@@ -1245,7 +1293,7 @@
       "file_type": "code",
       "norm_label": ".deseleccionartodosproyectos()",
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L70"
+      "source_location": "L74"
     },
     {
       "id": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_filtrarproyectos",
@@ -1257,7 +1305,7 @@
       "file_type": "code",
       "norm_label": ".filtrarproyectos()",
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L83"
+      "source_location": "L103"
     },
     {
       "id": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_formatdateiso",
@@ -1269,7 +1317,7 @@
       "file_type": "code",
       "norm_label": ".formatdateiso()",
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L171"
+      "source_location": "L188"
     },
     {
       "id": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_limpiarfiltros",
@@ -1281,7 +1329,7 @@
       "file_type": "code",
       "norm_label": ".limpiarfiltros()",
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L161"
+      "source_location": "L178"
     },
     {
       "id": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_loadproyectos",
@@ -1293,7 +1341,7 @@
       "file_type": "code",
       "norm_label": ".loadproyectos()",
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L74"
+      "source_location": "L78"
     },
     {
       "id": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_ngoninit",
@@ -1305,7 +1353,7 @@
       "file_type": "code",
       "norm_label": ".ngoninit()",
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L62"
+      "source_location": "L63"
     },
     {
       "id": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_seleccionartodosproyectos",
@@ -1317,7 +1365,7 @@
       "file_type": "code",
       "norm_label": ".seleccionartodosproyectos()",
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L66"
+      "source_location": "L70"
     },
     {
       "id": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_validatefilters",
@@ -1329,7 +1377,7 @@
       "file_type": "code",
       "norm_label": ".validatefilters()",
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L95"
+      "source_location": "L112"
     },
     {
       "id": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_verdesglose",
@@ -1341,7 +1389,7 @@
       "file_type": "code",
       "norm_label": ".verdesglose()",
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L178"
+      "source_location": "L195"
     },
     {
       "id": "scratch_update_responsive_fixformscss",
@@ -1594,6 +1642,42 @@
       "norm_label": ".startexport()",
       "source_file": "src/app/features/backup/backup.component.ts",
       "source_location": "L65"
+    },
+    {
+      "id": "src_app_features_reportes_costo_labor_desglose_costo_labor_desglose_component_costolabordesglosecomponent_loaddatos",
+      "label": ".loadDatos()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 29,
+      "community_name": "CostoLaborDesgloseComponent",
+      "file_type": "code",
+      "norm_label": ".loaddatos()",
+      "source_file": "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.ts",
+      "source_location": "L48"
+    },
+    {
+      "id": "src_app_features_reportes_costo_labor_desglose_costo_labor_desglose_component_costolabordesglosecomponent_ngoninit",
+      "label": ".ngOnInit()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 29,
+      "community_name": "CostoLaborDesgloseComponent",
+      "file_type": "code",
+      "norm_label": ".ngoninit()",
+      "source_file": "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.ts",
+      "source_location": "L38"
+    },
+    {
+      "id": "src_app_features_reportes_costo_labor_desglose_costo_labor_desglose_component_costolabordesglosecomponent_volver",
+      "label": ".volver()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 29,
+      "community_name": "CostoLaborDesgloseComponent",
+      "file_type": "code",
+      "norm_label": ".volver()",
+      "source_file": "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.ts",
+      "source_location": "L63"
     },
     {
       "id": "src_app_core_services_registros_tiempo_service_registrostiemposervice_createregistro",
@@ -1930,42 +2014,6 @@
       "norm_label": ".onsubmit()",
       "source_file": "src/app/features/auth/login/login.component.ts",
       "source_location": "L47"
-    },
-    {
-      "id": "src_app_features_reportes_costo_labor_desglose_costo_labor_desglose_component_costolabordesglosecomponent_loaddatos",
-      "label": ".loadDatos()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "app.routes.ts",
-      "file_type": "code",
-      "norm_label": ".loaddatos()",
-      "source_file": "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.ts",
-      "source_location": "L48"
-    },
-    {
-      "id": "src_app_features_reportes_costo_labor_desglose_costo_labor_desglose_component_costolabordesglosecomponent_ngoninit",
-      "label": ".ngOnInit()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "app.routes.ts",
-      "file_type": "code",
-      "norm_label": ".ngoninit()",
-      "source_file": "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.ts",
-      "source_location": "L38"
-    },
-    {
-      "id": "src_app_features_reportes_costo_labor_desglose_costo_labor_desglose_component_costolabordesglosecomponent_volver",
-      "label": ".volver()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "app.routes.ts",
-      "file_type": "code",
-      "norm_label": ".volver()",
-      "source_file": "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.ts",
-      "source_location": "L63"
     },
     {
       "id": "src_app_core_services_gastos_service_gastosproyectoservice_creategasto",
@@ -2576,11 +2624,22 @@
       "source_location": "L1"
     },
     {
+      "id": "injectable",
+      "label": "Injectable",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "ProyectosService",
+      "file_type": "code",
+      "norm_label": "injectable",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
       "id": "src_app_core_services_proyectos_service",
       "label": "proyectos.service.ts",
       "_origin": "ast",
       "community": 1,
-      "community_name": "Proyecto",
+      "community_name": "ProyectosService",
       "file_type": "code",
       "norm_label": "proyectos.service.ts",
       "source_file": "src/app/core/services/proyectos.service.ts",
@@ -2591,7 +2650,7 @@
       "label": "Injectable",
       "_origin": "ast",
       "community": 1,
-      "community_name": "Proyecto",
+      "community_name": "ProyectosService",
       "file_type": "code",
       "norm_label": "injectable",
       "source_file": "",
@@ -2602,29 +2661,18 @@
       "label": "reportes.service.ts",
       "_origin": "ast",
       "community": 1,
-      "community_name": "Proyecto",
+      "community_name": "ProyectosService",
       "file_type": "code",
       "norm_label": "reportes.service.ts",
       "source_file": "src/app/core/services/reportes.service.ts",
       "source_location": "L1"
     },
     {
-      "id": "src_app_core_services_reportes_service_ts_injectable",
-      "label": "Injectable",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "Proyecto",
-      "file_type": "code",
-      "norm_label": "injectable",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
       "id": "src_app_features_proyectos_proyectos_form_proyectos_form_component",
       "label": "proyectos-form.component.ts",
       "_origin": "ast",
       "community": 1,
-      "community_name": "Proyecto",
+      "community_name": "ProyectosService",
       "file_type": "code",
       "norm_label": "proyectos-form.component.ts",
       "source_file": "src/app/features/proyectos/proyectos-form/proyectos-form.component.ts",
@@ -2635,7 +2683,7 @@
       "label": "Component",
       "_origin": "ast",
       "community": 1,
-      "community_name": "Proyecto",
+      "community_name": "ProyectosService",
       "file_type": "code",
       "norm_label": "component",
       "source_file": "",
@@ -2646,7 +2694,7 @@
       "label": "proyectos-list.component.ts",
       "_origin": "ast",
       "community": 1,
-      "community_name": "Proyecto",
+      "community_name": "ProyectosService",
       "file_type": "code",
       "norm_label": "proyectos-list.component.ts",
       "source_file": "src/app/features/proyectos/proyectos-list/proyectos-list.component.ts",
@@ -2657,7 +2705,7 @@
       "label": "Component",
       "_origin": "ast",
       "community": 1,
-      "community_name": "Proyecto",
+      "community_name": "ProyectosService",
       "file_type": "code",
       "norm_label": "component",
       "source_file": "",
@@ -2668,7 +2716,7 @@
       "label": "costo-labor.component.ts",
       "_origin": "ast",
       "community": 1,
-      "community_name": "Proyecto",
+      "community_name": "ProyectosService",
       "file_type": "code",
       "norm_label": "costo-labor.component.ts",
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
@@ -2679,7 +2727,7 @@
       "label": "costo-labor-desglose.component.ts",
       "_origin": "ast",
       "community": 1,
-      "community_name": "Proyecto",
+      "community_name": "ProyectosService",
       "file_type": "code",
       "norm_label": "costo-labor-desglose.component.ts",
       "source_file": "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.ts",
@@ -2690,7 +2738,7 @@
       "label": "horas-trabajador.component.ts",
       "_origin": "ast",
       "community": 1,
-      "community_name": "Proyecto",
+      "community_name": "ProyectosService",
       "file_type": "code",
       "norm_label": "horas-trabajador.component.ts",
       "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
@@ -2854,15 +2902,158 @@
       "source_location": "L4"
     },
     {
-      "id": "src_app_core_services_backup_service_ts_injectable",
-      "label": "Injectable",
+      "id": "angular",
+      "label": "angular.json",
       "_origin": "ast",
       "community": 16,
-      "community_name": "Injectable",
+      "community_name": "proyectomarco",
       "file_type": "code",
-      "norm_label": "injectable",
-      "source_file": "",
-      "source_location": ""
+      "norm_label": "angular.json",
+      "source_file": "angular.json",
+      "source_location": "L1"
+    },
+    {
+      "id": "angular_cli_analytics",
+      "label": "analytics",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "proyectomarco",
+      "file_type": "code",
+      "norm_label": "analytics",
+      "source_file": "angular.json",
+      "source_location": "L6"
+    },
+    {
+      "id": "angular_cli_packagemanager",
+      "label": "packageManager",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "proyectomarco",
+      "file_type": "code",
+      "norm_label": "packagemanager",
+      "source_file": "angular.json",
+      "source_location": "L5"
+    },
+    {
+      "id": "angular_json_angular_cli",
+      "label": "cli",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "proyectomarco",
+      "file_type": "code",
+      "norm_label": "cli",
+      "source_file": "angular.json",
+      "source_location": "L4"
+    },
+    {
+      "id": "angular_newprojectroot",
+      "label": "newProjectRoot",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "proyectomarco",
+      "file_type": "code",
+      "norm_label": "newprojectroot",
+      "source_file": "angular.json",
+      "source_location": "L8"
+    },
+    {
+      "id": "angular_projects",
+      "label": "projects",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "proyectomarco",
+      "file_type": "code",
+      "norm_label": "projects",
+      "source_file": "angular.json",
+      "source_location": "L9"
+    },
+    {
+      "id": "angular_projects_proyectomarco",
+      "label": "proyectomarco",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "proyectomarco",
+      "file_type": "code",
+      "norm_label": "proyectomarco",
+      "source_file": "angular.json",
+      "source_location": "L10"
+    },
+    {
+      "id": "angular_proyectomarco_prefix",
+      "label": "prefix",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "proyectomarco",
+      "file_type": "code",
+      "norm_label": "prefix",
+      "source_file": "angular.json",
+      "source_location": "L15"
+    },
+    {
+      "id": "angular_proyectomarco_projecttype",
+      "label": "projectType",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "proyectomarco",
+      "file_type": "code",
+      "norm_label": "projecttype",
+      "source_file": "angular.json",
+      "source_location": "L11"
+    },
+    {
+      "id": "angular_proyectomarco_root",
+      "label": "root",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "proyectomarco",
+      "file_type": "code",
+      "norm_label": "root",
+      "source_file": "angular.json",
+      "source_location": "L13"
+    },
+    {
+      "id": "angular_proyectomarco_schematics",
+      "label": "schematics",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "proyectomarco",
+      "file_type": "code",
+      "norm_label": "schematics",
+      "source_file": "angular.json",
+      "source_location": "L12"
+    },
+    {
+      "id": "angular_proyectomarco_sourceroot",
+      "label": "sourceRoot",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "proyectomarco",
+      "file_type": "code",
+      "norm_label": "sourceroot",
+      "source_file": "angular.json",
+      "source_location": "L14"
+    },
+    {
+      "id": "angular_schema",
+      "label": "$schema",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "proyectomarco",
+      "file_type": "code",
+      "norm_label": "$schema",
+      "source_file": "angular.json",
+      "source_location": "L2"
+    },
+    {
+      "id": "angular_version",
+      "label": "version",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "proyectomarco",
+      "file_type": "code",
+      "norm_label": "version",
+      "source_file": "angular.json",
+      "source_location": "L3"
     },
     {
       "id": "scratch_query",
@@ -3651,17 +3842,6 @@
       "source_location": "L5"
     },
     {
-      "id": "injectable",
-      "label": "Injectable",
-      "_origin": "ast",
-      "community": 27,
-      "community_name": "BackupService",
-      "file_type": "code",
-      "norm_label": "injectable",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
       "id": "src_app_core_services_backup_service",
       "label": "backup.service.ts",
       "_origin": "ast",
@@ -3671,6 +3851,17 @@
       "norm_label": "backup.service.ts",
       "source_file": "src/app/core/services/backup.service.ts",
       "source_location": "L1"
+    },
+    {
+      "id": "src_app_core_services_backup_service_ts_injectable",
+      "label": "Injectable",
+      "_origin": "ast",
+      "community": 27,
+      "community_name": "BackupService",
+      "file_type": "code",
+      "norm_label": "injectable",
+      "source_file": "",
+      "source_location": ""
     },
     {
       "id": "src_app_features_backup_backup_component",
@@ -3684,7 +3875,7 @@
       "source_location": "L1"
     },
     {
-      "id": "component",
+      "id": "src_app_features_backup_backup_component_ts_component",
       "label": "Component",
       "_origin": "ast",
       "community": 28,
@@ -3695,33 +3886,22 @@
       "source_location": ""
     },
     {
-      "id": "src_app_features_backup_backup_component_ts_component",
+      "id": "src_app_features_reportes_costo_labor_desglose_costo_labor_desglose_component_ts_component",
       "label": "Component",
       "_origin": "ast",
       "community": 29,
-      "community_name": "Component",
+      "community_name": "CostoLaborDesgloseComponent",
       "file_type": "code",
       "norm_label": "component",
       "source_file": "",
       "source_location": ""
     },
     {
-      "id": "angular",
-      "label": "angular.json",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "proyectomarco",
-      "file_type": "code",
-      "norm_label": "angular.json",
-      "source_file": "angular.json",
-      "source_location": "L1"
-    },
-    {
       "id": "angular_architect_build",
       "label": "build",
       "_origin": "ast",
       "community": 3,
-      "community_name": "proyectomarco",
+      "community_name": "development",
       "file_type": "code",
       "norm_label": "build",
       "source_file": "angular.json",
@@ -3732,7 +3912,7 @@
       "label": "serve",
       "_origin": "ast",
       "community": 3,
-      "community_name": "proyectomarco",
+      "community_name": "development",
       "file_type": "code",
       "norm_label": "serve",
       "source_file": "angular.json",
@@ -3743,7 +3923,7 @@
       "label": "test",
       "_origin": "ast",
       "community": 3,
-      "community_name": "proyectomarco",
+      "community_name": "development",
       "file_type": "code",
       "norm_label": "test",
       "source_file": "angular.json",
@@ -3754,7 +3934,7 @@
       "label": "builder",
       "_origin": "ast",
       "community": 3,
-      "community_name": "proyectomarco",
+      "community_name": "development",
       "file_type": "code",
       "norm_label": "builder",
       "source_file": "angular.json",
@@ -3765,7 +3945,7 @@
       "label": "configurations",
       "_origin": "ast",
       "community": 3,
-      "community_name": "proyectomarco",
+      "community_name": "development",
       "file_type": "code",
       "norm_label": "configurations",
       "source_file": "angular.json",
@@ -3776,7 +3956,7 @@
       "label": "defaultConfiguration",
       "_origin": "ast",
       "community": 3,
-      "community_name": "proyectomarco",
+      "community_name": "development",
       "file_type": "code",
       "norm_label": "defaultconfiguration",
       "source_file": "angular.json",
@@ -3787,51 +3967,18 @@
       "label": "options",
       "_origin": "ast",
       "community": 3,
-      "community_name": "proyectomarco",
+      "community_name": "development",
       "file_type": "code",
       "norm_label": "options",
       "source_file": "angular.json",
       "source_location": "L19"
     },
     {
-      "id": "angular_cli",
-      "label": "cli",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "proyectomarco",
-      "file_type": "code",
-      "norm_label": "cli",
-      "source_file": "angular.json",
-      "source_location": "L4"
-    },
-    {
-      "id": "angular_cli_analytics",
-      "label": "analytics",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "proyectomarco",
-      "file_type": "code",
-      "norm_label": "analytics",
-      "source_file": "angular.json",
-      "source_location": "L6"
-    },
-    {
-      "id": "angular_cli_packagemanager",
-      "label": "packageManager",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "proyectomarco",
-      "file_type": "code",
-      "norm_label": "packagemanager",
-      "source_file": "angular.json",
-      "source_location": "L5"
-    },
-    {
       "id": "angular_configurations_development",
       "label": "development",
       "_origin": "ast",
       "community": 3,
-      "community_name": "proyectomarco",
+      "community_name": "development",
       "file_type": "code",
       "norm_label": "development",
       "source_file": "angular.json",
@@ -3842,7 +3989,7 @@
       "label": "production",
       "_origin": "ast",
       "community": 3,
-      "community_name": "proyectomarco",
+      "community_name": "development",
       "file_type": "code",
       "norm_label": "production",
       "source_file": "angular.json",
@@ -3853,7 +4000,7 @@
       "label": "buildTarget",
       "_origin": "ast",
       "community": 3,
-      "community_name": "proyectomarco",
+      "community_name": "development",
       "file_type": "code",
       "norm_label": "buildtarget",
       "source_file": "angular.json",
@@ -3864,7 +4011,7 @@
       "label": "extractLicenses",
       "_origin": "ast",
       "community": 3,
-      "community_name": "proyectomarco",
+      "community_name": "development",
       "file_type": "code",
       "norm_label": "extractlicenses",
       "source_file": "angular.json",
@@ -3875,7 +4022,7 @@
       "label": "optimization",
       "_origin": "ast",
       "community": 3,
-      "community_name": "proyectomarco",
+      "community_name": "development",
       "file_type": "code",
       "norm_label": "optimization",
       "source_file": "angular.json",
@@ -3886,29 +4033,18 @@
       "label": "sourceMap",
       "_origin": "ast",
       "community": 3,
-      "community_name": "proyectomarco",
+      "community_name": "development",
       "file_type": "code",
       "norm_label": "sourcemap",
       "source_file": "angular.json",
       "source_location": "L49"
     },
     {
-      "id": "angular_newprojectroot",
-      "label": "newProjectRoot",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "proyectomarco",
-      "file_type": "code",
-      "norm_label": "newprojectroot",
-      "source_file": "angular.json",
-      "source_location": "L8"
-    },
-    {
       "id": "angular_options_assets",
       "label": "assets",
       "_origin": "ast",
       "community": 3,
-      "community_name": "proyectomarco",
+      "community_name": "development",
       "file_type": "code",
       "norm_label": "assets",
       "source_file": "angular.json",
@@ -3919,7 +4055,7 @@
       "label": "browser",
       "_origin": "ast",
       "community": 3,
-      "community_name": "proyectomarco",
+      "community_name": "development",
       "file_type": "code",
       "norm_label": "browser",
       "source_file": "angular.json",
@@ -3930,7 +4066,7 @@
       "label": "styles",
       "_origin": "ast",
       "community": 3,
-      "community_name": "proyectomarco",
+      "community_name": "development",
       "file_type": "code",
       "norm_label": "styles",
       "source_file": "angular.json",
@@ -3941,7 +4077,7 @@
       "label": "tsConfig",
       "_origin": "ast",
       "community": 3,
-      "community_name": "proyectomarco",
+      "community_name": "development",
       "file_type": "code",
       "norm_label": "tsconfig",
       "source_file": "angular.json",
@@ -3952,7 +4088,7 @@
       "label": "budgets",
       "_origin": "ast",
       "community": 3,
-      "community_name": "proyectomarco",
+      "community_name": "development",
       "file_type": "code",
       "norm_label": "budgets",
       "source_file": "angular.json",
@@ -3963,7 +4099,7 @@
       "label": "buildTarget",
       "_origin": "ast",
       "community": 3,
-      "community_name": "proyectomarco",
+      "community_name": "development",
       "file_type": "code",
       "norm_label": "buildtarget",
       "source_file": "angular.json",
@@ -3974,117 +4110,29 @@
       "label": "outputHashing",
       "_origin": "ast",
       "community": 3,
-      "community_name": "proyectomarco",
+      "community_name": "development",
       "file_type": "code",
       "norm_label": "outputhashing",
       "source_file": "angular.json",
       "source_location": "L44"
     },
     {
-      "id": "angular_projects",
-      "label": "projects",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "proyectomarco",
-      "file_type": "code",
-      "norm_label": "projects",
-      "source_file": "angular.json",
-      "source_location": "L9"
-    },
-    {
-      "id": "angular_projects_proyectomarco",
-      "label": "proyectomarco",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "proyectomarco",
-      "file_type": "code",
-      "norm_label": "proyectomarco",
-      "source_file": "angular.json",
-      "source_location": "L10"
-    },
-    {
       "id": "angular_proyectomarco_architect",
       "label": "architect",
       "_origin": "ast",
       "community": 3,
-      "community_name": "proyectomarco",
+      "community_name": "development",
       "file_type": "code",
       "norm_label": "architect",
       "source_file": "angular.json",
       "source_location": "L16"
     },
     {
-      "id": "angular_proyectomarco_prefix",
-      "label": "prefix",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "proyectomarco",
-      "file_type": "code",
-      "norm_label": "prefix",
-      "source_file": "angular.json",
-      "source_location": "L15"
-    },
-    {
-      "id": "angular_proyectomarco_projecttype",
-      "label": "projectType",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "proyectomarco",
-      "file_type": "code",
-      "norm_label": "projecttype",
-      "source_file": "angular.json",
-      "source_location": "L11"
-    },
-    {
-      "id": "angular_proyectomarco_root",
-      "label": "root",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "proyectomarco",
-      "file_type": "code",
-      "norm_label": "root",
-      "source_file": "angular.json",
-      "source_location": "L13"
-    },
-    {
-      "id": "angular_proyectomarco_schematics",
-      "label": "schematics",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "proyectomarco",
-      "file_type": "code",
-      "norm_label": "schematics",
-      "source_file": "angular.json",
-      "source_location": "L12"
-    },
-    {
-      "id": "angular_proyectomarco_sourceroot",
-      "label": "sourceRoot",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "proyectomarco",
-      "file_type": "code",
-      "norm_label": "sourceroot",
-      "source_file": "angular.json",
-      "source_location": "L14"
-    },
-    {
-      "id": "angular_schema",
-      "label": "$schema",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "proyectomarco",
-      "file_type": "code",
-      "norm_label": "$schema",
-      "source_file": "angular.json",
-      "source_location": "L2"
-    },
-    {
       "id": "angular_serve_builder",
       "label": "builder",
       "_origin": "ast",
       "community": 3,
-      "community_name": "proyectomarco",
+      "community_name": "development",
       "file_type": "code",
       "norm_label": "builder",
       "source_file": "angular.json",
@@ -4095,7 +4143,7 @@
       "label": "configurations",
       "_origin": "ast",
       "community": 3,
-      "community_name": "proyectomarco",
+      "community_name": "development",
       "file_type": "code",
       "norm_label": "configurations",
       "source_file": "angular.json",
@@ -4106,7 +4154,7 @@
       "label": "defaultConfiguration",
       "_origin": "ast",
       "community": 3,
-      "community_name": "proyectomarco",
+      "community_name": "development",
       "file_type": "code",
       "norm_label": "defaultconfiguration",
       "source_file": "angular.json",
@@ -4117,29 +4165,18 @@
       "label": "builder",
       "_origin": "ast",
       "community": 3,
-      "community_name": "proyectomarco",
+      "community_name": "development",
       "file_type": "code",
       "norm_label": "builder",
       "source_file": "angular.json",
       "source_location": "L67"
     },
     {
-      "id": "angular_version",
-      "label": "version",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "proyectomarco",
-      "file_type": "code",
-      "norm_label": "version",
-      "source_file": "angular.json",
-      "source_location": "L3"
-    },
-    {
       "id": "ref_src_material_theme_scss",
       "label": "src/material-theme.scss",
       "_origin": "ast",
       "community": 3,
-      "community_name": "proyectomarco",
+      "community_name": "development",
       "file_type": "concept",
       "norm_label": "src/material-theme.scss",
       "source_file": "angular.json",
@@ -4150,11 +4187,22 @@
       "label": "src/styles.css",
       "_origin": "ast",
       "community": 3,
-      "community_name": "proyectomarco",
+      "community_name": "development",
       "file_type": "concept",
       "norm_label": "src/styles.css",
       "source_file": "angular.json",
       "source_location": "L28"
+    },
+    {
+      "id": "src_app_core_services_reportes_service_ts_injectable",
+      "label": "Injectable",
+      "_origin": "ast",
+      "community": 30,
+      "community_name": "Injectable",
+      "file_type": "code",
+      "norm_label": "injectable",
+      "source_file": "",
+      "source_location": ""
     },
     {
       "id": "src_app_core_services_registros_tiempo_service",
@@ -4609,17 +4657,6 @@
     },
     {
       "id": "src_app_features_home_home_component_ts_component",
-      "label": "Component",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "app.routes.ts",
-      "file_type": "code",
-      "norm_label": "component",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "src_app_features_reportes_costo_labor_desglose_costo_labor_desglose_component_ts_component",
       "label": "Component",
       "_origin": "ast",
       "community": 6,
@@ -5208,7 +5245,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/features/registros-tiempov2/registros-tiempov2-list/registros-tiempov2-list.component.ts",
-      "source_location": "L134",
+      "source_location": "L142",
       "weight": 1.0
     },
     {
@@ -5220,7 +5257,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/features/registros-tiempov2/registros-tiempov2-list/registros-tiempov2-list.component.ts",
-      "source_location": "L146",
+      "source_location": "L154",
       "weight": 1.0
     },
     {
@@ -5232,7 +5269,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/features/registros-tiempov2/registros-tiempov2-list/registros-tiempov2-list.component.ts",
-      "source_location": "L279",
+      "source_location": "L287",
       "weight": 1.0
     },
     {
@@ -5292,7 +5329,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L122",
+      "source_location": "L139",
       "weight": 1.0
     },
     {
@@ -5304,7 +5341,31 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L146",
+      "source_location": "L163",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_filtrarproyectos",
+      "target": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_aplicarfiltroproyectos",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
+      "source_location": "L105",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_loadproyectos",
+      "target": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_aplicarfiltroproyectos",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
+      "source_location": "L81",
       "weight": 1.0
     },
     {
@@ -5316,7 +5377,19 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L63",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_ngoninit",
+      "target": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_aplicarfiltroproyectos",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
+      "source_location": "L66",
       "weight": 1.0
     },
     {
@@ -5328,7 +5401,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L183",
+      "source_location": "L200",
       "weight": 1.0
     },
     {
@@ -5352,7 +5425,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
-      "source_location": "L144",
+      "source_location": "L169",
       "weight": 1.0
     },
     {
@@ -5364,7 +5437,31 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
-      "source_location": "L162",
+      "source_location": "L187",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_filtrarproyectos",
+      "target": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_aplicarfiltroproyectos",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
+      "source_location": "L113",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_loadproyectos",
+      "target": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_aplicarfiltroproyectos",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
+      "source_location": "L79",
       "weight": 1.0
     },
     {
@@ -5376,7 +5473,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
-      "source_location": "L62",
+      "source_location": "L68",
       "weight": 1.0
     },
     {
@@ -5388,7 +5485,19 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
-      "source_location": "L63",
+      "source_location": "L69",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_ngoninit",
+      "target": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_aplicarfiltroproyectos",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
+      "source_location": "L72",
       "weight": 1.0
     },
     {
@@ -5441,7 +5550,7 @@
     },
     {
       "source": "src_app_core_services_backup_service_backupservice",
-      "target": "injectable",
+      "target": "src_app_core_services_backup_service_ts_injectable",
       "relation": "references",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5501,14 +5610,14 @@
     },
     {
       "source": "src_app_core_services_reportes_service_reportesservice",
-      "target": "src_app_core_services_reportes_service_ts_injectable",
+      "target": "injectable",
       "relation": "references",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "decorator",
       "source_file": "src/app/core/services/reportes.service.ts",
-      "source_location": "L36",
+      "source_location": "L41",
       "weight": 1.0
     },
     {
@@ -5573,7 +5682,7 @@
     },
     {
       "source": "src_app_features_backup_backup_component_backupcomponent",
-      "target": "component",
+      "target": "src_app_features_backup_backup_component_ts_component",
       "relation": "references",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5845,66 +5954,6 @@
       "context": "field",
       "source_file": "src/app/features/registros-tiempo/registros-tiempo-form/registros-tiempo-form.component.ts",
       "source_location": "L32",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempov2_registros_tiempov2_list_registros_tiempov2_list_component_registrostiempov2listcomponent",
-      "target": "src_app_core_services_trabajadores_service_trabajador",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "field",
-      "source_file": "src/app/features/registros-tiempov2/registros-tiempov2-list/registros-tiempov2-list.component.ts",
-      "source_location": "L41",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempov2_registros_tiempov2_list_registros_tiempov2_list_component_registrostiempov2listcomponent",
-      "target": "src_app_core_services_proyectos_service_proyecto",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "field",
-      "source_file": "src/app/features/registros-tiempov2/registros-tiempov2-list/registros-tiempov2-list.component.ts",
-      "source_location": "L43",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent",
-      "target": "src_app_core_services_proyectos_service_proyecto",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "field",
-      "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L44",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent",
-      "target": "src_app_core_services_proyectos_service_proyecto",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "field",
-      "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
-      "source_location": "L43",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent",
-      "target": "src_app_core_services_trabajadores_service_trabajador",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "field",
-      "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
-      "source_location": "L45",
       "weight": 1.0
     },
     {
@@ -8292,7 +8341,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L178",
+      "source_location": "L195",
       "weight": 1.0
     },
     {
@@ -8531,7 +8580,7 @@
     },
     {
       "source": "angular",
-      "target": "angular_cli",
+      "target": "angular_json_angular_cli",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -8717,28 +8766,6 @@
       "weight": 1.0
     },
     {
-      "source": "angular_cli",
-      "target": "angular_cli_packagemanager",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "angular.json",
-      "source_location": "L5",
-      "weight": 1.0
-    },
-    {
-      "source": "angular_cli",
-      "target": "angular_cli_analytics",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "angular.json",
-      "source_location": "L6",
-      "weight": 1.0
-    },
-    {
       "source": "angular_configurations_development",
       "target": "angular_development_optimization",
       "relation": "contains",
@@ -8813,6 +8840,28 @@
       "confidence_score": 1.0,
       "source_file": "angular.json",
       "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "angular_json_angular_cli",
+      "target": "angular_cli_packagemanager",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "angular.json",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "angular_json_angular_cli",
+      "target": "angular_cli_analytics",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "angular.json",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -9791,18 +9840,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/core/services/reportes.service.ts",
-      "source_location": "L28",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_core_services_reportes_service",
-      "target": "src_app_core_services_reportes_service_reportesservice",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/core/services/reportes.service.ts",
-      "source_location": "L37",
+      "source_location": "L33",
       "weight": 1.0
     },
     {
@@ -9814,6 +9852,17 @@
       "confidence_score": 1.0,
       "source_file": "src/app/core/services/reportes.service.ts",
       "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_core_services_reportes_service",
+      "target": "src_app_core_services_reportes_service_reportesservice",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/core/services/reportes.service.ts",
+      "source_location": "L42",
       "weight": 1.0
     },
     {
@@ -10033,7 +10082,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
-      "source_location": "L29",
+      "source_location": "L30",
       "weight": 1.0
     },
     {
@@ -10407,7 +10456,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/core/services/reportes.service.ts",
-      "source_location": "L148",
+      "source_location": "L153",
       "weight": 1.0
     },
     {
@@ -10418,7 +10467,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/core/services/reportes.service.ts",
-      "source_location": "L217",
+      "source_location": "L249",
       "weight": 1.0
     },
     {
@@ -10429,7 +10478,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/core/services/reportes.service.ts",
-      "source_location": "L45",
+      "source_location": "L50",
       "weight": 1.0
     },
     {
@@ -11149,7 +11198,7 @@
     },
     {
       "source": "src_app_features_registros_tiempov2_registros_tiempov2_list_registros_tiempov2_list_component_registrostiempov2listcomponent",
-      "target": "src_app_features_registros_tiempov2_registros_tiempov2_list_registros_tiempov2_list_component_registrostiempov2listcomponent_cleartable",
+      "target": "src_app_features_registros_tiempov2_registros_tiempov2_list_registros_tiempov2_list_component_registrostiempov2listcomponent_seleccionartodosproyectos",
       "relation": "method",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -11160,13 +11209,35 @@
     },
     {
       "source": "src_app_features_registros_tiempov2_registros_tiempov2_list_registros_tiempov2_list_component_registrostiempov2listcomponent",
+      "target": "src_app_features_registros_tiempov2_registros_tiempov2_list_registros_tiempov2_list_component_registrostiempov2listcomponent_deseleccionartodosproyectos",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/registros-tiempov2/registros-tiempov2-list/registros-tiempov2-list.component.ts",
+      "source_location": "L128",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_registros_tiempov2_registros_tiempov2_list_registros_tiempov2_list_component_registrostiempov2listcomponent",
+      "target": "src_app_features_registros_tiempov2_registros_tiempov2_list_registros_tiempov2_list_component_registrostiempov2listcomponent_cleartable",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/registros-tiempov2/registros-tiempov2-list/registros-tiempov2-list.component.ts",
+      "source_location": "L132",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_registros_tiempov2_registros_tiempov2_list_registros_tiempov2_list_component_registrostiempov2listcomponent",
       "target": "src_app_features_registros_tiempov2_registros_tiempov2_list_registros_tiempov2_list_component_registrostiempov2listcomponent_buildtable",
       "relation": "method",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/features/registros-tiempov2/registros-tiempov2-list/registros-tiempov2-list.component.ts",
-      "source_location": "L133",
+      "source_location": "L141",
       "weight": 1.0
     },
     {
@@ -11177,7 +11248,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/features/registros-tiempov2/registros-tiempov2-list/registros-tiempov2-list.component.ts",
-      "source_location": "L183",
+      "source_location": "L191",
       "weight": 1.0
     },
     {
@@ -11188,7 +11259,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/features/registros-tiempov2/registros-tiempov2-list/registros-tiempov2-list.component.ts",
-      "source_location": "L190",
+      "source_location": "L198",
       "weight": 1.0
     },
     {
@@ -11199,7 +11270,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/features/registros-tiempov2/registros-tiempov2-list/registros-tiempov2-list.component.ts",
-      "source_location": "L203",
+      "source_location": "L211",
       "weight": 1.0
     },
     {
@@ -11210,7 +11281,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/features/registros-tiempov2/registros-tiempov2-list/registros-tiempov2-list.component.ts",
-      "source_location": "L229",
+      "source_location": "L237",
       "weight": 1.0
     },
     {
@@ -11248,101 +11319,13 @@
     },
     {
       "source": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent",
-      "target": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_buscar",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L120",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent",
-      "target": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_limpiarfiltros",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L161",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent",
-      "target": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_formatdateiso",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L171",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent",
-      "target": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_verdesglose",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L178",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent",
-      "target": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_ngoninit",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L62",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent",
-      "target": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_seleccionartodosproyectos",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L66",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent",
-      "target": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_deseleccionartodosproyectos",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L70",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent",
-      "target": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_loadproyectos",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L74",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent",
       "target": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_filtrarproyectos",
       "relation": "method",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L83",
+      "source_location": "L103",
       "weight": 1.0
     },
     {
@@ -11353,7 +11336,106 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L95",
+      "source_location": "L112",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent",
+      "target": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_buscar",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
+      "source_location": "L137",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent",
+      "target": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_limpiarfiltros",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
+      "source_location": "L178",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent",
+      "target": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_formatdateiso",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
+      "source_location": "L188",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent",
+      "target": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_verdesglose",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
+      "source_location": "L195",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent",
+      "target": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_ngoninit",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
+      "source_location": "L63",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent",
+      "target": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_seleccionartodosproyectos",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
+      "source_location": "L70",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent",
+      "target": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_deseleccionartodosproyectos",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
+      "source_location": "L74",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent",
+      "target": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_loadproyectos",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
+      "source_location": "L78",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent",
+      "target": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_aplicarfiltroproyectos",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
+      "source_location": "L87",
       "weight": 1.0
     },
     {
@@ -11391,123 +11473,13 @@
     },
     {
       "source": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent",
-      "target": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_deseleccionartodosproyectos",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
-      "source_location": "L102",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent",
-      "target": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_seleccionartodostrabajadores",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
-      "source_location": "L106",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent",
-      "target": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_deseleccionartodostrabajadores",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
-      "source_location": "L110",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent",
-      "target": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_validatefilters",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
-      "source_location": "L114",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent",
-      "target": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_buscar",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
-      "source_location": "L143",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent",
-      "target": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_limpiarfiltros",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
-      "source_location": "L177",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent",
-      "target": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_formatdateiso",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
-      "source_location": "L188",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent",
-      "target": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_ngoninit",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
-      "source_location": "L61",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent",
-      "target": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_loadproyectos",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
-      "source_location": "L66",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent",
-      "target": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_loadtrabajadores",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
-      "source_location": "L75",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent",
       "target": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_filtrarproyectos",
       "relation": "method",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
-      "source_location": "L84",
+      "source_location": "L111",
       "weight": 1.0
     },
     {
@@ -11518,7 +11490,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
-      "source_location": "L91",
+      "source_location": "L116",
       "weight": 1.0
     },
     {
@@ -11529,7 +11501,128 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
-      "source_location": "L98",
+      "source_location": "L123",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent",
+      "target": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_deseleccionartodosproyectos",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
+      "source_location": "L127",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent",
+      "target": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_seleccionartodostrabajadores",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
+      "source_location": "L131",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent",
+      "target": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_deseleccionartodostrabajadores",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
+      "source_location": "L135",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent",
+      "target": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_validatefilters",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
+      "source_location": "L139",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent",
+      "target": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_buscar",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
+      "source_location": "L168",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent",
+      "target": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_limpiarfiltros",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
+      "source_location": "L202",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent",
+      "target": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_formatdateiso",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
+      "source_location": "L213",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent",
+      "target": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_ngoninit",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
+      "source_location": "L67",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent",
+      "target": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_loadproyectos",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
+      "source_location": "L76",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent",
+      "target": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_loadtrabajadores",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
+      "source_location": "L85",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent",
+      "target": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_aplicarfiltroproyectos",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts",
+      "source_location": "L94",
       "weight": 1.0
     },
     {
@@ -11757,5 +11850,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "b954c1d6465f2b490baa3512c2130b80eea6cf35"
+  "built_at_commit": "0cec358bfbb3f9389bd3c4946630e0e680f7c9ad"
 }
