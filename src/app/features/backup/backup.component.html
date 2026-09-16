@@ -1,0 +1,318 @@
+<div class="page-container">
+  <!-- Encabezado de la página -->
+  <div class="page-header">
+    <div class="header-title-group">
+      <div class="header-icon-badge">
+        <mat-icon>storage</mat-icon>
+      </div>
+      <div>
+        <h2>Copia de Seguridad y Restauración</h2>
+        <p class="subtitle">Descarga respaldos completos en formato JSON o restaura tu información cuando lo necesites.</p>
+      </div>
+    </div>
+
+    <button mat-stroked-button (click)="loadStats()" [disabled]="loadingStats() || isExporting() || isRestoring()" matTooltip="Actualizar conteo de registros actuales">
+      <mat-icon [class.spin-icon]="loadingStats()">sync</mat-icon>
+      <span>Actualizar Estado</span>
+    </button>
+  </div>
+
+  <!-- Resumen de Datos Actuales en Base de Datos -->
+  <div class="stats-overview-grid">
+    <div class="stat-card">
+      <div class="stat-icon-wrapper blue">
+        <mat-icon>badge</mat-icon>
+      </div>
+      <div class="stat-info">
+        <span class="stat-label">Trabajadores</span>
+        <span class="stat-value">
+          @if (loadingStats()) { <span class="placeholder-shimmer">...</span> }
+          @else { {{ stats()?.trabajadores ?? 0 }} }
+        </span>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-icon-wrapper teal">
+        <mat-icon>business</mat-icon>
+      </div>
+      <div class="stat-info">
+        <span class="stat-label">Proyectos</span>
+        <span class="stat-value">
+          @if (loadingStats()) { <span class="placeholder-shimmer">...</span> }
+          @else { {{ stats()?.proyectos ?? 0 }} }
+        </span>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-icon-wrapper purple">
+        <mat-icon>access_time</mat-icon>
+      </div>
+      <div class="stat-info">
+        <span class="stat-label">Registros Labor</span>
+        <span class="stat-value">
+          @if (loadingStats()) { <span class="placeholder-shimmer">...</span> }
+          @else { {{ stats()?.registros_tiempo ?? 0 }} }
+        </span>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-icon-wrapper green">
+        <mat-icon>payments</mat-icon>
+      </div>
+      <div class="stat-info">
+        <span class="stat-label">Nóminas</span>
+        <span class="stat-value">
+          @if (loadingStats()) { <span class="placeholder-shimmer">...</span> }
+          @else { {{ stats()?.nominas ?? 0 }} }
+        </span>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-icon-wrapper amber">
+        <mat-icon>receipt</mat-icon>
+      </div>
+      <div class="stat-info">
+        <span class="stat-label">Gastos Proyecto</span>
+        <span class="stat-value">
+          @if (loadingStats()) { <span class="placeholder-shimmer">...</span> }
+          @else { {{ stats()?.gastos_proyecto ?? 0 }} }
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contenedor Principal: 2 Columnas (Exportar y Restaurar) -->
+  <div class="backup-main-grid">
+
+    <!-- SECCIÓN 1: EXPORTAR / DESCARGAR BACKUP -->
+    <div class="backup-action-card">
+      <div class="card-header-bar">
+        <div class="icon-title">
+          <mat-icon color="primary">cloud_download</mat-icon>
+          <h3>Exportar Copia de Seguridad (JSON)</h3>
+        </div>
+        <span class="badge-tag">Recomendado</span>
+      </div>
+
+      <p class="card-description">
+        Genera un archivo <code>.json</code> completo con todas las tablas del sistema (empleados, casas/proyectos, horas trabajadas, nóminas y gastos). El archivo se descargará automáticamente a tu computadora o dispositivo.
+      </p>
+
+      <!-- Estado: Espera / Animación mientras se crea el JSON -->
+      @if (isExporting()) {
+        <div class="export-animation-container">
+          <!-- Esfera animada con pulso y órbita -->
+          <div class="radar-visual">
+            <div class="radar-circle circle-1"></div>
+            <div class="radar-circle circle-2"></div>
+            <div class="radar-circle circle-3"></div>
+            <div class="radar-core">
+              <mat-icon class="pulse-icon">cloud_download</mat-icon>
+            </div>
+          </div>
+
+          <!-- Barra de progreso dinámica -->
+          <div class="progress-details-block">
+            <div class="progress-header">
+              <span class="progress-step-text">{{ backupService.progress().step }}</span>
+              <span class="progress-pct">{{ backupService.progress().progress }}%</span>
+            </div>
+            <mat-progress-bar mode="determinate" [value]="backupService.progress().progress" class="animated-progress"></mat-progress-bar>
+            @if (backupService.progress().details) {
+              <span class="progress-subtext">{{ backupService.progress().details }}</span>
+            }
+          </div>
+
+          <div class="steps-micro-list">
+            <div class="micro-step" [class.done]="backupService.progress().progress >= 20">
+              <mat-icon>{{ backupService.progress().progress >= 20 ? 'check_circle' : 'hourglass_top' }}</mat-icon>
+              <span>Trabajadores</span>
+            </div>
+            <div class="micro-step" [class.done]="backupService.progress().progress >= 35">
+              <mat-icon>{{ backupService.progress().progress >= 35 ? 'check_circle' : 'hourglass_top' }}</mat-icon>
+              <span>Proyectos</span>
+            </div>
+            <div class="micro-step" [class.done]="backupService.progress().progress >= 60">
+              <mat-icon>{{ backupService.progress().progress >= 60 ? 'check_circle' : 'hourglass_top' }}</mat-icon>
+              <span>Labor (Horas)</span>
+            </div>
+            <div class="micro-step" [class.done]="backupService.progress().progress >= 85">
+              <mat-icon>{{ backupService.progress().progress >= 85 ? 'check_circle' : 'hourglass_top' }}</mat-icon>
+              <span>Nóminas y Gastos</span>
+            </div>
+            <div class="micro-step" [class.done]="backupService.progress().progress >= 95">
+              <mat-icon>{{ backupService.progress().progress >= 95 ? 'check_circle' : 'hourglass_top' }}</mat-icon>
+              <span>Compilar JSON</span>
+            </div>
+          </div>
+        </div>
+      } @else {
+        <!-- Botón de acción para iniciar exportación -->
+        <div class="action-box">
+          <button mat-flat-button color="primary" class="big-action-btn" (click)="startExport()" [disabled]="isRestoring()">
+            <mat-icon>download</mat-icon>
+            <span>Descargar Copia de Seguridad Ahora</span>
+          </button>
+        </div>
+      }
+
+      <!-- Mensaje de éxito de la última descarga -->
+      @if (lastExportedFile(); as file) {
+        <div class="success-banner">
+          <mat-icon class="success-icon">task_alt</mat-icon>
+          <div class="success-content">
+            <strong>¡Copia descargada con éxito!</strong>
+            <p>Archivo: <code>{{ file.filename }}</code> ({{ file.sizeKb }} KB)</p>
+            <div class="tag-row">
+              <span>{{ file.stats.trabajadores }} trabajadores</span>
+              <span>•</span>
+              <span>{{ file.stats.proyectos }} proyectos</span>
+              <span>•</span>
+              <span>{{ file.stats.registros_tiempo }} registros labor</span>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+
+    <!-- SECCIÓN 2: RESTAURAR DESDE UN ARCHIVO JSON -->
+    <div class="backup-action-card">
+      <div class="card-header-bar">
+        <div class="icon-title">
+          <mat-icon color="accent">settings_backup_restore</mat-icon>
+          <h3>Restaurar Base de Datos</h3>
+        </div>
+        <span class="badge-tag warning-tag">Precaución</span>
+      </div>
+
+      <p class="card-description">
+        Selecciona un archivo <code>.json</code> previamente exportado para recuperar o sincronizar la información del sistema.
+      </p>
+
+      <!-- Estado: Animación de progreso durante la restauración -->
+      @if (isRestoring()) {
+        <div class="restore-animation-container">
+          <div class="radar-visual restore-theme">
+            <div class="radar-circle circle-1"></div>
+            <div class="radar-circle circle-2"></div>
+            <div class="radar-core">
+              <mat-icon class="spin-icon">autorenew</mat-icon>
+            </div>
+          </div>
+
+          <div class="progress-details-block">
+            <div class="progress-header">
+              <span class="progress-step-text">{{ backupService.progress().step }}</span>
+              <span class="progress-pct">{{ backupService.progress().progress }}%</span>
+            </div>
+            <mat-progress-bar mode="determinate" [value]="backupService.progress().progress" class="animated-progress restore-bar"></mat-progress-bar>
+            @if (backupService.progress().details) {
+              <span class="progress-subtext">{{ backupService.progress().details }}</span>
+            }
+          </div>
+        </div>
+      } @else {
+
+        <!-- Si aún no se selecciona archivo, mostramos zona Dropzone -->
+        @if (!selectedFile()) {
+          <div class="dropzone" (dragover)="onDragOver($event)" (drop)="onDrop($event)" (click)="fileInput.click()">
+            <input #fileInput type="file" accept=".json" (change)="onFileSelected($event)" style="display: none;">
+            <div class="dropzone-content">
+              <mat-icon class="dropzone-icon">file_upload</mat-icon>
+              <h4>Arrastra tu archivo JSON aquí</h4>
+              <p>o haz clic para explorar tus archivos</p>
+              <span class="file-type-hint">Solo archivos .json de Proyecto Marco</span>
+            </div>
+          </div>
+        }
+
+        <!-- Mensaje de error de validación -->
+        @if (fileValidationError()) {
+          <div class="error-banner">
+            <mat-icon>error_outline</mat-icon>
+            <span>{{ fileValidationError() }}</span>
+            <button mat-icon-button (click)="cancelRestore()">
+              <mat-icon>close</mat-icon>
+            </button>
+          </div>
+        }
+
+        <!-- Archivo seleccionado y validado -->
+        @if (selectedBackupData(); as backup) {
+          <div class="file-summary-card">
+            <div class="file-summary-header">
+              <div class="file-info-col">
+                <mat-icon class="file-icon">description</mat-icon>
+                <div>
+                  <h4 class="filename-title">{{ selectedFile()?.name }}</h4>
+                  <span class="file-date">Generado el: {{ backup.metadata.created_at | date:'medium' }}</span>
+                </div>
+              </div>
+              <button mat-icon-button (click)="cancelRestore()" matTooltip="Descartar archivo">
+                <mat-icon>delete_outline</mat-icon>
+              </button>
+            </div>
+
+            <mat-divider></mat-divider>
+
+            <div class="preview-counts">
+              <span class="preview-title">Contenido a restaurar:</span>
+              <div class="counts-pills">
+                <span class="count-pill"><b>{{ backup.metadata.counts.trabajadores }}</b> trabajadores</span>
+                <span class="count-pill"><b>{{ backup.metadata.counts.proyectos }}</b> proyectos</span>
+                <span class="count-pill"><b>{{ backup.metadata.counts.registros_tiempo }}</b> labor</span>
+                <span class="count-pill"><b>{{ backup.metadata.counts.nominas }}</b> nóminas</span>
+                <span class="count-pill"><b>{{ backup.metadata.counts.gastos_proyecto }}</b> gastos</span>
+              </div>
+            </div>
+
+            <!-- Diálogo / Confirmación de Seguridad -->
+            @if (showRestoreConfirm()) {
+              <div class="critical-warning-box">
+                <div class="warning-title-row">
+                  <mat-icon>warning</mat-icon>
+                  <strong>¿Confirmar restauración de la base de datos?</strong>
+                </div>
+                <p>
+                  Esta operación reemplazará los datos actuales en Supabase con los del archivo seleccionado para mantener la consistencia e integridad referencial.
+                </p>
+                <div class="confirm-actions">
+                  <button mat-stroked-button (click)="showRestoreConfirm.set(false)">
+                    Cancelar
+                  </button>
+                  <button mat-flat-button color="warn" (click)="executeRestore()">
+                    <mat-icon>check</mat-icon>
+                    <span>Sí, Proceder y Restaurar</span>
+                  </button>
+                </div>
+              </div>
+            } @else {
+              <div class="ready-actions">
+                <button mat-flat-button color="accent" class="big-action-btn" (click)="requestRestoreConfirmation()" [disabled]="isExporting()">
+                  <mat-icon>restore</mat-icon>
+                  <span>Iniciar Proceso de Restauración</span>
+                </button>
+              </div>
+            }
+          </div>
+        }
+      }
+
+      <!-- Mensaje de éxito de restauración previa -->
+      @if (lastRestoredStats(); as r) {
+        <div class="success-banner restore-success">
+          <mat-icon class="success-icon">check_circle</mat-icon>
+          <div class="success-content">
+            <strong>¡Restauración Finalizada con Éxito!</strong>
+            <p>Se restablecieron todos los datos correctamente en Supabase.</p>
+          </div>
+        </div>
+      }
+    </div>
+
+  </div>
+</div>

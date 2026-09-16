@@ -11,6 +11,7 @@ import { GastosListComponent } from './features/gastos/gastos-list/gastos-list.c
 import { CostoLaborComponent } from './features/reportes/costo-labor/costo-labor.component';
 import { HorasTrabajadorComponent } from './features/reportes/horas-trabajador/horas-trabajador.component';
 import { CostoLaborDesgloseComponent } from './features/reportes/costo-labor-desglose/costo-labor-desglose.component';
+import { BackupComponent } from './features/backup/backup.component';
 import { authGuard } from './core/guards/auth.guard';
 import { noAuthGuard } from './core/guards/no-auth.guard';
 
@@ -69,6 +70,10 @@ export const routes: Routes = [
       {
         path: 'reporte-horas-trabajador',
         component: HorasTrabajadorComponent
+      },
+      {
+        path: 'backup',
+        component: BackupComponent
       }
     ]
   },

@@ -5,3 +5,6 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+@keyframes spin { to { transform: rotate(360deg); } }
+.spin-icon { animation: spin 1.2s linear infinite; }
