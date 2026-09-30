@@ -45,7 +45,7 @@ export class CostoLaborComponent implements OnInit {
   proyectosFiltrados: Proyecto[] = [];
   projectSearchText = '';
   selectedProyectoIds = new FormControl<string[]>([]);
-  selectedEstatus = new FormControl<string>('');
+  selectedEstatus = new FormControl<string>('activo');
   dateRange = new FormGroup({
     start: new FormControl<Date | null>(null),
     end: new FormControl<Date | null>(null)
@@ -124,7 +124,7 @@ export class CostoLaborComponent implements OnInit {
     }
 
     const estatus = this.selectedEstatus.value;
-    if (estatus === '' || estatus === null) {
+    if (estatus === null || estatus === undefined) {
       errors.push('el estado del proyecto');
     }
 
@@ -177,7 +177,7 @@ export class CostoLaborComponent implements OnInit {
 
   limpiarFiltros() {
     this.selectedProyectoIds.setValue([]);
-    this.selectedEstatus.setValue('');
+    this.selectedEstatus.setValue('activo');
     this.dateRange.reset();
     this.filterError.set('');
     this.hasSearched.set(false);

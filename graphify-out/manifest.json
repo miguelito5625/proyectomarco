@@ -192,9 +192,9 @@
     "semantic_hash": "97e566ff68ca14da707953673ef1ec80"
   },
   "src/app/features/reportes/costo-labor/costo-labor.component.ts": {
-    "mtime": 1789521009.6473985,
-    "seen": 1789521064.340692,
-    "ast_hash": "0bf17093cb2d0aa5a848e0d25451d681",
+    "mtime": 1790801898.6951795,
+    "seen": 1790801918.256743,
+    "ast_hash": "8a1383673b146daeca4dc6f0cee1598b",
     "semantic_hash": ""
   },
   "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts": {
