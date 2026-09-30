@@ -54,9 +54,9 @@
     "semantic_hash": "411dead10faf1ff7b6ab3d249b524ee0"
   },
   "src/app/app.routes.ts": {
-    "mtime": 1790800711.350052,
-    "seen": 1790800813.997848,
-    "ast_hash": "cd73e05d1be811bedd0301f808fc334b",
+    "mtime": 1790801450.5199459,
+    "seen": 1790801474.747972,
+    "ast_hash": "8efbfbb12ee16a838fab2ab3ae2823ce",
     "semantic_hash": ""
   },
   "src/app/app.spec.ts": {
@@ -178,12 +178,6 @@
     "seen": 1787808900.6230202,
     "ast_hash": "764284fe4f4baf7e298fed981c295afc",
     "semantic_hash": "764284fe4f4baf7e298fed981c295afc"
-  },
-  "src/app/features/registros-tiempov2/registros-tiempov2-list/registros-tiempov2-list.component.ts": {
-    "mtime": 1789520928.678819,
-    "seen": 1789521064.3404946,
-    "ast_hash": "092851eaf028a0374b53bae1d93b991f",
-    "semantic_hash": ""
   },
   "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.ts": {
     "mtime": 1781754102.9933631,
@@ -389,12 +383,6 @@
     "ast_hash": "d36e30c9727df7bd5020c4c7a281c64c",
     "semantic_hash": ""
   },
-  "src/app/features/registros-tiempov2/registros-tiempov2-list/registros-tiempov2-list.component.html": {
-    "mtime": 1789520917.091892,
-    "seen": 1789521064.3442397,
-    "ast_hash": "c8b6f7da2e9c0f5b78b811908c615c0a",
-    "semantic_hash": ""
-  },
   "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.html": {
     "mtime": 1789521029.5549078,
     "seen": 1789521064.3442419,
@@ -489,6 +477,18 @@
     "mtime": 1789520883.1618695,
     "seen": 1789521899.4623816,
     "ast_hash": "",
+    "semantic_hash": ""
+  },
+  "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts": {
+    "mtime": 1790801392.5221884,
+    "seen": 1790801474.749629,
+    "ast_hash": "c526de680f410dfe7ce42ee85b9c5437",
+    "semantic_hash": ""
+  },
+  "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.html": {
+    "mtime": 1789520917.091892,
+    "seen": 1790801474.7521076,
+    "ast_hash": "c8b6f7da2e9c0f5b78b811908c615c0a",
     "semantic_hash": ""
   }
 }

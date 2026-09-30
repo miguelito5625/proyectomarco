@@ -102,10 +102,10 @@
     "semantic_hash": "7f7a4460c58541ed5389ed7b76d667e9"
   },
   "src/app/core/services/registros-tiempo.service.ts": {
-    "mtime": 1787807368.9704201,
-    "seen": 1787808900.6230085,
-    "ast_hash": "f567ed0c0d998aa633b62c0989f2f19a",
-    "semantic_hash": "f567ed0c0d998aa633b62c0989f2f19a"
+    "mtime": 1790801651.8330603,
+    "seen": 1790801708.9778645,
+    "ast_hash": "5578417e5b73a6c82aa0b3899ad34096",
+    "semantic_hash": ""
   },
   "src/app/core/services/reportes.service.ts": {
     "mtime": 1790800785.5491917,
@@ -480,9 +480,9 @@
     "semantic_hash": ""
   },
   "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts": {
-    "mtime": 1790801392.5221884,
-    "seen": 1790801474.749629,
-    "ast_hash": "c526de680f410dfe7ce42ee85b9c5437",
+    "mtime": 1790801686.7746787,
+    "seen": 1790801708.978983,
+    "ast_hash": "c17a8b5a2f5630231c85bb76fe97b6e2",
     "semantic_hash": ""
   },
   "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.html": {

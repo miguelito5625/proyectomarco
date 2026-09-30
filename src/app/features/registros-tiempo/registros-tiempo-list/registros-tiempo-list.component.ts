@@ -55,7 +55,15 @@ export class RegistrosTiempoListComponent implements OnInit {
   
   dataSource: any[] = [];
   
-  originalData = new Map<string, { id?: string, horas: number, horas_extra: number, gasolina: number }>();
+  originalData = new Map<string, { 
+    id?: string; 
+    horas: number; 
+    horas_extra: number; 
+    gasolina: number;
+    tarifa_regular?: number;
+    tarifa_extra?: number;
+    tarifa_sabado?: number;
+  }>();
   changes = new Map<string, { horas: number | null, horas_extra: number | null, gasolina: number | null }>();
 
   ngOnInit() {
@@ -182,8 +190,19 @@ export class RegistrosTiempoListComponent implements OnInit {
       
       const row = this.dataSource.find(r => r.proyecto.id === pId);
       if (row && dateColumns.includes(dateISO)) {
-        row[dateISO] = { horas: reg.horas, horas_extra: reg.horas_extra || 0, gasolina: reg.gasolina || 0 };
-        this.originalData.set(`${pId}_${dateISO}`, { id: reg.id, horas: reg.horas, horas_extra: reg.horas_extra || 0, gasolina: reg.gasolina || 0 });
+        const h = Number(reg.horas) || 0;
+        const he = Number(reg.horas_extra) || 0;
+        const g = Number(reg.gasolina) || 0;
+        row[dateISO] = { horas: h, horas_extra: he, gasolina: g };
+        this.originalData.set(`${pId}_${dateISO}`, { 
+          id: reg.id, 
+          horas: h, 
+          horas_extra: he, 
+          gasolina: g,
+          tarifa_regular: reg.tarifa_regular != null ? Number(reg.tarifa_regular) : undefined,
+          tarifa_extra: reg.tarifa_extra != null ? Number(reg.tarifa_extra) : undefined,
+          tarifa_sabado: reg.tarifa_sabado != null ? Number(reg.tarifa_sabado) : undefined
+        });
       }
     }
   }
@@ -238,27 +257,53 @@ export class RegistrosTiempoListComponent implements OnInit {
     if (this.changes.size === 0) return;
 
     this.saving.set(true);
-    const trabajadorId = this.selectedTrabajadorId.value!;
-    const trabajador = this.trabajadoresActivos.find(t => t.id === trabajadorId);
-    const tarifaRegular = trabajador?.pago_hora_regular || 0;
-    const tarifaExtra = trabajador?.pago_hora_extra || 0;
-    const tarifaSabado = trabajador?.pago_sabado || tarifaRegular;
+    const trabajadorId = this.selectedTrabajadorId.value;
+    if (!trabajadorId) {
+      this.snackBar.open('Debe seleccionar un trabajador', 'Cerrar', { duration: 3000 });
+      this.saving.set(false);
+      return;
+    }
+
+    const trabajador = this.trabajadoresActivos.find(t => t.id === trabajadorId) ||
+                       this.trabajadoresFiltrados.find(t => t.id === trabajadorId);
+    const tarifaRegular = Number(trabajador?.pago_hora_regular) || 0;
+    const tarifaExtra = Number(trabajador?.pago_hora_extra) || 0;
+    const tarifaSabado = Number(trabajador?.pago_sabado) || tarifaRegular || 0;
     
     try {
       const promises = [];
       for (const [key, values] of this.changes.entries()) {
         const [proyectoId, dateISO] = key.split('_');
+        if (!proyectoId || !dateISO) continue;
+
         const original = this.originalData.get(key);
 
-        const h = values.horas || 0;
-        const he = values.horas_extra || 0;
-        const g = values.gasolina || 0;
+        const h = Math.max(0, Number(values.horas) || 0);
+        const he = Math.max(0, Number(values.horas_extra) || 0);
+        const g = Math.max(0, Number(values.gasolina) || 0);
 
         if (original && original.id) {
           if (h === 0 && he === 0 && g === 0) {
              promises.push(this.registrosService.deleteRegistro(original.id));
           } else {
-             promises.push(this.registrosService.updateRegistro(original.id, { horas: h, horas_extra: he, gasolina: g }));
+             const regTarifaRegular = (original.tarifa_regular != null && !isNaN(original.tarifa_regular)) 
+               ? Number(original.tarifa_regular) 
+               : tarifaRegular;
+             const regTarifaExtra = (original.tarifa_extra != null && !isNaN(original.tarifa_extra)) 
+               ? Number(original.tarifa_extra) 
+               : tarifaExtra;
+             const regTarifaSabado = (original.tarifa_sabado != null && !isNaN(original.tarifa_sabado)) 
+               ? Number(original.tarifa_sabado) 
+               : (tarifaSabado || regTarifaRegular);
+
+             promises.push(this.registrosService.updateRegistro(original.id, { 
+               horas: h, 
+               horas_extra: he, 
+               gasolina: g,
+               tarifa_regular: regTarifaRegular,
+               tarifa_extra: regTarifaExtra,
+               tarifa_sabado: regTarifaSabado
+             }));
           }
         } else {
           if (h > 0 || he > 0 || g > 0) {

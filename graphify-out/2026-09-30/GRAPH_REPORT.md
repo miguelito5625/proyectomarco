@@ -1,7 +1,7 @@
 # Graph Report - proyectomarco  (2026-09-30)
 
 ## Corpus Check
-- 61 files · ~21,984 words
+- 61 files · ~21,976 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `46e615f4`
+- Built from commit: `75395aeb`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -19,6 +19,7 @@
 - Proyecto
 - dependencies
 - development
+- RegistrosTiempoListComponent
 - devDependencies
 - app.routes.ts
 - gastos-form.component.ts
@@ -26,7 +27,6 @@
 - TrabajadoresService
 - HorasTrabajadorComponent
 - Reglas de Proyecto: proyectomarco
-- RegistrosTiempov2ListComponent
 - CostoLaborComponent
 - update_responsive.js
 - fix_ts.js
@@ -47,7 +47,7 @@
 ## God Nodes (most connected - your core abstractions)
 1. `SupabaseService` - 26 edges
 2. `HorasTrabajadorComponent` - 19 edges
-3. `RegistrosTiempov2ListComponent` - 18 edges
+3. `RegistrosTiempoListComponent` - 18 edges
 4. `CostoLaborComponent` - 15 edges
 5. `Proyecto` - 14 edges
 6. `ProyectosService` - 14 edges
@@ -57,14 +57,14 @@
 10. `BackupService` - 10 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `RegistrosTiempov2ListComponent` --references--> `Proyecto`  [EXTRACTED]
-  src/app/features/registros-tiempov2/registros-tiempov2-list/registros-tiempov2-list.component.ts → src/app/core/services/proyectos.service.ts
+- `RegistrosTiempoListComponent` --references--> `Proyecto`  [EXTRACTED]
+  src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts → src/app/core/services/proyectos.service.ts
 - `CostoLaborComponent` --references--> `Proyecto`  [EXTRACTED]
   src/app/features/reportes/costo-labor/costo-labor.component.ts → src/app/core/services/proyectos.service.ts
 - `HorasTrabajadorComponent` --references--> `Proyecto`  [EXTRACTED]
   src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts → src/app/core/services/proyectos.service.ts
-- `RegistrosTiempov2ListComponent` --references--> `Trabajador`  [EXTRACTED]
-  src/app/features/registros-tiempov2/registros-tiempov2-list/registros-tiempov2-list.component.ts → src/app/core/services/trabajadores.service.ts
+- `RegistrosTiempoListComponent` --references--> `Trabajador`  [EXTRACTED]
+  src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts → src/app/core/services/trabajadores.service.ts
 - `HorasTrabajadorComponent` --references--> `Trabajador`  [EXTRACTED]
   src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts → src/app/core/services/trabajadores.service.ts
 
@@ -153,7 +153,7 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.052) - this node is a cross-community bridge._
 - **Why does `HorasTrabajadorComponent` connect `HorasTrabajadorComponent` to `Proyecto`, `app.routes.ts`, `TrabajadoresService`?**
   _High betweenness centrality (0.046) - this node is a cross-community bridge._
-- **Why does `RegistrosTiempov2ListComponent` connect `RegistrosTiempov2ListComponent` to `Proyecto`, `app.routes.ts`, `TrabajadoresService`?**
+- **Why does `RegistrosTiempoListComponent` connect `RegistrosTiempoListComponent` to `Proyecto`, `app.routes.ts`, `TrabajadoresService`?**
   _High betweenness centrality (0.043) - this node is a cross-community bridge._
 - **What connects `$schema`, `version`, `packageManager` to the rest of the system?**
   _92 weakly-connected nodes found - possible documentation gaps or missing edges._

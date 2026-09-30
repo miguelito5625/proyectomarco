@@ -49,9 +49,19 @@ export class RegistrosTiempoService {
   }
 
   async createRegistro(registro: Partial<RegistroTiempo>): Promise<RegistroTiempo> {
+    const payload = {
+      ...registro,
+      horas: Math.max(0, Number(registro.horas) || 0),
+      horas_extra: Math.max(0, Number(registro.horas_extra) || 0),
+      gasolina: Math.max(0, Number(registro.gasolina) || 0),
+      tarifa_regular: Math.max(0, Number(registro.tarifa_regular) || 0),
+      tarifa_extra: Math.max(0, Number(registro.tarifa_extra) || 0),
+      tarifa_sabado: Math.max(0, Number(registro.tarifa_sabado) || 0),
+    };
+
     const { data, error } = await this.supabase
       .from('registros_tiempo')
-      .insert([registro])
+      .insert([payload])
       .select()
       .single();
 
@@ -60,9 +70,23 @@ export class RegistrosTiempoService {
   }
 
   async updateRegistro(id: string, registro: Partial<RegistroTiempo>): Promise<RegistroTiempo> {
+    const payload: Partial<RegistroTiempo> = { ...registro };
+    if ('horas' in payload) payload.horas = Math.max(0, Number(payload.horas) || 0);
+    if ('horas_extra' in payload) payload.horas_extra = Math.max(0, Number(payload.horas_extra) || 0);
+    if ('gasolina' in payload) payload.gasolina = Math.max(0, Number(payload.gasolina) || 0);
+    if ('tarifa_regular' in payload && payload.tarifa_regular !== undefined) {
+      payload.tarifa_regular = Math.max(0, Number(payload.tarifa_regular) || 0);
+    }
+    if ('tarifa_extra' in payload && payload.tarifa_extra !== undefined) {
+      payload.tarifa_extra = Math.max(0, Number(payload.tarifa_extra) || 0);
+    }
+    if ('tarifa_sabado' in payload && payload.tarifa_sabado !== undefined) {
+      payload.tarifa_sabado = Math.max(0, Number(payload.tarifa_sabado) || 0);
+    }
+
     const { data, error } = await this.supabase
       .from('registros_tiempo')
-      .update(registro)
+      .update(payload)
       .eq('id', id)
       .select()
       .single();
