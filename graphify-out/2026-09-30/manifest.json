@@ -102,10 +102,10 @@
     "semantic_hash": "7f7a4460c58541ed5389ed7b76d667e9"
   },
   "src/app/core/services/registros-tiempo.service.ts": {
-    "mtime": 1787807368.9704201,
-    "seen": 1787808900.6230085,
-    "ast_hash": "f567ed0c0d998aa633b62c0989f2f19a",
-    "semantic_hash": "f567ed0c0d998aa633b62c0989f2f19a"
+    "mtime": 1790801651.8330603,
+    "seen": 1790801708.9778645,
+    "ast_hash": "5578417e5b73a6c82aa0b3899ad34096",
+    "semantic_hash": ""
   },
   "src/app/core/services/reportes.service.ts": {
     "mtime": 1790800785.5491917,
@@ -192,9 +192,9 @@
     "semantic_hash": "97e566ff68ca14da707953673ef1ec80"
   },
   "src/app/features/reportes/costo-labor/costo-labor.component.ts": {
-    "mtime": 1789521009.6473985,
-    "seen": 1789521064.340692,
-    "ast_hash": "0bf17093cb2d0aa5a848e0d25451d681",
+    "mtime": 1790801898.6951795,
+    "seen": 1790801918.256743,
+    "ast_hash": "8a1383673b146daeca4dc6f0cee1598b",
     "semantic_hash": ""
   },
   "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts": {
@@ -432,9 +432,9 @@
     "semantic_hash": ""
   },
   "src/index.html": {
-    "mtime": 1777230027.103116,
-    "seen": 1787809406.721388,
-    "ast_hash": "0a8dcb4bd60f3e66280fdd8084863197",
+    "mtime": 1790802431.7763262,
+    "seen": 1790802462.3122222,
+    "ast_hash": "78f4b7b4a63bda9d6c40ca9efcf50ee9",
     "semantic_hash": ""
   },
   ".agents/skills/db_backup/SKILL.md": {
@@ -480,15 +480,21 @@
     "semantic_hash": ""
   },
   "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts": {
-    "mtime": 1790801392.5221884,
-    "seen": 1790801474.749629,
-    "ast_hash": "c526de680f410dfe7ce42ee85b9c5437",
+    "mtime": 1790801686.7746787,
+    "seen": 1790801708.978983,
+    "ast_hash": "c17a8b5a2f5630231c85bb76fe97b6e2",
     "semantic_hash": ""
   },
   "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.html": {
     "mtime": 1789520917.091892,
     "seen": 1790801474.7521076,
     "ast_hash": "c8b6f7da2e9c0f5b78b811908c615c0a",
+    "semantic_hash": ""
+  },
+  "public/404.html": {
+    "mtime": 1790802422.2338197,
+    "seen": 1790802462.3107955,
+    "ast_hash": "bbd14773028fedc6b84c8fae2ede0caa",
     "semantic_hash": ""
   }
 }

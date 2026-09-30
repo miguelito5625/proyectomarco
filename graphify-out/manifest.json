@@ -108,9 +108,9 @@
     "semantic_hash": ""
   },
   "src/app/core/services/reportes.service.ts": {
-    "mtime": 1790800785.5491917,
-    "seen": 1790800813.999008,
-    "ast_hash": "697b6d9bd0e8ecdc5ef0216fac9e6674",
+    "mtime": 1790802759.072871,
+    "seen": 1790802825.4183612,
+    "ast_hash": "87bb5681ca2460eb1f52f10977de7999",
     "semantic_hash": ""
   },
   "src/app/core/services/supabase.service.ts": {
@@ -180,10 +180,10 @@
     "semantic_hash": "764284fe4f4baf7e298fed981c295afc"
   },
   "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.ts": {
-    "mtime": 1781754102.9933631,
-    "seen": 1787808900.6230242,
-    "ast_hash": "0372d791289b7d47504726880c16ee45",
-    "semantic_hash": "0372d791289b7d47504726880c16ee45"
+    "mtime": 1790802808.4834983,
+    "seen": 1790802825.4193103,
+    "ast_hash": "8ce98b595e6ca61e559d34619a0e8fe9",
+    "semantic_hash": ""
   },
   "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.spec.ts": {
     "mtime": 1781753874.3469596,
@@ -192,9 +192,9 @@
     "semantic_hash": "97e566ff68ca14da707953673ef1ec80"
   },
   "src/app/features/reportes/costo-labor/costo-labor.component.ts": {
-    "mtime": 1790801898.6951795,
-    "seen": 1790801918.256743,
-    "ast_hash": "8a1383673b146daeca4dc6f0cee1598b",
+    "mtime": 1790802797.3481035,
+    "seen": 1790802825.4193885,
+    "ast_hash": "925999ae1e67e48acf9ebdc757953d1c",
     "semantic_hash": ""
   },
   "src/app/features/reportes/horas-trabajador/horas-trabajador.component.ts": {

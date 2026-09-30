@@ -60,11 +60,38 @@ export class CostoLaborComponent implements OnInit {
     return this.datos().reduce((acc, curr) => acc + (curr.costo_estimado_labor || 0), 0);
   });
 
-  ngOnInit() {
-    this.loadProyectos();
+  async ngOnInit() {
     this.selectedEstatus.valueChanges.subscribe(() => {
       this.aplicarFiltroProyectos();
     });
+
+    const savedState = this.reportesService.getCostoLaborState();
+    if (savedState) {
+      if (savedState.estatus) {
+        this.selectedEstatus.setValue(savedState.estatus, { emitEvent: false });
+      }
+      if (savedState.fechaInicio && savedState.fechaFin) {
+        const [sy, sm, sd] = savedState.fechaInicio.split('-').map(Number);
+        const [ey, em, ed] = savedState.fechaFin.split('-').map(Number);
+        this.dateRange.setValue({
+          start: new Date(sy, sm - 1, sd),
+          end: new Date(ey, em - 1, ed)
+        });
+      }
+    }
+
+    await this.loadProyectos();
+
+    if (savedState) {
+      if (savedState.proyectoIds && savedState.proyectoIds.length > 0) {
+        this.selectedProyectoIds.setValue(savedState.proyectoIds);
+      }
+      if (savedState.hasSearched && savedState.datos) {
+        this.datos.set(savedState.datos);
+        this.dataSource.data = savedState.datos;
+        this.hasSearched.set(true);
+      }
+    }
   }
 
   seleccionarTodosProyectos() {
@@ -168,6 +195,15 @@ export class CostoLaborComponent implements OnInit {
       this.datos.set(data);
       this.dataSource.data = data;
       this.hasSearched.set(true);
+
+      this.reportesService.saveCostoLaborState({
+        proyectoIds: this.selectedProyectoIds.value || [],
+        fechaInicio: start ? this.formatDateISO(start) : null,
+        fechaFin: end ? this.formatDateISO(end) : null,
+        estatus: this.selectedEstatus.value || '',
+        hasSearched: true,
+        datos: data
+      });
     } catch (error: any) {
       this.snackBar.open('Error al cargar reporte: ' + error.message, 'Cerrar', { duration: 5000 });
     } finally {
@@ -183,6 +219,7 @@ export class CostoLaborComponent implements OnInit {
     this.hasSearched.set(false);
     this.datos.set([]);
     this.dataSource.data = [];
+    this.reportesService.clearCostoLaborState();
   }
 
   private formatDateISO(date: Date): string {
@@ -200,6 +237,16 @@ export class CostoLaborComponent implements OnInit {
       queryParams.fechaInicio = this.formatDateISO(start);
       queryParams.fechaFin = this.formatDateISO(end);
     }
+
+    this.reportesService.saveCostoLaborState({
+      proyectoIds: this.selectedProyectoIds.value || [],
+      fechaInicio: start ? this.formatDateISO(start) : null,
+      fechaFin: end ? this.formatDateISO(end) : null,
+      estatus: this.selectedEstatus.value || '',
+      hasSearched: this.hasSearched(),
+      datos: this.datos()
+    });
+
     this.router.navigate(['/reporte-costo-labor', element.proyecto_id, 'desglose'], { queryParams });
   }
 }

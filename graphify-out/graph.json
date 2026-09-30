@@ -43,6 +43,32 @@
       "source_location": "L9"
     },
     {
+      "id": "src_app_features_user_change_password_dialog_change_password_dialog_component_changepassworddialogcomponent",
+      "label": "ChangePasswordDialogComponent",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "main-layout.component.ts",
+      "file_type": "code",
+      "norm_label": "changepassworddialogcomponent",
+      "source_file": "src/app/features/user/change-password-dialog/change-password-dialog.component.ts",
+      "source_location": "L40"
+    },
+    {
+      "id": "src_app_features_user_change_password_dialog_change_password_dialog_component_confirmpasswordmatcher",
+      "label": "ConfirmPasswordMatcher",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "main-layout.component.ts",
+      "file_type": "code",
+      "norm_label": "confirmpasswordmatcher",
+      "source_file": "src/app/features/user/change-password-dialog/change-password-dialog.component.ts",
+      "source_location": "L22"
+    },
+    {
       "id": "src_app_features_user_user_profile_dialog_user_profile_dialog_component_userprofiledialogcomponent",
       "label": "UserProfileDialogComponent",
       "_callable": true,
@@ -121,6 +147,19 @@
       "source_location": "L15"
     },
     {
+      "id": "src_app_core_services_reportes_service_costolaborstate",
+      "label": "CostoLaborState",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "Proyecto",
+      "file_type": "code",
+      "norm_label": "costolaborstate",
+      "source_file": "src/app/core/services/reportes.service.ts",
+      "source_location": "L22"
+    },
+    {
       "id": "src_app_core_services_reportes_service_horastrabajador",
       "label": "HorasTrabajador",
       "_callable": true,
@@ -131,7 +170,7 @@
       "file_type": "code",
       "norm_label": "horastrabajador",
       "source_file": "src/app/core/services/reportes.service.ts",
-      "source_location": "L22"
+      "source_location": "L31"
     },
     {
       "id": "src_app_core_services_reportes_service_horastrabajadorfilters",
@@ -144,7 +183,7 @@
       "file_type": "code",
       "norm_label": "horastrabajadorfilters",
       "source_file": "src/app/core/services/reportes.service.ts",
-      "source_location": "L33"
+      "source_location": "L42"
     },
     {
       "id": "src_app_core_services_reportes_service_reportesservice",
@@ -157,7 +196,7 @@
       "file_type": "code",
       "norm_label": "reportesservice",
       "source_file": "src/app/core/services/reportes.service.ts",
-      "source_location": "L42"
+      "source_location": "L51"
     },
     {
       "id": "src_app_features_proyectos_proyectos_form_proyectos_form_component_proyectosformcomponent",
@@ -290,13 +329,26 @@
       "source_location": "L29"
     },
     {
+      "id": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent",
+      "label": "RegistrosTiempoListComponent",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "RegistrosTiempoListComponent",
+      "file_type": "code",
+      "norm_label": "registrostiempolistcomponent",
+      "source_file": "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts",
+      "source_location": "L30"
+    },
+    {
       "id": "src_app_core_services_dashboard_service_dashboarddata",
       "label": "DashboardData",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 30,
-      "community_name": "dashboard.service.ts",
+      "community": 6,
+      "community_name": "app.routes.ts",
       "file_type": "code",
       "norm_label": "dashboarddata",
       "source_file": "src/app/core/services/dashboard.service.ts",
@@ -308,8 +360,8 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 30,
-      "community_name": "dashboard.service.ts",
+      "community": 6,
+      "community_name": "app.routes.ts",
       "file_type": "code",
       "norm_label": "dashboardservice",
       "source_file": "src/app/core/services/dashboard.service.ts",
@@ -321,8 +373,8 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 30,
-      "community_name": "dashboard.service.ts",
+      "community": 6,
+      "community_name": "app.routes.ts",
       "file_type": "code",
       "norm_label": "dashboardstats",
       "source_file": "src/app/core/services/dashboard.service.ts",
@@ -334,8 +386,8 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 30,
-      "community_name": "dashboard.service.ts",
+      "community": 6,
+      "community_name": "app.routes.ts",
       "file_type": "code",
       "norm_label": "recentactivityitem",
       "source_file": "src/app/core/services/dashboard.service.ts",
@@ -347,8 +399,8 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 30,
-      "community_name": "dashboard.service.ts",
+      "community": 6,
+      "community_name": "app.routes.ts",
       "file_type": "code",
       "norm_label": "topproject",
       "source_file": "src/app/core/services/dashboard.service.ts",
@@ -360,37 +412,11 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 30,
-      "community_name": "dashboard.service.ts",
+      "community": 6,
+      "community_name": "app.routes.ts",
       "file_type": "code",
       "norm_label": "topworker",
       "source_file": "src/app/core/services/dashboard.service.ts",
-      "source_location": "L30"
-    },
-    {
-      "id": "src_app_features_home_home_component_homecomponent",
-      "label": "HomeComponent",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 30,
-      "community_name": "dashboard.service.ts",
-      "file_type": "code",
-      "norm_label": "homecomponent",
-      "source_file": "src/app/features/home/home.component.ts",
-      "source_location": "L36"
-    },
-    {
-      "id": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent",
-      "label": "RegistrosTiempoListComponent",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "RegistrosTiempoListComponent",
-      "file_type": "code",
-      "norm_label": "registrostiempolistcomponent",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts",
       "source_location": "L30"
     },
     {
@@ -446,30 +472,17 @@
       "source_location": "L29"
     },
     {
-      "id": "src_app_features_user_change_password_dialog_change_password_dialog_component_changepassworddialogcomponent",
-      "label": "ChangePasswordDialogComponent",
+      "id": "src_app_features_home_home_component_homecomponent",
+      "label": "HomeComponent",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 6,
       "community_name": "app.routes.ts",
       "file_type": "code",
-      "norm_label": "changepassworddialogcomponent",
-      "source_file": "src/app/features/user/change-password-dialog/change-password-dialog.component.ts",
-      "source_location": "L40"
-    },
-    {
-      "id": "src_app_features_user_change_password_dialog_change_password_dialog_component_confirmpasswordmatcher",
-      "label": "ConfirmPasswordMatcher",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "app.routes.ts",
-      "file_type": "code",
-      "norm_label": "confirmpasswordmatcher",
-      "source_file": "src/app/features/user/change-password-dialog/change-password-dialog.component.ts",
-      "source_location": "L22"
+      "norm_label": "homecomponent",
+      "source_file": "src/app/features/home/home.component.ts",
+      "source_location": "L36"
     },
     {
       "id": "src_app_core_services_gastos_service_gastoproyecto",
@@ -676,6 +689,54 @@
       "source_location": "L39"
     },
     {
+      "id": "src_app_features_user_change_password_dialog_change_password_dialog_component_changepassworddialogcomponent_ngoninit",
+      "label": ".ngOnInit()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "main-layout.component.ts",
+      "file_type": "code",
+      "norm_label": ".ngoninit()",
+      "source_file": "src/app/features/user/change-password-dialog/change-password-dialog.component.ts",
+      "source_location": "L55"
+    },
+    {
+      "id": "src_app_features_user_change_password_dialog_change_password_dialog_component_changepassworddialogcomponent_onsubmit",
+      "label": ".onSubmit()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "main-layout.component.ts",
+      "file_type": "code",
+      "norm_label": ".onsubmit()",
+      "source_file": "src/app/features/user/change-password-dialog/change-password-dialog.component.ts",
+      "source_location": "L63"
+    },
+    {
+      "id": "src_app_features_user_change_password_dialog_change_password_dialog_component_confirmpasswordmatcher_iserrorstate",
+      "label": ".isErrorState()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "main-layout.component.ts",
+      "file_type": "code",
+      "norm_label": ".iserrorstate()",
+      "source_file": "src/app/features/user/change-password-dialog/change-password-dialog.component.ts",
+      "source_location": "L23"
+    },
+    {
+      "id": "src_app_features_user_change_password_dialog_change_password_dialog_component_passwordmatchvalidator",
+      "label": "passwordMatchValidator()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "main-layout.component.ts",
+      "file_type": "code",
+      "norm_label": "passwordmatchvalidator()",
+      "source_file": "src/app/features/user/change-password-dialog/change-password-dialog.component.ts",
+      "source_location": "L13"
+    },
+    {
       "id": "src_app_features_user_user_profile_dialog_user_profile_dialog_component_userprofiledialogcomponent_ngoninit",
       "label": ".ngOnInit()",
       "_callable": true,
@@ -820,6 +881,18 @@
       "source_location": "L50"
     },
     {
+      "id": "src_app_core_services_reportes_service_reportesservice_clearcostolaborstate",
+      "label": ".clearCostoLaborState()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "Proyecto",
+      "file_type": "code",
+      "norm_label": ".clearcostolaborstate()",
+      "source_file": "src/app/core/services/reportes.service.ts",
+      "source_location": "L80"
+    },
+    {
       "id": "src_app_core_services_reportes_service_reportesservice_fetchregistrostiempopaginado",
       "label": ".fetchRegistrosTiempoPaginado()",
       "_callable": true,
@@ -829,7 +902,7 @@
       "file_type": "code",
       "norm_label": ".fetchregistrostiempopaginado()",
       "source_file": "src/app/core/services/reportes.service.ts",
-      "source_location": "L48"
+      "source_location": "L92"
     },
     {
       "id": "src_app_core_services_reportes_service_reportesservice_getcostolabordesglose",
@@ -841,7 +914,7 @@
       "file_type": "code",
       "norm_label": ".getcostolabordesglose()",
       "source_file": "src/app/core/services/reportes.service.ts",
-      "source_location": "L282"
+      "source_location": "L326"
     },
     {
       "id": "src_app_core_services_reportes_service_reportesservice_getcostolaborfiltered",
@@ -853,7 +926,19 @@
       "file_type": "code",
       "norm_label": ".getcostolaborfiltered()",
       "source_file": "src/app/core/services/reportes.service.ts",
-      "source_location": "L100"
+      "source_location": "L144"
+    },
+    {
+      "id": "src_app_core_services_reportes_service_reportesservice_getcostolaborstate",
+      "label": ".getCostoLaborState()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "Proyecto",
+      "file_type": "code",
+      "norm_label": ".getcostolaborstate()",
+      "source_file": "src/app/core/services/reportes.service.ts",
+      "source_location": "L64"
     },
     {
       "id": "src_app_core_services_reportes_service_reportesservice_gethorastrabajadorfiltered",
@@ -865,7 +950,19 @@
       "file_type": "code",
       "norm_label": ".gethorastrabajadorfiltered()",
       "source_file": "src/app/core/services/reportes.service.ts",
-      "source_location": "L194"
+      "source_location": "L238"
+    },
+    {
+      "id": "src_app_core_services_reportes_service_reportesservice_savecostolaborstate",
+      "label": ".saveCostoLaborState()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "Proyecto",
+      "file_type": "code",
+      "norm_label": ".savecostolaborstate()",
+      "source_file": "src/app/core/services/reportes.service.ts",
+      "source_location": "L55"
     },
     {
       "id": "src_app_features_proyectos_proyectos_form_proyectos_form_component_proyectosformcomponent_ngoninit",
@@ -961,7 +1058,7 @@
       "file_type": "code",
       "norm_label": ".loaddatos()",
       "source_file": "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.ts",
-      "source_location": "L48"
+      "source_location": "L49"
     },
     {
       "id": "src_app_features_reportes_costo_labor_desglose_costo_labor_desglose_component_costolabordesglosecomponent_ngoninit",
@@ -973,7 +1070,7 @@
       "file_type": "code",
       "norm_label": ".ngoninit()",
       "source_file": "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.ts",
-      "source_location": "L38"
+      "source_location": "L39"
     },
     {
       "id": "src_app_features_reportes_costo_labor_desglose_costo_labor_desglose_component_costolabordesglosecomponent_volver",
@@ -985,7 +1082,7 @@
       "file_type": "code",
       "norm_label": ".volver()",
       "source_file": "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.ts",
-      "source_location": "L63"
+      "source_location": "L64"
     },
     {
       "id": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_aplicarfiltroproyectos",
@@ -1165,7 +1262,7 @@
       "file_type": "code",
       "norm_label": ".aplicarfiltroproyectos()",
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L87"
+      "source_location": "L114"
     },
     {
       "id": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_buscar",
@@ -1177,7 +1274,7 @@
       "file_type": "code",
       "norm_label": ".buscar()",
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L137"
+      "source_location": "L164"
     },
     {
       "id": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_deseleccionartodosproyectos",
@@ -1189,7 +1286,7 @@
       "file_type": "code",
       "norm_label": ".deseleccionartodosproyectos()",
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L74"
+      "source_location": "L101"
     },
     {
       "id": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_filtrarproyectos",
@@ -1201,7 +1298,7 @@
       "file_type": "code",
       "norm_label": ".filtrarproyectos()",
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L103"
+      "source_location": "L130"
     },
     {
       "id": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_formatdateiso",
@@ -1213,7 +1310,7 @@
       "file_type": "code",
       "norm_label": ".formatdateiso()",
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L188"
+      "source_location": "L225"
     },
     {
       "id": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_limpiarfiltros",
@@ -1225,7 +1322,7 @@
       "file_type": "code",
       "norm_label": ".limpiarfiltros()",
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L178"
+      "source_location": "L214"
     },
     {
       "id": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_loadproyectos",
@@ -1237,7 +1334,7 @@
       "file_type": "code",
       "norm_label": ".loadproyectos()",
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L78"
+      "source_location": "L105"
     },
     {
       "id": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_ngoninit",
@@ -1261,7 +1358,7 @@
       "file_type": "code",
       "norm_label": ".seleccionartodosproyectos()",
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L70"
+      "source_location": "L97"
     },
     {
       "id": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_validatefilters",
@@ -1273,7 +1370,7 @@
       "file_type": "code",
       "norm_label": ".validatefilters()",
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L112"
+      "source_location": "L139"
     },
     {
       "id": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_verdesglose",
@@ -1285,7 +1382,7 @@
       "file_type": "code",
       "norm_label": ".verdesglose()",
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L195"
+      "source_location": "L232"
     },
     {
       "id": "scratch_update_responsive_fixformscss",
@@ -1540,66 +1637,6 @@
       "source_location": "L65"
     },
     {
-      "id": "src_app_core_services_dashboard_service_dashboardservice_fetchallrecords",
-      "label": ".fetchAllRecords()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 30,
-      "community_name": "dashboard.service.ts",
-      "file_type": "code",
-      "norm_label": ".fetchallrecords()",
-      "source_file": "src/app/core/services/dashboard.service.ts",
-      "source_location": "L66"
-    },
-    {
-      "id": "src_app_core_services_dashboard_service_dashboardservice_getdashboarddata",
-      "label": ".getDashboardData()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 30,
-      "community_name": "dashboard.service.ts",
-      "file_type": "code",
-      "norm_label": ".getdashboarddata()",
-      "source_file": "src/app/core/services/dashboard.service.ts",
-      "source_location": "L95"
-    },
-    {
-      "id": "src_app_features_home_home_component_homecomponent_getinitials",
-      "label": ".getInitials()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 30,
-      "community_name": "dashboard.service.ts",
-      "file_type": "code",
-      "norm_label": ".getinitials()",
-      "source_file": "src/app/features/home/home.component.ts",
-      "source_location": "L87"
-    },
-    {
-      "id": "src_app_features_home_home_component_homecomponent_loaddashboarddata",
-      "label": ".loadDashboardData()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 30,
-      "community_name": "dashboard.service.ts",
-      "file_type": "code",
-      "norm_label": ".loaddashboarddata()",
-      "source_file": "src/app/features/home/home.component.ts",
-      "source_location": "L67"
-    },
-    {
-      "id": "src_app_features_home_home_component_homecomponent_ngoninit",
-      "label": ".ngOnInit()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 30,
-      "community_name": "dashboard.service.ts",
-      "file_type": "code",
-      "norm_label": ".ngoninit()",
-      "source_file": "src/app/features/home/home.component.ts",
-      "source_location": "L63"
-    },
-    {
       "id": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent_buildtable",
       "label": ".buildTable()",
       "_callable": true,
@@ -1778,6 +1815,30 @@
       "norm_label": "noauthguard()",
       "source_file": "src/app/core/guards/no-auth.guard.ts",
       "source_location": "L5"
+    },
+    {
+      "id": "src_app_core_services_dashboard_service_dashboardservice_fetchallrecords",
+      "label": ".fetchAllRecords()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.routes.ts",
+      "file_type": "code",
+      "norm_label": ".fetchallrecords()",
+      "source_file": "src/app/core/services/dashboard.service.ts",
+      "source_location": "L66"
+    },
+    {
+      "id": "src_app_core_services_dashboard_service_dashboardservice_getdashboarddata",
+      "label": ".getDashboardData()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.routes.ts",
+      "file_type": "code",
+      "norm_label": ".getdashboarddata()",
+      "source_file": "src/app/core/services/dashboard.service.ts",
+      "source_location": "L95"
     },
     {
       "id": "src_app_core_services_registros_tiempo_service_registrostiemposervice_createregistro",
@@ -1960,7 +2021,31 @@
       "source_location": "L47"
     },
     {
-      "id": "src_app_features_user_change_password_dialog_change_password_dialog_component_changepassworddialogcomponent_ngoninit",
+      "id": "src_app_features_home_home_component_homecomponent_getinitials",
+      "label": ".getInitials()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.routes.ts",
+      "file_type": "code",
+      "norm_label": ".getinitials()",
+      "source_file": "src/app/features/home/home.component.ts",
+      "source_location": "L87"
+    },
+    {
+      "id": "src_app_features_home_home_component_homecomponent_loaddashboarddata",
+      "label": ".loadDashboardData()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.routes.ts",
+      "file_type": "code",
+      "norm_label": ".loaddashboarddata()",
+      "source_file": "src/app/features/home/home.component.ts",
+      "source_location": "L67"
+    },
+    {
+      "id": "src_app_features_home_home_component_homecomponent_ngoninit",
       "label": ".ngOnInit()",
       "_callable": true,
       "_origin": "ast",
@@ -1968,44 +2053,8 @@
       "community_name": "app.routes.ts",
       "file_type": "code",
       "norm_label": ".ngoninit()",
-      "source_file": "src/app/features/user/change-password-dialog/change-password-dialog.component.ts",
-      "source_location": "L55"
-    },
-    {
-      "id": "src_app_features_user_change_password_dialog_change_password_dialog_component_changepassworddialogcomponent_onsubmit",
-      "label": ".onSubmit()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "app.routes.ts",
-      "file_type": "code",
-      "norm_label": ".onsubmit()",
-      "source_file": "src/app/features/user/change-password-dialog/change-password-dialog.component.ts",
+      "source_file": "src/app/features/home/home.component.ts",
       "source_location": "L63"
-    },
-    {
-      "id": "src_app_features_user_change_password_dialog_change_password_dialog_component_confirmpasswordmatcher_iserrorstate",
-      "label": ".isErrorState()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "app.routes.ts",
-      "file_type": "code",
-      "norm_label": ".iserrorstate()",
-      "source_file": "src/app/features/user/change-password-dialog/change-password-dialog.component.ts",
-      "source_location": "L23"
-    },
-    {
-      "id": "src_app_features_user_change_password_dialog_change_password_dialog_component_passwordmatchvalidator",
-      "label": "passwordMatchValidator()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "app.routes.ts",
-      "file_type": "code",
-      "norm_label": "passwordmatchvalidator()",
-      "source_file": "src/app/features/user/change-password-dialog/change-password-dialog.component.ts",
-      "source_location": "L13"
     },
     {
       "id": "src_app_core_services_gastos_service_gastosproyectoservice_creategasto",
@@ -2440,6 +2489,17 @@
       "source_location": "L74"
     },
     {
+      "id": "forms",
+      "label": "@angular/forms",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "main-layout.component.ts",
+      "confidence": "EXTRACTED",
+      "file_type": "code",
+      "norm_label": "@angular/forms",
+      "source_file": "@angular/forms"
+    },
+    {
       "id": "inject",
       "label": "Inject",
       "_origin": "ast",
@@ -2535,6 +2595,28 @@
       "community_name": "main-layout.component.ts",
       "file_type": "code",
       "norm_label": "injectable",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "src_app_features_user_change_password_dialog_change_password_dialog_component",
+      "label": "change-password-dialog.component.ts",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "main-layout.component.ts",
+      "file_type": "code",
+      "norm_label": "change-password-dialog.component.ts",
+      "source_file": "src/app/features/user/change-password-dialog/change-password-dialog.component.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_app_features_user_change_password_dialog_change_password_dialog_component_ts_component",
+      "label": "Component",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "main-layout.component.ts",
+      "file_type": "code",
+      "norm_label": "component",
       "source_file": "",
       "source_location": ""
     },
@@ -4153,50 +4235,6 @@
       "source_location": "L28"
     },
     {
-      "id": "src_app_core_services_dashboard_service",
-      "label": "dashboard.service.ts",
-      "_origin": "ast",
-      "community": 30,
-      "community_name": "dashboard.service.ts",
-      "file_type": "code",
-      "norm_label": "dashboard.service.ts",
-      "source_file": "src/app/core/services/dashboard.service.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_app_core_services_dashboard_service_ts_injectable",
-      "label": "Injectable",
-      "_origin": "ast",
-      "community": 30,
-      "community_name": "dashboard.service.ts",
-      "file_type": "code",
-      "norm_label": "injectable",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "src_app_features_home_home_component",
-      "label": "home.component.ts",
-      "_origin": "ast",
-      "community": 30,
-      "community_name": "dashboard.service.ts",
-      "file_type": "code",
-      "norm_label": "home.component.ts",
-      "source_file": "src/app/features/home/home.component.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_app_features_home_home_component_ts_component",
-      "label": "Component",
-      "_origin": "ast",
-      "community": 30,
-      "community_name": "dashboard.service.ts",
-      "file_type": "code",
-      "norm_label": "component",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
       "id": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_ts_component",
       "label": "Component",
       "_origin": "ast",
@@ -4494,17 +4532,6 @@
       "source_location": "L35"
     },
     {
-      "id": "forms",
-      "label": "@angular/forms",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "app.routes.ts",
-      "confidence": "EXTRACTED",
-      "file_type": "code",
-      "norm_label": "@angular/forms",
-      "source_file": "@angular/forms"
-    },
-    {
       "id": "src_app_app_routes",
       "label": "app.routes.ts",
       "_origin": "ast",
@@ -4536,6 +4563,28 @@
       "norm_label": "no-auth.guard.ts",
       "source_file": "src/app/core/guards/no-auth.guard.ts",
       "source_location": "L1"
+    },
+    {
+      "id": "src_app_core_services_dashboard_service",
+      "label": "dashboard.service.ts",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.routes.ts",
+      "file_type": "code",
+      "norm_label": "dashboard.service.ts",
+      "source_file": "src/app/core/services/dashboard.service.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_app_core_services_dashboard_service_ts_injectable",
+      "label": "Injectable",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.routes.ts",
+      "file_type": "code",
+      "norm_label": "injectable",
+      "source_file": "",
+      "source_location": ""
     },
     {
       "id": "src_app_core_services_registros_tiempo_service",
@@ -4604,6 +4653,28 @@
       "source_location": ""
     },
     {
+      "id": "src_app_features_home_home_component",
+      "label": "home.component.ts",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.routes.ts",
+      "file_type": "code",
+      "norm_label": "home.component.ts",
+      "source_file": "src/app/features/home/home.component.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_app_features_home_home_component_ts_component",
+      "label": "Component",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.routes.ts",
+      "file_type": "code",
+      "norm_label": "component",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
       "id": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component",
       "label": "registros-tiempo-list.component.ts",
       "_origin": "ast",
@@ -4613,28 +4684,6 @@
       "norm_label": "registros-tiempo-list.component.ts",
       "source_file": "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts",
       "source_location": "L1"
-    },
-    {
-      "id": "src_app_features_user_change_password_dialog_change_password_dialog_component",
-      "label": "change-password-dialog.component.ts",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "app.routes.ts",
-      "file_type": "code",
-      "norm_label": "change-password-dialog.component.ts",
-      "source_file": "src/app/features/user/change-password-dialog/change-password-dialog.component.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_app_features_user_change_password_dialog_change_password_dialog_component_ts_component",
-      "label": "Component",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "app.routes.ts",
-      "file_type": "code",
-      "norm_label": "component",
-      "source_file": "",
-      "source_location": ""
     },
     {
       "id": "src_environments_environment",
@@ -4927,7 +4976,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/core/services/reportes.service.ts",
-      "source_location": "L120",
+      "source_location": "L164",
       "weight": 1.0
     },
     {
@@ -4939,7 +4988,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/core/services/reportes.service.ts",
-      "source_location": "L225",
+      "source_location": "L269",
       "weight": 1.0
     },
     {
@@ -5263,7 +5312,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L139",
+      "source_location": "L166",
       "weight": 1.0
     },
     {
@@ -5275,7 +5324,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L163",
+      "source_location": "L190",
       "weight": 1.0
     },
     {
@@ -5287,7 +5336,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L105",
+      "source_location": "L132",
       "weight": 1.0
     },
     {
@@ -5299,19 +5348,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L81",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_ngoninit",
-      "target": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_loadproyectos",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L64",
+      "source_location": "L108",
       "weight": 1.0
     },
     {
@@ -5323,7 +5360,19 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L66",
+      "source_location": "L65",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_ngoninit",
+      "target": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_loadproyectos",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
+      "source_location": "L83",
       "weight": 1.0
     },
     {
@@ -5335,7 +5384,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L200",
+      "source_location": "L237",
       "weight": 1.0
     },
     {
@@ -5347,7 +5396,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.ts",
-      "source_location": "L44",
+      "source_location": "L45",
       "weight": 1.0
     },
     {
@@ -5563,7 +5612,7 @@
       "confidence_score": 1.0,
       "context": "decorator",
       "source_file": "src/app/core/services/reportes.service.ts",
-      "source_location": "L41",
+      "source_location": "L50",
       "weight": 1.0
     },
     {
@@ -8155,7 +8204,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L195",
+      "source_location": "L232",
       "weight": 1.0
     },
     {
@@ -9703,7 +9752,7 @@
     },
     {
       "source": "src_app_core_services_reportes_service",
-      "target": "src_app_core_services_reportes_service_horastrabajador",
+      "target": "src_app_core_services_reportes_service_costolaborstate",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -9714,13 +9763,13 @@
     },
     {
       "source": "src_app_core_services_reportes_service",
-      "target": "src_app_core_services_reportes_service_horastrabajadorfilters",
+      "target": "src_app_core_services_reportes_service_horastrabajador",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/core/services/reportes.service.ts",
-      "source_location": "L33",
+      "source_location": "L31",
       "weight": 1.0
     },
     {
@@ -9736,13 +9785,24 @@
     },
     {
       "source": "src_app_core_services_reportes_service",
-      "target": "src_app_core_services_reportes_service_reportesservice",
+      "target": "src_app_core_services_reportes_service_horastrabajadorfilters",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/core/services/reportes.service.ts",
       "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_core_services_reportes_service",
+      "target": "src_app_core_services_reportes_service_reportesservice",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/core/services/reportes.service.ts",
+      "source_location": "L51",
       "weight": 1.0
     },
     {
@@ -10345,7 +10405,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/core/services/reportes.service.ts",
-      "source_location": "L100",
+      "source_location": "L144",
       "weight": 1.0
     },
     {
@@ -10356,7 +10416,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/core/services/reportes.service.ts",
-      "source_location": "L194",
+      "source_location": "L238",
       "weight": 1.0
     },
     {
@@ -10367,7 +10427,40 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/core/services/reportes.service.ts",
-      "source_location": "L282",
+      "source_location": "L326",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_core_services_reportes_service_reportesservice",
+      "target": "src_app_core_services_reportes_service_reportesservice_savecostolaborstate",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/core/services/reportes.service.ts",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_core_services_reportes_service_reportesservice",
+      "target": "src_app_core_services_reportes_service_reportesservice_getcostolaborstate",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/core/services/reportes.service.ts",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_core_services_reportes_service_reportesservice",
+      "target": "src_app_core_services_reportes_service_reportesservice_clearcostolaborstate",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/core/services/reportes.service.ts",
+      "source_location": "L80",
       "weight": 1.0
     },
     {
@@ -10378,7 +10471,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/core/services/reportes.service.ts",
-      "source_location": "L48",
+      "source_location": "L92",
       "weight": 1.0
     },
     {
@@ -11131,13 +11224,46 @@
     },
     {
       "source": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent",
+      "target": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_deseleccionartodosproyectos",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
+      "source_location": "L101",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent",
+      "target": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_loadproyectos",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
+      "source_location": "L105",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent",
+      "target": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_aplicarfiltroproyectos",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
+      "source_location": "L114",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent",
       "target": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_filtrarproyectos",
       "relation": "method",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L103",
+      "source_location": "L130",
       "weight": 1.0
     },
     {
@@ -11148,7 +11274,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L112",
+      "source_location": "L139",
       "weight": 1.0
     },
     {
@@ -11159,7 +11285,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L137",
+      "source_location": "L164",
       "weight": 1.0
     },
     {
@@ -11170,7 +11296,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L178",
+      "source_location": "L214",
       "weight": 1.0
     },
     {
@@ -11181,7 +11307,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L188",
+      "source_location": "L225",
       "weight": 1.0
     },
     {
@@ -11192,7 +11318,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L195",
+      "source_location": "L232",
       "weight": 1.0
     },
     {
@@ -11214,40 +11340,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L70",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent",
-      "target": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_deseleccionartodosproyectos",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L74",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent",
-      "target": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_loadproyectos",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L78",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent",
-      "target": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_aplicarfiltroproyectos",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/features/reportes/costo-labor/costo-labor.component.ts",
-      "source_location": "L87",
+      "source_location": "L97",
       "weight": 1.0
     },
     {
@@ -11258,7 +11351,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.ts",
-      "source_location": "L38",
+      "source_location": "L39",
       "weight": 1.0
     },
     {
@@ -11269,7 +11362,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.ts",
-      "source_location": "L48",
+      "source_location": "L49",
       "weight": 1.0
     },
     {
@@ -11280,7 +11373,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.ts",
-      "source_location": "L63",
+      "source_location": "L64",
       "weight": 1.0
     },
     {
@@ -11662,5 +11755,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "c1f5718b95b1a2a8ce164890a423296befe8092e"
+  "built_at_commit": "8fd461fac63643edd34146b58ba95788c3e25667"
 }

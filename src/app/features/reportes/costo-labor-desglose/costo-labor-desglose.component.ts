@@ -1,5 +1,5 @@
 import { Component, inject, OnInit, signal } from '@angular/core';
-import { CommonModule, DatePipe, CurrencyPipe } from '@angular/common';
+import { CommonModule, DatePipe, CurrencyPipe, Location } from '@angular/common';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MatTableModule, MatTableDataSource } from '@angular/material/table';
 import { MatButtonModule } from '@angular/material/button';
@@ -22,6 +22,7 @@ import { ProyectosService, Proyecto } from '../../../core/services/proyectos.ser
 export class CostoLaborDesgloseComponent implements OnInit {
   private route = inject(ActivatedRoute);
   private router = inject(Router);
+  private location = inject(Location);
   private reportesService = inject(ReportesService);
   private proyectosService = inject(ProyectosService);
   private snackBar = inject(MatSnackBar);
@@ -61,6 +62,10 @@ export class CostoLaborDesgloseComponent implements OnInit {
   }
 
   volver() {
-    this.router.navigate(['/reporte-costo-labor']);
+    if (window.history.length > 1) {
+      this.location.back();
+    } else {
+      this.router.navigate(['/reporte-costo-labor']);
+    }
   }
 }

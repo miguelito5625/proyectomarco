@@ -26,6 +26,5 @@
   "25": "auto_compiler/SKILL.md",
   "26": "prompt_enhancer/SKILL.md",
   "27": "BackupService",
-  "28": "BackupComponent",
-  "30": "dashboard.service.ts"
+  "28": "BackupComponent"
 }

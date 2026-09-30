@@ -19,6 +19,15 @@ export interface CostoLaborFilters {
   estatus?: string;      // 'activo', 'inactivo', or '' for all
 }
 
+export interface CostoLaborState {
+  proyectoIds: string[];
+  fechaInicio: string | null;
+  fechaFin: string | null;
+  estatus: string;
+  hasSearched: boolean;
+  datos?: CostoLabor[];
+}
+
 export interface HorasTrabajador {
   proyecto_nombre: string;
   trabajador_nombre: string;
@@ -41,6 +50,41 @@ export interface HorasTrabajadorFilters {
 @Injectable({ providedIn: 'root' })
 export class ReportesService {
   private supabase = inject(SupabaseService).client;
+  private _costoLaborState: CostoLaborState | null = null;
+
+  saveCostoLaborState(state: CostoLaborState): void {
+    this._costoLaborState = state;
+    try {
+      sessionStorage.setItem('costo_labor_state', JSON.stringify(state));
+    } catch {
+      // ignore storage quota errors
+    }
+  }
+
+  getCostoLaborState(): CostoLaborState | null {
+    if (this._costoLaborState) {
+      return this._costoLaborState;
+    }
+    try {
+      const stored = sessionStorage.getItem('costo_labor_state');
+      if (stored) {
+        this._costoLaborState = JSON.parse(stored);
+        return this._costoLaborState;
+      }
+    } catch {
+      // ignore
+    }
+    return null;
+  }
+
+  clearCostoLaborState(): void {
+    this._costoLaborState = null;
+    try {
+      sessionStorage.removeItem('costo_labor_state');
+    } catch {
+      // ignore
+    }
+  }
 
   /**
    * Obtiene registros de tiempo paginados por lotes para evitar el límite de 1000 filas de PostgREST
