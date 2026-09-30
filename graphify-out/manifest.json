@@ -432,9 +432,9 @@
     "semantic_hash": ""
   },
   "src/index.html": {
-    "mtime": 1777230027.103116,
-    "seen": 1787809406.721388,
-    "ast_hash": "0a8dcb4bd60f3e66280fdd8084863197",
+    "mtime": 1790802431.7763262,
+    "seen": 1790802462.3122222,
+    "ast_hash": "78f4b7b4a63bda9d6c40ca9efcf50ee9",
     "semantic_hash": ""
   },
   ".agents/skills/db_backup/SKILL.md": {
@@ -489,6 +489,12 @@
     "mtime": 1789520917.091892,
     "seen": 1790801474.7521076,
     "ast_hash": "c8b6f7da2e9c0f5b78b811908c615c0a",
+    "semantic_hash": ""
+  },
+  "public/404.html": {
+    "mtime": 1790802422.2338197,
+    "seen": 1790802462.3107955,
+    "ast_hash": "bbd14773028fedc6b84c8fae2ede0caa",
     "semantic_hash": ""
   }
 }
