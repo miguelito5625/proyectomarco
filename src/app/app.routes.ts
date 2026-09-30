@@ -4,7 +4,7 @@ import { MainLayoutComponent } from './layout/main-layout/main-layout.component'
 import { HomeComponent } from './features/home/home.component';
 import { TrabajadoresListComponent } from './features/trabajadores/trabajadores-list/trabajadores-list.component';
 import { ProyectosListComponent } from './features/proyectos/proyectos-list/proyectos-list.component';
-import { RegistrosTiempov2ListComponent } from './features/registros-tiempov2/registros-tiempov2-list/registros-tiempov2-list.component';
+import { RegistrosTiempoListComponent } from './features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component';
 import { NominasListComponent } from './features/nominas/nominas-list/nominas-list.component';
 import { GastosListComponent } from './features/gastos/gastos-list/gastos-list.component';
 import { CostoLaborComponent } from './features/reportes/costo-labor/costo-labor.component';
@@ -44,12 +44,7 @@ export const routes: Routes = [
       },
       {
         path: 'registros-tiempo',
-        component: RegistrosTiempov2ListComponent
-      },
-      {
-        path: 'registros-tiempov2',
-        redirectTo: 'registros-tiempo',
-        pathMatch: 'full'
+        component: RegistrosTiempoListComponent
       },
       {
         path: 'nominas',

@@ -3,7 +3,6 @@
   "1": "Proyecto",
   "2": "dependencies",
   "3": "development",
-  "4": "registros-tiempov2-list.component.ts",
   "5": "devDependencies",
   "6": "app.routes.ts",
   "7": "gastos-form.component.ts",
@@ -28,7 +27,5 @@
   "26": "prompt_enhancer/SKILL.md",
   "27": "BackupService",
   "28": "BackupComponent",
-  "29": "CostoLaborDesgloseComponent",
-  "30": "Injectable",
-  "31": "Component"
+  "30": "dashboard.service.ts"
 }

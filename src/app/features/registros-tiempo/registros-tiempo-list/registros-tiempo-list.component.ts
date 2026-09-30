@@ -17,17 +17,17 @@ import { RegistroTiempo, RegistrosTiempoService } from '../../../core/services/r
 import { SupabaseService } from '../../../core/services/supabase.service';
 
 @Component({
-  selector: 'app-registros-tiempov2-list',
+  selector: 'app-registros-tiempo-list',
   standalone: true,
   imports: [
     CommonModule, MatTableModule, MatInputModule, MatFormFieldModule, MatButtonModule, MatIconModule,
     MatSelectModule, MatSnackBarModule, MatCardModule,
     MatDatepickerModule, MatNativeDateModule, ReactiveFormsModule, FormsModule
   ],
-  templateUrl: './registros-tiempov2-list.component.html',
-  styleUrls: ['./registros-tiempov2-list.component.scss']
+  templateUrl: './registros-tiempo-list.component.html',
+  styleUrls: ['./registros-tiempo-list.component.scss']
 })
-export class RegistrosTiempov2ListComponent implements OnInit {
+export class RegistrosTiempoListComponent implements OnInit {
   private supabase = inject(SupabaseService).client;
   private proyectosService = inject(ProyectosService);
   private trabajadoresService = inject(TrabajadoresService);

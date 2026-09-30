@@ -43,32 +43,6 @@
       "source_location": "L9"
     },
     {
-      "id": "src_app_features_user_change_password_dialog_change_password_dialog_component_changepassworddialogcomponent",
-      "label": "ChangePasswordDialogComponent",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "main-layout.component.ts",
-      "file_type": "code",
-      "norm_label": "changepassworddialogcomponent",
-      "source_file": "src/app/features/user/change-password-dialog/change-password-dialog.component.ts",
-      "source_location": "L40"
-    },
-    {
-      "id": "src_app_features_user_change_password_dialog_change_password_dialog_component_confirmpasswordmatcher",
-      "label": "ConfirmPasswordMatcher",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "main-layout.component.ts",
-      "file_type": "code",
-      "norm_label": "confirmpasswordmatcher",
-      "source_file": "src/app/features/user/change-password-dialog/change-password-dialog.component.ts",
-      "source_location": "L22"
-    },
-    {
       "id": "src_app_features_user_user_profile_dialog_user_profile_dialog_component_userprofiledialogcomponent",
       "label": "UserProfileDialogComponent",
       "_callable": true,
@@ -212,6 +186,19 @@
       "source_location": "L26"
     },
     {
+      "id": "src_app_features_reportes_costo_labor_desglose_costo_labor_desglose_component_costolabordesglosecomponent",
+      "label": "CostoLaborDesgloseComponent",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "Proyecto",
+      "file_type": "code",
+      "norm_label": "costolabordesglosecomponent",
+      "source_file": "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.ts",
+      "source_location": "L22"
+    },
+    {
       "id": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent",
       "label": "HorasTrabajadorComponent",
       "_callable": true,
@@ -316,78 +303,13 @@
       "source_location": "L29"
     },
     {
-      "id": "src_app_features_reportes_costo_labor_desglose_costo_labor_desglose_component_costolabordesglosecomponent",
-      "label": "CostoLaborDesgloseComponent",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 29,
-      "community_name": "CostoLaborDesgloseComponent",
-      "file_type": "code",
-      "norm_label": "costolabordesglosecomponent",
-      "source_file": "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.ts",
-      "source_location": "L22"
-    },
-    {
-      "id": "src_app_core_services_registros_tiempo_service_registrostiemposervice",
-      "label": "RegistrosTiempoService",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "registros-tiempov2-list.component.ts",
-      "file_type": "code",
-      "norm_label": "registrostiemposervice",
-      "source_file": "src/app/core/services/registros-tiempo.service.ts",
-      "source_location": "L23"
-    },
-    {
-      "id": "src_app_core_services_registros_tiempo_service_registrotiempo",
-      "label": "RegistroTiempo",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "registros-tiempov2-list.component.ts",
-      "file_type": "code",
-      "norm_label": "registrotiempo",
-      "source_file": "src/app/core/services/registros-tiempo.service.ts",
-      "source_location": "L4"
-    },
-    {
-      "id": "src_app_features_registros_tiempo_registros_tiempo_form_registros_tiempo_form_component_registrostiempoformcomponent",
-      "label": "RegistrosTiempoFormComponent",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "registros-tiempov2-list.component.ts",
-      "file_type": "code",
-      "norm_label": "registrostiempoformcomponent",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-form/registros-tiempo-form.component.ts",
-      "source_location": "L25"
-    },
-    {
-      "id": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent",
-      "label": "RegistrosTiempoListComponent",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "registros-tiempov2-list.component.ts",
-      "file_type": "code",
-      "norm_label": "registrostiempolistcomponent",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts",
-      "source_location": "L30"
-    },
-    {
       "id": "src_app_core_services_dashboard_service_dashboarddata",
       "label": "DashboardData",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 6,
-      "community_name": "app.routes.ts",
+      "community": 30,
+      "community_name": "dashboard.service.ts",
       "file_type": "code",
       "norm_label": "dashboarddata",
       "source_file": "src/app/core/services/dashboard.service.ts",
@@ -399,8 +321,8 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 6,
-      "community_name": "app.routes.ts",
+      "community": 30,
+      "community_name": "dashboard.service.ts",
       "file_type": "code",
       "norm_label": "dashboardservice",
       "source_file": "src/app/core/services/dashboard.service.ts",
@@ -412,8 +334,8 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 6,
-      "community_name": "app.routes.ts",
+      "community": 30,
+      "community_name": "dashboard.service.ts",
       "file_type": "code",
       "norm_label": "dashboardstats",
       "source_file": "src/app/core/services/dashboard.service.ts",
@@ -425,8 +347,8 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 6,
-      "community_name": "app.routes.ts",
+      "community": 30,
+      "community_name": "dashboard.service.ts",
       "file_type": "code",
       "norm_label": "recentactivityitem",
       "source_file": "src/app/core/services/dashboard.service.ts",
@@ -438,8 +360,8 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 6,
-      "community_name": "app.routes.ts",
+      "community": 30,
+      "community_name": "dashboard.service.ts",
       "file_type": "code",
       "norm_label": "topproject",
       "source_file": "src/app/core/services/dashboard.service.ts",
@@ -451,12 +373,51 @@
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 6,
-      "community_name": "app.routes.ts",
+      "community": 30,
+      "community_name": "dashboard.service.ts",
       "file_type": "code",
       "norm_label": "topworker",
       "source_file": "src/app/core/services/dashboard.service.ts",
       "source_location": "L30"
+    },
+    {
+      "id": "src_app_features_home_home_component_homecomponent",
+      "label": "HomeComponent",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 30,
+      "community_name": "dashboard.service.ts",
+      "file_type": "code",
+      "norm_label": "homecomponent",
+      "source_file": "src/app/features/home/home.component.ts",
+      "source_location": "L36"
+    },
+    {
+      "id": "src_app_core_services_registros_tiempo_service_registrostiemposervice",
+      "label": "RegistrosTiempoService",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.routes.ts",
+      "file_type": "code",
+      "norm_label": "registrostiemposervice",
+      "source_file": "src/app/core/services/registros-tiempo.service.ts",
+      "source_location": "L23"
+    },
+    {
+      "id": "src_app_core_services_registros_tiempo_service_registrotiempo",
+      "label": "RegistroTiempo",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.routes.ts",
+      "file_type": "code",
+      "norm_label": "registrotiempo",
+      "source_file": "src/app/core/services/registros-tiempo.service.ts",
+      "source_location": "L4"
     },
     {
       "id": "src_app_core_services_supabase_service_supabaseservice",
@@ -485,17 +446,30 @@
       "source_location": "L29"
     },
     {
-      "id": "src_app_features_home_home_component_homecomponent",
-      "label": "HomeComponent",
+      "id": "src_app_features_user_change_password_dialog_change_password_dialog_component_changepassworddialogcomponent",
+      "label": "ChangePasswordDialogComponent",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 6,
       "community_name": "app.routes.ts",
       "file_type": "code",
-      "norm_label": "homecomponent",
-      "source_file": "src/app/features/home/home.component.ts",
-      "source_location": "L36"
+      "norm_label": "changepassworddialogcomponent",
+      "source_file": "src/app/features/user/change-password-dialog/change-password-dialog.component.ts",
+      "source_location": "L40"
+    },
+    {
+      "id": "src_app_features_user_change_password_dialog_change_password_dialog_component_confirmpasswordmatcher",
+      "label": "ConfirmPasswordMatcher",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.routes.ts",
+      "file_type": "code",
+      "norm_label": "confirmpasswordmatcher",
+      "source_file": "src/app/features/user/change-password-dialog/change-password-dialog.component.ts",
+      "source_location": "L22"
     },
     {
       "id": "src_app_core_services_gastos_service_gastoproyecto",
@@ -702,54 +676,6 @@
       "source_location": "L39"
     },
     {
-      "id": "src_app_features_user_change_password_dialog_change_password_dialog_component_changepassworddialogcomponent_ngoninit",
-      "label": ".ngOnInit()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "main-layout.component.ts",
-      "file_type": "code",
-      "norm_label": ".ngoninit()",
-      "source_file": "src/app/features/user/change-password-dialog/change-password-dialog.component.ts",
-      "source_location": "L55"
-    },
-    {
-      "id": "src_app_features_user_change_password_dialog_change_password_dialog_component_changepassworddialogcomponent_onsubmit",
-      "label": ".onSubmit()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "main-layout.component.ts",
-      "file_type": "code",
-      "norm_label": ".onsubmit()",
-      "source_file": "src/app/features/user/change-password-dialog/change-password-dialog.component.ts",
-      "source_location": "L63"
-    },
-    {
-      "id": "src_app_features_user_change_password_dialog_change_password_dialog_component_confirmpasswordmatcher_iserrorstate",
-      "label": ".isErrorState()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "main-layout.component.ts",
-      "file_type": "code",
-      "norm_label": ".iserrorstate()",
-      "source_file": "src/app/features/user/change-password-dialog/change-password-dialog.component.ts",
-      "source_location": "L23"
-    },
-    {
-      "id": "src_app_features_user_change_password_dialog_change_password_dialog_component_passwordmatchvalidator",
-      "label": "passwordMatchValidator()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "main-layout.component.ts",
-      "file_type": "code",
-      "norm_label": "passwordmatchvalidator()",
-      "source_file": "src/app/features/user/change-password-dialog/change-password-dialog.component.ts",
-      "source_location": "L13"
-    },
-    {
       "id": "src_app_features_user_user_profile_dialog_user_profile_dialog_component_userprofiledialogcomponent_ngoninit",
       "label": ".ngOnInit()",
       "_callable": true,
@@ -894,6 +820,18 @@
       "source_location": "L50"
     },
     {
+      "id": "src_app_core_services_reportes_service_reportesservice_fetchregistrostiempopaginado",
+      "label": ".fetchRegistrosTiempoPaginado()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "Proyecto",
+      "file_type": "code",
+      "norm_label": ".fetchregistrostiempopaginado()",
+      "source_file": "src/app/core/services/reportes.service.ts",
+      "source_location": "L48"
+    },
+    {
       "id": "src_app_core_services_reportes_service_reportesservice_getcostolabordesglose",
       "label": ".getCostoLaborDesglose()",
       "_callable": true,
@@ -903,7 +841,7 @@
       "file_type": "code",
       "norm_label": ".getcostolabordesglose()",
       "source_file": "src/app/core/services/reportes.service.ts",
-      "source_location": "L249"
+      "source_location": "L282"
     },
     {
       "id": "src_app_core_services_reportes_service_reportesservice_getcostolaborfiltered",
@@ -915,7 +853,7 @@
       "file_type": "code",
       "norm_label": ".getcostolaborfiltered()",
       "source_file": "src/app/core/services/reportes.service.ts",
-      "source_location": "L50"
+      "source_location": "L100"
     },
     {
       "id": "src_app_core_services_reportes_service_reportesservice_gethorastrabajadorfiltered",
@@ -927,7 +865,7 @@
       "file_type": "code",
       "norm_label": ".gethorastrabajadorfiltered()",
       "source_file": "src/app/core/services/reportes.service.ts",
-      "source_location": "L153"
+      "source_location": "L194"
     },
     {
       "id": "src_app_features_proyectos_proyectos_form_proyectos_form_component_proyectosformcomponent_ngoninit",
@@ -1012,6 +950,42 @@
       "norm_label": ".openform()",
       "source_file": "src/app/features/proyectos/proyectos-list/proyectos-list.component.ts",
       "source_location": "L65"
+    },
+    {
+      "id": "src_app_features_reportes_costo_labor_desglose_costo_labor_desglose_component_costolabordesglosecomponent_loaddatos",
+      "label": ".loadDatos()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "Proyecto",
+      "file_type": "code",
+      "norm_label": ".loaddatos()",
+      "source_file": "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.ts",
+      "source_location": "L48"
+    },
+    {
+      "id": "src_app_features_reportes_costo_labor_desglose_costo_labor_desglose_component_costolabordesglosecomponent_ngoninit",
+      "label": ".ngOnInit()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "Proyecto",
+      "file_type": "code",
+      "norm_label": ".ngoninit()",
+      "source_file": "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.ts",
+      "source_location": "L38"
+    },
+    {
+      "id": "src_app_features_reportes_costo_labor_desglose_costo_labor_desglose_component_costolabordesglosecomponent_volver",
+      "label": ".volver()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "Proyecto",
+      "file_type": "code",
+      "norm_label": ".volver()",
+      "source_file": "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.ts",
+      "source_location": "L63"
     },
     {
       "id": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent_aplicarfiltroproyectos",
@@ -1722,232 +1696,64 @@
       "source_location": "L65"
     },
     {
-      "id": "src_app_features_reportes_costo_labor_desglose_costo_labor_desglose_component_costolabordesglosecomponent_loaddatos",
-      "label": ".loadDatos()",
+      "id": "src_app_core_services_dashboard_service_dashboardservice_fetchallrecords",
+      "label": ".fetchAllRecords()",
       "_callable": true,
       "_origin": "ast",
-      "community": 29,
-      "community_name": "CostoLaborDesgloseComponent",
+      "community": 30,
+      "community_name": "dashboard.service.ts",
       "file_type": "code",
-      "norm_label": ".loaddatos()",
-      "source_file": "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.ts",
-      "source_location": "L48"
+      "norm_label": ".fetchallrecords()",
+      "source_file": "src/app/core/services/dashboard.service.ts",
+      "source_location": "L66"
     },
     {
-      "id": "src_app_features_reportes_costo_labor_desglose_costo_labor_desglose_component_costolabordesglosecomponent_ngoninit",
+      "id": "src_app_core_services_dashboard_service_dashboardservice_getdashboarddata",
+      "label": ".getDashboardData()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 30,
+      "community_name": "dashboard.service.ts",
+      "file_type": "code",
+      "norm_label": ".getdashboarddata()",
+      "source_file": "src/app/core/services/dashboard.service.ts",
+      "source_location": "L95"
+    },
+    {
+      "id": "src_app_features_home_home_component_homecomponent_getinitials",
+      "label": ".getInitials()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 30,
+      "community_name": "dashboard.service.ts",
+      "file_type": "code",
+      "norm_label": ".getinitials()",
+      "source_file": "src/app/features/home/home.component.ts",
+      "source_location": "L87"
+    },
+    {
+      "id": "src_app_features_home_home_component_homecomponent_loaddashboarddata",
+      "label": ".loadDashboardData()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 30,
+      "community_name": "dashboard.service.ts",
+      "file_type": "code",
+      "norm_label": ".loaddashboarddata()",
+      "source_file": "src/app/features/home/home.component.ts",
+      "source_location": "L67"
+    },
+    {
+      "id": "src_app_features_home_home_component_homecomponent_ngoninit",
       "label": ".ngOnInit()",
       "_callable": true,
       "_origin": "ast",
-      "community": 29,
-      "community_name": "CostoLaborDesgloseComponent",
+      "community": 30,
+      "community_name": "dashboard.service.ts",
       "file_type": "code",
       "norm_label": ".ngoninit()",
-      "source_file": "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.ts",
-      "source_location": "L38"
-    },
-    {
-      "id": "src_app_features_reportes_costo_labor_desglose_costo_labor_desglose_component_costolabordesglosecomponent_volver",
-      "label": ".volver()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 29,
-      "community_name": "CostoLaborDesgloseComponent",
-      "file_type": "code",
-      "norm_label": ".volver()",
-      "source_file": "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.ts",
+      "source_file": "src/app/features/home/home.component.ts",
       "source_location": "L63"
-    },
-    {
-      "id": "src_app_core_services_registros_tiempo_service_registrostiemposervice_createregistro",
-      "label": ".createRegistro()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "registros-tiempov2-list.component.ts",
-      "file_type": "code",
-      "norm_label": ".createregistro()",
-      "source_file": "src/app/core/services/registros-tiempo.service.ts",
-      "source_location": "L51"
-    },
-    {
-      "id": "src_app_core_services_registros_tiempo_service_registrostiemposervice_deleteregistro",
-      "label": ".deleteRegistro()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "registros-tiempov2-list.component.ts",
-      "file_type": "code",
-      "norm_label": ".deleteregistro()",
-      "source_file": "src/app/core/services/registros-tiempo.service.ts",
-      "source_location": "L74"
-    },
-    {
-      "id": "src_app_core_services_registros_tiempo_service_registrostiemposervice_getregistro",
-      "label": ".getRegistro()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "registros-tiempov2-list.component.ts",
-      "file_type": "code",
-      "norm_label": ".getregistro()",
-      "source_file": "src/app/core/services/registros-tiempo.service.ts",
-      "source_location": "L40"
-    },
-    {
-      "id": "src_app_core_services_registros_tiempo_service_registrostiemposervice_getregistros",
-      "label": ".getRegistros()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "registros-tiempov2-list.component.ts",
-      "file_type": "code",
-      "norm_label": ".getregistros()",
-      "source_file": "src/app/core/services/registros-tiempo.service.ts",
-      "source_location": "L26"
-    },
-    {
-      "id": "src_app_core_services_registros_tiempo_service_registrostiemposervice_updateregistro",
-      "label": ".updateRegistro()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "registros-tiempov2-list.component.ts",
-      "file_type": "code",
-      "norm_label": ".updateregistro()",
-      "source_file": "src/app/core/services/registros-tiempo.service.ts",
-      "source_location": "L62"
-    },
-    {
-      "id": "src_app_features_registros_tiempo_registros_tiempo_form_registros_tiempo_form_component_registrostiempoformcomponent_loadselectdata",
-      "label": ".loadSelectData()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "registros-tiempov2-list.component.ts",
-      "file_type": "code",
-      "norm_label": ".loadselectdata()",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-form/registros-tiempo-form.component.ts",
-      "source_location": "L55"
-    },
-    {
-      "id": "src_app_features_registros_tiempo_registros_tiempo_form_registros_tiempo_form_component_registrostiempoformcomponent_ngoninit",
-      "label": ".ngOnInit()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "registros-tiempov2-list.component.ts",
-      "file_type": "code",
-      "norm_label": ".ngoninit()",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-form/registros-tiempo-form.component.ts",
-      "source_location": "L41"
-    },
-    {
-      "id": "src_app_features_registros_tiempo_registros_tiempo_form_registros_tiempo_form_component_registrostiempoformcomponent_onsubmit",
-      "label": ".onSubmit()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "registros-tiempov2-list.component.ts",
-      "file_type": "code",
-      "norm_label": ".onsubmit()",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-form/registros-tiempo-form.component.ts",
-      "source_location": "L69"
-    },
-    {
-      "id": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent_applydatefilter",
-      "label": ".applyDateFilter()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "registros-tiempov2-list.component.ts",
-      "file_type": "code",
-      "norm_label": ".applydatefilter()",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts",
-      "source_location": "L139"
-    },
-    {
-      "id": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent_applyfilter",
-      "label": ".applyFilter()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "registros-tiempov2-list.component.ts",
-      "file_type": "code",
-      "norm_label": ".applyfilter()",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts",
-      "source_location": "L134"
-    },
-    {
-      "id": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent_cleardatefilter",
-      "label": ".clearDateFilter()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "registros-tiempov2-list.component.ts",
-      "file_type": "code",
-      "norm_label": ".cleardatefilter()",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts",
-      "source_location": "L143"
-    },
-    {
-      "id": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent_deleteregistro",
-      "label": ".deleteRegistro()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "registros-tiempov2-list.component.ts",
-      "file_type": "code",
-      "norm_label": ".deleteregistro()",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts",
-      "source_location": "L122"
-    },
-    {
-      "id": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent_loadregistros",
-      "label": ".loadRegistros()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "registros-tiempov2-list.component.ts",
-      "file_type": "code",
-      "norm_label": ".loadregistros()",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts",
-      "source_location": "L98"
-    },
-    {
-      "id": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent_ngoninit",
-      "label": ".ngOnInit()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "registros-tiempov2-list.component.ts",
-      "file_type": "code",
-      "norm_label": ".ngoninit()",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts",
-      "source_location": "L47"
-    },
-    {
-      "id": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent_openform",
-      "label": ".openForm()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "registros-tiempov2-list.component.ts",
-      "file_type": "code",
-      "norm_label": ".openform()",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts",
-      "source_location": "L111"
-    },
-    {
-      "id": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent_updatetablefilter",
-      "label": ".updateTableFilter()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "registros-tiempov2-list.component.ts",
-      "file_type": "code",
-      "norm_label": ".updatetablefilter()",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts",
-      "source_location": "L149"
     },
     {
       "id": "src_app_core_guards_auth_guard_authguard",
@@ -1974,28 +1780,64 @@
       "source_location": "L5"
     },
     {
-      "id": "src_app_core_services_dashboard_service_dashboardservice_fetchallrecords",
-      "label": ".fetchAllRecords()",
+      "id": "src_app_core_services_registros_tiempo_service_registrostiemposervice_createregistro",
+      "label": ".createRegistro()",
       "_callable": true,
       "_origin": "ast",
       "community": 6,
       "community_name": "app.routes.ts",
       "file_type": "code",
-      "norm_label": ".fetchallrecords()",
-      "source_file": "src/app/core/services/dashboard.service.ts",
-      "source_location": "L66"
+      "norm_label": ".createregistro()",
+      "source_file": "src/app/core/services/registros-tiempo.service.ts",
+      "source_location": "L51"
     },
     {
-      "id": "src_app_core_services_dashboard_service_dashboardservice_getdashboarddata",
-      "label": ".getDashboardData()",
+      "id": "src_app_core_services_registros_tiempo_service_registrostiemposervice_deleteregistro",
+      "label": ".deleteRegistro()",
       "_callable": true,
       "_origin": "ast",
       "community": 6,
       "community_name": "app.routes.ts",
       "file_type": "code",
-      "norm_label": ".getdashboarddata()",
-      "source_file": "src/app/core/services/dashboard.service.ts",
-      "source_location": "L95"
+      "norm_label": ".deleteregistro()",
+      "source_file": "src/app/core/services/registros-tiempo.service.ts",
+      "source_location": "L74"
+    },
+    {
+      "id": "src_app_core_services_registros_tiempo_service_registrostiemposervice_getregistro",
+      "label": ".getRegistro()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.routes.ts",
+      "file_type": "code",
+      "norm_label": ".getregistro()",
+      "source_file": "src/app/core/services/registros-tiempo.service.ts",
+      "source_location": "L40"
+    },
+    {
+      "id": "src_app_core_services_registros_tiempo_service_registrostiemposervice_getregistros",
+      "label": ".getRegistros()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.routes.ts",
+      "file_type": "code",
+      "norm_label": ".getregistros()",
+      "source_file": "src/app/core/services/registros-tiempo.service.ts",
+      "source_location": "L26"
+    },
+    {
+      "id": "src_app_core_services_registros_tiempo_service_registrostiemposervice_updateregistro",
+      "label": ".updateRegistro()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.routes.ts",
+      "file_type": "code",
+      "norm_label": ".updateregistro()",
+      "source_file": "src/app/core/services/registros-tiempo.service.ts",
+      "source_location": "L62"
     },
     {
       "id": "src_app_core_services_supabase_service_supabaseservice_client",
@@ -2118,31 +1960,7 @@
       "source_location": "L47"
     },
     {
-      "id": "src_app_features_home_home_component_homecomponent_getinitials",
-      "label": ".getInitials()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "app.routes.ts",
-      "file_type": "code",
-      "norm_label": ".getinitials()",
-      "source_file": "src/app/features/home/home.component.ts",
-      "source_location": "L87"
-    },
-    {
-      "id": "src_app_features_home_home_component_homecomponent_loaddashboarddata",
-      "label": ".loadDashboardData()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "app.routes.ts",
-      "file_type": "code",
-      "norm_label": ".loaddashboarddata()",
-      "source_file": "src/app/features/home/home.component.ts",
-      "source_location": "L67"
-    },
-    {
-      "id": "src_app_features_home_home_component_homecomponent_ngoninit",
+      "id": "src_app_features_user_change_password_dialog_change_password_dialog_component_changepassworddialogcomponent_ngoninit",
       "label": ".ngOnInit()",
       "_callable": true,
       "_origin": "ast",
@@ -2150,8 +1968,44 @@
       "community_name": "app.routes.ts",
       "file_type": "code",
       "norm_label": ".ngoninit()",
-      "source_file": "src/app/features/home/home.component.ts",
+      "source_file": "src/app/features/user/change-password-dialog/change-password-dialog.component.ts",
+      "source_location": "L55"
+    },
+    {
+      "id": "src_app_features_user_change_password_dialog_change_password_dialog_component_changepassworddialogcomponent_onsubmit",
+      "label": ".onSubmit()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.routes.ts",
+      "file_type": "code",
+      "norm_label": ".onsubmit()",
+      "source_file": "src/app/features/user/change-password-dialog/change-password-dialog.component.ts",
       "source_location": "L63"
+    },
+    {
+      "id": "src_app_features_user_change_password_dialog_change_password_dialog_component_confirmpasswordmatcher_iserrorstate",
+      "label": ".isErrorState()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.routes.ts",
+      "file_type": "code",
+      "norm_label": ".iserrorstate()",
+      "source_file": "src/app/features/user/change-password-dialog/change-password-dialog.component.ts",
+      "source_location": "L23"
+    },
+    {
+      "id": "src_app_features_user_change_password_dialog_change_password_dialog_component_passwordmatchvalidator",
+      "label": "passwordMatchValidator()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.routes.ts",
+      "file_type": "code",
+      "norm_label": "passwordmatchvalidator()",
+      "source_file": "src/app/features/user/change-password-dialog/change-password-dialog.component.ts",
+      "source_location": "L13"
     },
     {
       "id": "src_app_core_services_gastos_service_gastosproyectoservice_creategasto",
@@ -2638,7 +2492,7 @@
       "file_type": "code",
       "norm_label": "routes",
       "source_file": "src/app/app.routes.ts",
-      "source_location": "L18"
+      "source_location": "L17"
     },
     {
       "id": "src_app_app_spec",
@@ -2681,28 +2535,6 @@
       "community_name": "main-layout.component.ts",
       "file_type": "code",
       "norm_label": "injectable",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "src_app_features_user_change_password_dialog_change_password_dialog_component",
-      "label": "change-password-dialog.component.ts",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "main-layout.component.ts",
-      "file_type": "code",
-      "norm_label": "change-password-dialog.component.ts",
-      "source_file": "src/app/features/user/change-password-dialog/change-password-dialog.component.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_app_features_user_change_password_dialog_change_password_dialog_component_ts_component",
-      "label": "Component",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "main-layout.component.ts",
-      "file_type": "code",
-      "norm_label": "component",
       "source_file": "",
       "source_location": ""
     },
@@ -2870,6 +2702,17 @@
       "norm_label": "costo-labor-desglose.component.ts",
       "source_file": "src/app/features/reportes/costo-labor-desglose/costo-labor-desglose.component.ts",
       "source_location": "L1"
+    },
+    {
+      "id": "src_app_features_reportes_costo_labor_desglose_costo_labor_desglose_component_ts_component",
+      "label": "Component",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "Proyecto",
+      "file_type": "code",
+      "norm_label": "component",
+      "source_file": "",
+      "source_location": ""
     },
     {
       "id": "src_app_features_reportes_horas_trabajador_horas_trabajador_component",
@@ -3051,17 +2894,6 @@
       "source_location": "L1"
     },
     {
-      "id": "angular_cli",
-      "label": "cli",
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "proyectomarco",
-      "file_type": "code",
-      "norm_label": "cli",
-      "source_file": "angular.json",
-      "source_location": "L4"
-    },
-    {
       "id": "angular_cli_analytics",
       "label": "analytics",
       "_origin": "ast",
@@ -3082,6 +2914,17 @@
       "norm_label": "packagemanager",
       "source_file": "angular.json",
       "source_location": "L5"
+    },
+    {
+      "id": "angular_json_angular_cli",
+      "label": "cli",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "proyectomarco",
+      "file_type": "code",
+      "norm_label": "cli",
+      "source_file": "angular.json",
+      "source_location": "L4"
     },
     {
       "id": "angular_newprojectroot",
@@ -4024,17 +3867,6 @@
       "source_location": ""
     },
     {
-      "id": "src_app_features_reportes_costo_labor_desglose_costo_labor_desglose_component_ts_component",
-      "label": "Component",
-      "_origin": "ast",
-      "community": 29,
-      "community_name": "CostoLaborDesgloseComponent",
-      "file_type": "code",
-      "norm_label": "component",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
       "id": "angular_architect_build",
       "label": "build",
       "_origin": "ast",
@@ -4332,103 +4164,48 @@
       "source_location": "L28"
     },
     {
+      "id": "src_app_core_services_dashboard_service",
+      "label": "dashboard.service.ts",
+      "_origin": "ast",
+      "community": 30,
+      "community_name": "dashboard.service.ts",
+      "file_type": "code",
+      "norm_label": "dashboard.service.ts",
+      "source_file": "src/app/core/services/dashboard.service.ts",
+      "source_location": "L1"
+    },
+    {
       "id": "src_app_core_services_dashboard_service_ts_injectable",
       "label": "Injectable",
       "_origin": "ast",
       "community": 30,
-      "community_name": "Injectable",
+      "community_name": "dashboard.service.ts",
       "file_type": "code",
       "norm_label": "injectable",
       "source_file": "",
       "source_location": ""
+    },
+    {
+      "id": "src_app_features_home_home_component",
+      "label": "home.component.ts",
+      "_origin": "ast",
+      "community": 30,
+      "community_name": "dashboard.service.ts",
+      "file_type": "code",
+      "norm_label": "home.component.ts",
+      "source_file": "src/app/features/home/home.component.ts",
+      "source_location": "L1"
     },
     {
       "id": "src_app_features_home_home_component_ts_component",
       "label": "Component",
       "_origin": "ast",
-      "community": 31,
-      "community_name": "Component",
+      "community": 30,
+      "community_name": "dashboard.service.ts",
       "file_type": "code",
       "norm_label": "component",
       "source_file": "",
       "source_location": ""
-    },
-    {
-      "id": "src_app_core_services_registros_tiempo_service",
-      "label": "registros-tiempo.service.ts",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "registros-tiempov2-list.component.ts",
-      "file_type": "code",
-      "norm_label": "registros-tiempo.service.ts",
-      "source_file": "src/app/core/services/registros-tiempo.service.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_app_core_services_registros_tiempo_service_ts_injectable",
-      "label": "Injectable",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "registros-tiempov2-list.component.ts",
-      "file_type": "code",
-      "norm_label": "injectable",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "src_app_features_registros_tiempo_registros_tiempo_form_registros_tiempo_form_component",
-      "label": "registros-tiempo-form.component.ts",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "registros-tiempov2-list.component.ts",
-      "file_type": "code",
-      "norm_label": "registros-tiempo-form.component.ts",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-form/registros-tiempo-form.component.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_app_features_registros_tiempo_registros_tiempo_form_registros_tiempo_form_component_ts_component",
-      "label": "Component",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "registros-tiempov2-list.component.ts",
-      "file_type": "code",
-      "norm_label": "component",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component",
-      "label": "registros-tiempo-list.component.ts",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "registros-tiempov2-list.component.ts",
-      "file_type": "code",
-      "norm_label": "registros-tiempo-list.component.ts",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_ts_component",
-      "label": "Component",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "registros-tiempov2-list.component.ts",
-      "file_type": "code",
-      "norm_label": "component",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "src_app_features_registros_tiempov2_registros_tiempov2_list_registros_tiempov2_list_component",
-      "label": "registros-tiempov2-list.component.ts",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "registros-tiempov2-list.component.ts",
-      "file_type": "code",
-      "norm_label": "registros-tiempov2-list.component.ts",
-      "source_file": "src/app/features/registros-tiempov2/registros-tiempov2-list/registros-tiempov2-list.component.ts",
-      "source_location": "L1"
     },
     {
       "id": "package",
@@ -4717,26 +4494,15 @@
       "source_location": "L35"
     },
     {
-      "id": "component",
-      "label": "Component",
+      "id": "forms",
+      "label": "@angular/forms",
       "_origin": "ast",
       "community": 6,
       "community_name": "app.routes.ts",
+      "confidence": "EXTRACTED",
       "file_type": "code",
-      "norm_label": "component",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "injectable",
-      "label": "Injectable",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "app.routes.ts",
-      "file_type": "code",
-      "norm_label": "injectable",
-      "source_file": "",
-      "source_location": ""
+      "norm_label": "@angular/forms",
+      "source_file": "@angular/forms"
     },
     {
       "id": "src_app_app_routes",
@@ -4772,15 +4538,26 @@
       "source_location": "L1"
     },
     {
-      "id": "src_app_core_services_dashboard_service",
-      "label": "dashboard.service.ts",
+      "id": "src_app_core_services_registros_tiempo_service",
+      "label": "registros-tiempo.service.ts",
       "_origin": "ast",
       "community": 6,
       "community_name": "app.routes.ts",
       "file_type": "code",
-      "norm_label": "dashboard.service.ts",
-      "source_file": "src/app/core/services/dashboard.service.ts",
+      "norm_label": "registros-tiempo.service.ts",
+      "source_file": "src/app/core/services/registros-tiempo.service.ts",
       "source_location": "L1"
+    },
+    {
+      "id": "src_app_core_services_registros_tiempo_service_ts_injectable",
+      "label": "Injectable",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.routes.ts",
+      "file_type": "code",
+      "norm_label": "injectable",
+      "source_file": "",
+      "source_location": ""
     },
     {
       "id": "src_app_core_services_supabase_service",
@@ -4827,15 +4604,37 @@
       "source_location": ""
     },
     {
-      "id": "src_app_features_home_home_component",
-      "label": "home.component.ts",
+      "id": "src_app_features_registros_tiempov2_registros_tiempov2_list_registros_tiempov2_list_component",
+      "label": "registros-tiempov2-list.component.ts",
       "_origin": "ast",
       "community": 6,
       "community_name": "app.routes.ts",
       "file_type": "code",
-      "norm_label": "home.component.ts",
-      "source_file": "src/app/features/home/home.component.ts",
+      "norm_label": "registros-tiempov2-list.component.ts",
+      "source_file": "src/app/features/registros-tiempov2/registros-tiempov2-list/registros-tiempov2-list.component.ts",
       "source_location": "L1"
+    },
+    {
+      "id": "src_app_features_user_change_password_dialog_change_password_dialog_component",
+      "label": "change-password-dialog.component.ts",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.routes.ts",
+      "file_type": "code",
+      "norm_label": "change-password-dialog.component.ts",
+      "source_file": "src/app/features/user/change-password-dialog/change-password-dialog.component.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_app_features_user_change_password_dialog_change_password_dialog_component_ts_component",
+      "label": "Component",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "app.routes.ts",
+      "file_type": "code",
+      "norm_label": "component",
+      "source_file": "",
+      "source_location": ""
     },
     {
       "id": "src_environments_environment",
@@ -5120,6 +4919,30 @@
       "weight": 1.0
     },
     {
+      "source": "src_app_core_services_reportes_service_reportesservice_getcostolaborfiltered",
+      "target": "src_app_core_services_reportes_service_reportesservice_fetchregistrostiempopaginado",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/core/services/reportes.service.ts",
+      "source_location": "L120",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_core_services_reportes_service_reportesservice_gethorastrabajadorfiltered",
+      "target": "src_app_core_services_reportes_service_reportesservice_fetchregistrostiempopaginado",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/app/core/services/reportes.service.ts",
+      "source_location": "L225",
+      "weight": 1.0
+    },
+    {
       "source": "src_app_core_services_theme_service_themeservice_constructor",
       "target": "src_app_core_services_theme_service_themeservice_applytheme",
       "relation": "calls",
@@ -5345,90 +5168,6 @@
       "context": "call",
       "source_file": "src/app/features/proyectos/proyectos-list/proyectos-list.component.ts",
       "source_location": "L72",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_form_registros_tiempo_form_component_registrostiempoformcomponent_ngoninit",
-      "target": "src_app_features_registros_tiempo_registros_tiempo_form_registros_tiempo_form_component_registrostiempoformcomponent_loadselectdata",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-form/registros-tiempo-form.component.ts",
-      "source_location": "L52",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent_applydatefilter",
-      "target": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent_updatetablefilter",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts",
-      "source_location": "L140",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent_applyfilter",
-      "target": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent_updatetablefilter",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts",
-      "source_location": "L136",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent_cleardatefilter",
-      "target": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent_updatetablefilter",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts",
-      "source_location": "L146",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent_deleteregistro",
-      "target": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent_loadregistros",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts",
-      "source_location": "L127",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent_ngoninit",
-      "target": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent_loadregistros",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts",
-      "source_location": "L95",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent_openform",
-      "target": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent_loadregistros",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts",
-      "source_location": "L118",
       "weight": 1.0
     },
     {
@@ -5757,7 +5496,7 @@
     },
     {
       "source": "src_app_core_services_dashboard_service_dashboardservice",
-      "target": "injectable",
+      "target": "src_app_core_services_dashboard_service_ts_injectable",
       "relation": "references",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5925,7 +5664,7 @@
     },
     {
       "source": "src_app_features_home_home_component_homecomponent",
-      "target": "component",
+      "target": "src_app_features_home_home_component_ts_component",
       "relation": "references",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5981,30 +5720,6 @@
       "context": "decorator",
       "source_file": "src/app/features/proyectos/proyectos-list/proyectos-list.component.ts",
       "source_location": "L16",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_form_registros_tiempo_form_component_registrostiempoformcomponent",
-      "target": "src_app_features_registros_tiempo_registros_tiempo_form_registros_tiempo_form_component_ts_component",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "decorator",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-form/registros-tiempo-form.component.ts",
-      "source_location": "L15",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent",
-      "target": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_ts_component",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "decorator",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts",
-      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -6149,18 +5864,6 @@
       "context": "field",
       "source_file": "src/app/features/proyectos/proyectos-form/proyectos-form.component.ts",
       "source_location": "L30",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_form_registros_tiempo_form_component_registrostiempoformcomponent",
-      "target": "src_app_core_services_registros_tiempo_service_registrotiempo",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "field",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-form/registros-tiempo-form.component.ts",
-      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -6525,7 +6228,7 @@
     },
     {
       "source": "src_app_app_routes",
-      "target": "src_app_features_gastos_gastos_list_gastos_list_component_gastoslistcomponent",
+      "target": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6537,7 +6240,7 @@
     },
     {
       "source": "src_app_app_routes",
-      "target": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent",
+      "target": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6549,7 +6252,7 @@
     },
     {
       "source": "src_app_app_routes",
-      "target": "src_app_features_reportes_horas_trabajador_horas_trabajador_component_horastrabajadorcomponent",
+      "target": "src_app_features_reportes_costo_labor_desglose_costo_labor_desglose_component_costolabordesglosecomponent",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6561,18 +6264,6 @@
     },
     {
       "source": "src_app_app_routes",
-      "target": "src_app_features_reportes_costo_labor_desglose_costo_labor_desglose_component_costolabordesglosecomponent",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/app.routes.ts",
-      "source_location": "L13",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_app_routes",
       "target": "src_app_features_backup_backup_component_backupcomponent",
       "relation": "imports",
       "_origin": "ast",
@@ -6580,7 +6271,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/app.routes.ts",
-      "source_location": "L14",
+      "source_location": "L13",
       "weight": 1.0
     },
     {
@@ -6645,7 +6336,7 @@
     },
     {
       "source": "src_app_app_routes",
-      "target": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent",
+      "target": "src_app_features_registros_tiempov2_registros_tiempov2_list_registros_tiempov2_list_component_registrostiempov2listcomponent",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6657,7 +6348,7 @@
     },
     {
       "source": "src_app_app_routes",
-      "target": "src_app_features_registros_tiempov2_registros_tiempov2_list_registros_tiempov2_list_component_registrostiempov2listcomponent",
+      "target": "src_app_features_nominas_nominas_list_nominas_list_component_nominaslistcomponent",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6669,7 +6360,7 @@
     },
     {
       "source": "src_app_app_routes",
-      "target": "src_app_features_nominas_nominas_list_nominas_list_component_nominaslistcomponent",
+      "target": "src_app_features_gastos_gastos_list_gastos_list_component_gastoslistcomponent",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7160,114 +6851,6 @@
       "weight": 1.0
     },
     {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_form_registros_tiempo_form_component",
-      "target": "src_app_core_services_registros_tiempo_service_registrostiemposervice",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-form/registros-tiempo-form.component.ts",
-      "source_location": "L10",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_form_registros_tiempo_form_component",
-      "target": "src_app_core_services_registros_tiempo_service_registrotiempo",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-form/registros-tiempo-form.component.ts",
-      "source_location": "L10",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_form_registros_tiempo_form_component",
-      "target": "src_app_core_services_proyectos_service_proyecto",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-form/registros-tiempo-form.component.ts",
-      "source_location": "L11",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_form_registros_tiempo_form_component",
-      "target": "src_app_core_services_proyectos_service_proyectosservice",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-form/registros-tiempo-form.component.ts",
-      "source_location": "L11",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_form_registros_tiempo_form_component",
-      "target": "src_app_core_services_trabajadores_service_trabajador",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-form/registros-tiempo-form.component.ts",
-      "source_location": "L12",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_form_registros_tiempo_form_component",
-      "target": "src_app_core_services_trabajadores_service_trabajadoresservice",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-form/registros-tiempo-form.component.ts",
-      "source_location": "L12",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component",
-      "target": "src_app_core_services_registros_tiempo_service_registrostiemposervice",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts",
-      "source_location": "L15",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component",
-      "target": "src_app_core_services_registros_tiempo_service_registrotiempo",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts",
-      "source_location": "L15",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component",
-      "target": "src_app_features_registros_tiempo_registros_tiempo_form_registros_tiempo_form_component_registrostiempoformcomponent",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts",
-      "source_location": "L16",
-      "weight": 1.0
-    },
-    {
       "source": "src_app_features_registros_tiempov2_registros_tiempov2_list_registros_tiempov2_list_component",
       "target": "src_app_core_services_proyectos_service_proyecto",
       "relation": "imports",
@@ -7725,7 +7308,7 @@
     },
     {
       "source": "src_app_app_routes",
-      "target": "src_app_features_gastos_gastos_list_gastos_list_component",
+      "target": "src_app_features_reportes_costo_labor_costo_labor_component",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7737,7 +7320,7 @@
     },
     {
       "source": "src_app_app_routes",
-      "target": "src_app_features_reportes_costo_labor_costo_labor_component",
+      "target": "src_app_features_reportes_horas_trabajador_horas_trabajador_component",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7749,7 +7332,7 @@
     },
     {
       "source": "src_app_app_routes",
-      "target": "src_app_features_reportes_horas_trabajador_horas_trabajador_component",
+      "target": "src_app_features_reportes_costo_labor_desglose_costo_labor_desglose_component",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7761,7 +7344,7 @@
     },
     {
       "source": "src_app_app_routes",
-      "target": "src_app_features_reportes_costo_labor_desglose_costo_labor_desglose_component",
+      "target": "src_app_features_backup_backup_component",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7773,7 +7356,7 @@
     },
     {
       "source": "src_app_app_routes",
-      "target": "src_app_features_backup_backup_component",
+      "target": "src_app_core_guards_auth_guard",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7785,18 +7368,6 @@
     },
     {
       "source": "src_app_app_routes",
-      "target": "src_app_core_guards_auth_guard",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/app.routes.ts",
-      "source_location": "L15",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_app_routes",
       "target": "src_app_core_guards_no_auth_guard",
       "relation": "imports_from",
       "_origin": "ast",
@@ -7804,7 +7375,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/app.routes.ts",
-      "source_location": "L16",
+      "source_location": "L15",
       "weight": 1.0
     },
     {
@@ -7869,7 +7440,7 @@
     },
     {
       "source": "src_app_app_routes",
-      "target": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component",
+      "target": "src_app_features_registros_tiempov2_registros_tiempov2_list_registros_tiempov2_list_component",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7881,7 +7452,7 @@
     },
     {
       "source": "src_app_app_routes",
-      "target": "src_app_features_registros_tiempov2_registros_tiempov2_list_registros_tiempov2_list_component",
+      "target": "src_app_features_nominas_nominas_list_nominas_list_component",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7893,7 +7464,7 @@
     },
     {
       "source": "src_app_app_routes",
-      "target": "src_app_features_nominas_nominas_list_nominas_list_component",
+      "target": "src_app_features_gastos_gastos_list_gastos_list_component",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -8240,66 +7811,6 @@
       "weight": 1.0
     },
     {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_form_registros_tiempo_form_component",
-      "target": "src_app_core_services_registros_tiempo_service",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-form/registros-tiempo-form.component.ts",
-      "source_location": "L10",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_form_registros_tiempo_form_component",
-      "target": "src_app_core_services_proyectos_service",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-form/registros-tiempo-form.component.ts",
-      "source_location": "L11",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_form_registros_tiempo_form_component",
-      "target": "src_app_core_services_trabajadores_service",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-form/registros-tiempo-form.component.ts",
-      "source_location": "L12",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component",
-      "target": "src_app_core_services_registros_tiempo_service",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts",
-      "source_location": "L15",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component",
-      "target": "src_app_features_registros_tiempo_registros_tiempo_form_registros_tiempo_form_component",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts",
-      "source_location": "L16",
-      "weight": 1.0
-    },
-    {
       "source": "src_app_features_registros_tiempov2_registros_tiempov2_list_registros_tiempov2_list_component",
       "target": "src_app_core_services_proyectos_service",
       "relation": "imports_from",
@@ -8636,30 +8147,6 @@
       "weight": 1.0
     },
     {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent_deleteregistro",
-      "target": "src_app_core_services_registros_tiempo_service_registrotiempo",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "parameter_type",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts",
-      "source_location": "L122",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent_openform",
-      "target": "src_app_core_services_registros_tiempo_service_registrotiempo",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "parameter_type",
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts",
-      "source_location": "L111",
-      "weight": 1.0
-    },
-    {
       "source": "src_app_features_reportes_costo_labor_costo_labor_component_costolaborcomponent_verdesglose",
       "target": "src_app_core_services_reportes_service_costolabor",
       "relation": "references",
@@ -8907,7 +8394,7 @@
     },
     {
       "source": "angular",
-      "target": "angular_cli",
+      "target": "angular_json_angular_cli",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -9093,28 +8580,6 @@
       "weight": 1.0
     },
     {
-      "source": "angular_cli",
-      "target": "angular_cli_packagemanager",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "angular.json",
-      "source_location": "L5",
-      "weight": 1.0
-    },
-    {
-      "source": "angular_cli",
-      "target": "angular_cli_analytics",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "angular.json",
-      "source_location": "L6",
-      "weight": 1.0
-    },
-    {
       "source": "angular_configurations_development",
       "target": "angular_development_optimization",
       "relation": "contains",
@@ -9189,6 +8654,28 @@
       "confidence_score": 1.0,
       "source_file": "angular.json",
       "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "angular_json_angular_cli",
+      "target": "angular_cli_packagemanager",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "angular.json",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "angular_json_angular_cli",
+      "target": "angular_cli_analytics",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "angular.json",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -9980,7 +9467,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/app.routes.ts",
-      "source_location": "L18",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -10413,28 +9900,6 @@
       "weight": 1.0
     },
     {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_form_registros_tiempo_form_component",
-      "target": "src_app_features_registros_tiempo_registros_tiempo_form_registros_tiempo_form_component_registrostiempoformcomponent",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-form/registros-tiempo-form.component.ts",
-      "source_location": "L25",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component",
-      "target": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts",
-      "source_location": "L30",
-      "weight": 1.0
-    },
-    {
       "source": "src_app_features_registros_tiempov2_registros_tiempov2_list_registros_tiempov2_list_component",
       "target": "src_app_features_registros_tiempov2_registros_tiempov2_list_registros_tiempov2_list_component_registrostiempov2listcomponent",
       "relation": "contains",
@@ -10565,6 +10030,15 @@
       "source_file": "src/environments/environment.ts",
       "source_location": "L1",
       "weight": 1.0
+    },
+    {
+      "source": "src_app_features_user_change_password_dialog_change_password_dialog_component",
+      "target": "forms",
+      "relation": "dynamic_import",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/features/user/change-password-dialog/change-password-dialog.component.ts"
     },
     {
       "source": "src_app_core_services_backup_service_backupservice",
@@ -10865,13 +10339,24 @@
     },
     {
       "source": "src_app_core_services_reportes_service_reportesservice",
+      "target": "src_app_core_services_reportes_service_reportesservice_getcostolaborfiltered",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/core/services/reportes.service.ts",
+      "source_location": "L100",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_core_services_reportes_service_reportesservice",
       "target": "src_app_core_services_reportes_service_reportesservice_gethorastrabajadorfiltered",
       "relation": "method",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/core/services/reportes.service.ts",
-      "source_location": "L153",
+      "source_location": "L194",
       "weight": 1.0
     },
     {
@@ -10882,18 +10367,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/core/services/reportes.service.ts",
-      "source_location": "L249",
+      "source_location": "L282",
       "weight": 1.0
     },
     {
       "source": "src_app_core_services_reportes_service_reportesservice",
-      "target": "src_app_core_services_reportes_service_reportesservice_getcostolaborfiltered",
+      "target": "src_app_core_services_reportes_service_reportesservice_fetchregistrostiempopaginado",
       "relation": "method",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/app/core/services/reportes.service.ts",
-      "source_location": "L50",
+      "source_location": "L48",
       "weight": 1.0
     },
     {
@@ -11499,127 +10984,6 @@
       "confidence_score": 1.0,
       "source_file": "src/app/features/proyectos/proyectos-list/proyectos-list.component.ts",
       "source_location": "L88",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_form_registros_tiempo_form_component_registrostiempoformcomponent",
-      "target": "src_app_features_registros_tiempo_registros_tiempo_form_registros_tiempo_form_component_registrostiempoformcomponent_ngoninit",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-form/registros-tiempo-form.component.ts",
-      "source_location": "L41",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_form_registros_tiempo_form_component_registrostiempoformcomponent",
-      "target": "src_app_features_registros_tiempo_registros_tiempo_form_registros_tiempo_form_component_registrostiempoformcomponent_loadselectdata",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-form/registros-tiempo-form.component.ts",
-      "source_location": "L55",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_form_registros_tiempo_form_component_registrostiempoformcomponent",
-      "target": "src_app_features_registros_tiempo_registros_tiempo_form_registros_tiempo_form_component_registrostiempoformcomponent_onsubmit",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-form/registros-tiempo-form.component.ts",
-      "source_location": "L69",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent",
-      "target": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent_openform",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts",
-      "source_location": "L111",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent",
-      "target": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent_deleteregistro",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts",
-      "source_location": "L122",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent",
-      "target": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent_applyfilter",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts",
-      "source_location": "L134",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent",
-      "target": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent_applydatefilter",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts",
-      "source_location": "L139",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent",
-      "target": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent_cleardatefilter",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts",
-      "source_location": "L143",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent",
-      "target": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent_updatetablefilter",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts",
-      "source_location": "L149",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent",
-      "target": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent_ngoninit",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts",
-      "source_location": "L47",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent",
-      "target": "src_app_features_registros_tiempo_registros_tiempo_list_registros_tiempo_list_component_registrostiempolistcomponent_loadregistros",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts",
-      "source_location": "L98",
       "weight": 1.0
     },
     {
@@ -12269,7 +11633,7 @@
       "confidence_score": 0.85,
       "context": "collection",
       "source_file": "src/app/app.routes.ts",
-      "source_location": "L27",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -12281,7 +11645,7 @@
       "confidence_score": 0.85,
       "context": "collection",
       "source_file": "src/app/app.routes.ts",
-      "source_location": "L32",
+      "source_location": "L31",
       "weight": 1.0
     },
     {

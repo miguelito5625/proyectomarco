@@ -54,9 +54,9 @@
     "semantic_hash": "411dead10faf1ff7b6ab3d249b524ee0"
   },
   "src/app/app.routes.ts": {
-    "mtime": 1789520014.415334,
-    "seen": 1789520274.6639006,
-    "ast_hash": "82ecb38470c67a02387ee9b0507f5d67",
+    "mtime": 1790800711.350052,
+    "seen": 1790800813.997848,
+    "ast_hash": "cd73e05d1be811bedd0301f808fc334b",
     "semantic_hash": ""
   },
   "src/app/app.spec.ts": {
@@ -108,9 +108,9 @@
     "semantic_hash": "f567ed0c0d998aa633b62c0989f2f19a"
   },
   "src/app/core/services/reportes.service.ts": {
-    "mtime": 1789520964.8382292,
-    "seen": 1789521064.3392694,
-    "ast_hash": "b9c3ccc8f72426086f403ee05837af86",
+    "mtime": 1790800785.5491917,
+    "seen": 1790800813.999008,
+    "ast_hash": "697b6d9bd0e8ecdc5ef0216fac9e6674",
     "semantic_hash": ""
   },
   "src/app/core/services/supabase.service.ts": {
@@ -178,18 +178,6 @@
     "seen": 1787808900.6230202,
     "ast_hash": "764284fe4f4baf7e298fed981c295afc",
     "semantic_hash": "764284fe4f4baf7e298fed981c295afc"
-  },
-  "src/app/features/registros-tiempo/registros-tiempo-form/registros-tiempo-form.component.ts": {
-    "mtime": 1777250000.2826357,
-    "seen": 1787808900.6230211,
-    "ast_hash": "df72f461145142e20101b30ce07a4bd4",
-    "semantic_hash": "df72f461145142e20101b30ce07a4bd4"
-  },
-  "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.ts": {
-    "mtime": 1777354122.1299162,
-    "seen": 1787808900.623022,
-    "ast_hash": "0618726d79117814b27f0ddaf6719281",
-    "semantic_hash": "0618726d79117814b27f0ddaf6719281"
   },
   "src/app/features/registros-tiempov2/registros-tiempov2-list/registros-tiempov2-list.component.ts": {
     "mtime": 1789520928.678819,
@@ -290,7 +278,7 @@
   ".vscode/mcp.json": {
     "mtime": 1777229876.2570295,
     "seen": 1789521899.4623754,
-    "ast_hash": "a73020575e74990ecd722ccc5122bb0c",
+    "ast_hash": "",
     "semantic_hash": ""
   },
   ".agents/AGENTS.md": {
@@ -372,9 +360,9 @@
     "semantic_hash": ""
   },
   "src/app/features/home/home.component.html": {
-    "mtime": 1789521770.7391472,
-    "seen": 1789521880.7551827,
-    "ast_hash": "9708b3b7386df39b9e494ad07beeb496",
+    "mtime": 1790800738.2600539,
+    "seen": 1790800814.0026805,
+    "ast_hash": "9a862d208e37b84153f011165830f211",
     "semantic_hash": ""
   },
   "src/app/features/nominas/nominas-form/nominas-form.component.html": {
@@ -399,18 +387,6 @@
     "mtime": 1782229451.565012,
     "seen": 1787809406.7213788,
     "ast_hash": "d36e30c9727df7bd5020c4c7a281c64c",
-    "semantic_hash": ""
-  },
-  "src/app/features/registros-tiempo/registros-tiempo-form/registros-tiempo-form.component.html": {
-    "mtime": 1777250001.5851262,
-    "seen": 1787809406.7213795,
-    "ast_hash": "16a54a6a49d8183d407fc3d6f0af68a3",
-    "semantic_hash": ""
-  },
-  "src/app/features/registros-tiempo/registros-tiempo-list/registros-tiempo-list.component.html": {
-    "mtime": 1777354172.5040352,
-    "seen": 1787809406.7213802,
-    "ast_hash": "6e2c037d74a659a6a02664a56940ce9c",
     "semantic_hash": ""
   },
   "src/app/features/registros-tiempov2/registros-tiempov2-list/registros-tiempov2-list.component.html": {
@@ -462,9 +438,9 @@
     "semantic_hash": ""
   },
   "src/app/layout/main-layout/main-layout.component.html": {
-    "mtime": 1789520945.1094804,
-    "seen": 1789521064.344688,
-    "ast_hash": "684fff312d8ca3b9929990359617f57a",
+    "mtime": 1790800720.5470748,
+    "seen": 1790800814.0036497,
+    "ast_hash": "4a6a62ec23cc2cb3172d15704dcee4da",
     "semantic_hash": ""
   },
   "src/index.html": {
@@ -482,7 +458,7 @@
   "db/esquema_bd.sql": {
     "mtime": 1787807359.008685,
     "seen": 1789521899.4623861,
-    "ast_hash": "b766bbab21c107d904c301b51793b4e1",
+    "ast_hash": "",
     "semantic_hash": ""
   },
   "src/app/core/services/backup.service.ts": {
@@ -512,7 +488,7 @@
   "db/backfill_tarifas_historicas.sql": {
     "mtime": 1789520883.1618695,
     "seen": 1789521899.4623816,
-    "ast_hash": "91044407f028130a9319a01177ecd5ee",
+    "ast_hash": "",
     "semantic_hash": ""
   }
 }
